@@ -1,4 +1,6 @@
 import json
+import os
+import sys
 
 
 # method that takes json files and returns their lengths 
@@ -8,14 +10,16 @@ def files_length(files):
 
 # writes data into a give file
 def write_file(data, file_name):
-    with open(file_name, 'w') as f:
+    with open(os.path.join(sys.path[0], file_name), 'w') as f:
         json.dump(data, f, indent=4)
+    f.close()
 
 
 # reads a json file and parses its data 
 def read_file(file_name):
     file = open(file_name, 'r')
     file_data = file.read()
+    file.close()
     return json.loads(file_data)
 
 
@@ -31,7 +35,7 @@ def parse_duplicates(file_data, field):
                 added_keys.append(item2[field])
         print('Parsing ' + str(i + 1) + ' of ' + str(len(file_data)) + ' ')
     write_file(result_items, 'parsed_output.json')
-    print('\nCompleted! A new file has been created. Continue? yes/no (y/n)')
+    print('\nCompleted! A new file has been created. Continue? (y/n)')
     if input() == 'yes' or input() == 'y':
         menu()
 
