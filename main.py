@@ -51,7 +51,7 @@ def menu():
             file_name = input('File name: ')
             try:
                 parsed_data = read_file(file_name)
-                field_name = input('Field name to check duplicates for: \n')
+                field_name = input('Field name to check duplicates for: ')
                 parse_duplicates(parsed_data, field_name)
             except Exception as e:
                 print('\nFile is invalid or not found. Error: {error} \n'.format(error=e))
