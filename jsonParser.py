@@ -1,7 +1,7 @@
 import json
 
 
-# method that takes json files and returns their total length 
+# method that takes json files and returns their lengths 
 def files_length(files):
     menu()
 
