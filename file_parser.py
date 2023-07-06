@@ -44,7 +44,7 @@ def parse_duplicates(file_data, field):
 def menu():
     print('Please choose an option:')
     print('1 - Compare files lengths')
-    print('2 - Remove duplicates')
+    print('2 - Remove duplicates - Array of objects')
     option = input()
 
     if len(option) > 0:
@@ -69,3 +69,28 @@ def menu():
 
 
 menu()
+
+
+# TODO deal with nested values
+# def check_nested(file_data):
+#     if isinstance(file_data, dict):
+#         print('is dict')
+#     elif isinstance(file_data, list):
+#         print('list')
+#
+#     for key, value in file_data.items():
+#         if isinstance(value, dict):
+#             print('value dict')
+#         elif isinstance(value, list):
+#             for val in value:
+#                 if isinstance(val, str):
+#                     print('value str')
+#                     pass
+#                 elif isinstance(val, list):
+#                     print('value list')
+#                     pass
+#                 elif isinstance(val, dict):
+#                     print('value dict')
+#                     pass
+#                 else:
+#                     parse_duplicates(file_data, 'field')
