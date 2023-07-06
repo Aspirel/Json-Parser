@@ -7,8 +7,8 @@ def files_length(files):
 
 
 # writes data into a give file
-def write_file(data, fileName):
-    with open(fileName, 'w') as f:
+def write_file(data, file_name):
+    with open(file_name, 'w') as f:
         json.dump(data, f, indent=4)
         
 
@@ -20,19 +20,19 @@ def read_file(file_name):
 
 
 # checks a json file for duplicates and creates a new output file without them
-def parse_duplicates(fileData, field, outputFileName):
+def parse_duplicates(file_data, field):
     print('Starting duplicate removal tool...')
-    result_items = []
-    added_keys = []
-    for i, item1 in enumerate(fileData):
-        for item2 in fileData:
+    result_items: list = []
+    added_keys: list = []
+    for i, item1 in enumerate(file_data):
+        for item2 in file_data:
             if len(result_items) == 0 or item1[field] != item2[field] and item2[field] not in added_keys:
                 result_items.append(item2)
                 added_keys.append(item2[field])
-        print('Parsing ' + str(i+1) + ' of ' + str(len(fileData)) + ' ')
-    write_file(result_items, outputFileName)
+        print('Parsing ' + str(i+1) + ' of ' + str(len(file_data)) + ' ')
+    write_file(result_items, 'parsed_output.json')
     print('\nCompleted! A new file has been created. Continue? yes/no')
-    if input() == 'yes':
+    if input() == 'yes' or input() == 'y':
         menu()
     
 
@@ -52,8 +52,7 @@ def menu():
             try:
                 parsed_data = read_file(file_name)
                 field_name = input('Field name to check duplicates for: \n')
-                output_file_name = input('Output file name: \n')
-                parse_duplicates(parsed_data, field_name, output_file_name + '.json')
+                parse_duplicates(parsed_data, field_name)
             except Exception as e: 
                 print('\nFile is invalid or not found. Error: {error} \n'.format(error=e))
                 menu()
@@ -65,8 +64,4 @@ def menu():
         menu()
 
 
-# TODO
-# Need to check for supported file extensions. Need to store it and use it for the output file extension.
-# Need to check for a file extension when after its input, if exists and is valid, keep it, otherwise,
-# inform the user of the default extension .json and add it to the output file
 menu()
