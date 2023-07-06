@@ -10,7 +10,7 @@ def files_length(files):
 def write_file(data, file_name):
     with open(file_name, 'w') as f:
         json.dump(data, f, indent=4)
-        
+
 
 # reads a json file and parses its data 
 def read_file(file_name):
@@ -22,19 +22,19 @@ def read_file(file_name):
 # checks a json file for duplicates and creates a new output file without them
 def parse_duplicates(file_data, field):
     print('Starting duplicate removal tool...')
-    result_items: list = []
-    added_keys: list = []
+    result_items = []
+    added_keys = []
     for i, item1 in enumerate(file_data):
         for item2 in file_data:
             if len(result_items) == 0 or item1[field] != item2[field] and item2[field] not in added_keys:
                 result_items.append(item2)
                 added_keys.append(item2[field])
-        print('Parsing ' + str(i+1) + ' of ' + str(len(file_data)) + ' ')
+        print('Parsing ' + str(i + 1) + ' of ' + str(len(file_data)) + ' ')
     write_file(result_items, 'parsed_output.json')
-    print('\nCompleted! A new file has been created. Continue? yes/no')
+    print('\nCompleted! A new file has been created. Continue? yes/no (y/n)')
     if input() == 'yes' or input() == 'y':
         menu()
-    
+
 
 # the user menu with options for different funtions
 def menu():
@@ -42,7 +42,7 @@ def menu():
     print('1 - Compare files lengths')
     print('2 - Remove duplicates')
     option = input()
-    
+
     if len(option) > 0:
         if option == '1':
             print('test')
@@ -53,7 +53,7 @@ def menu():
                 parsed_data = read_file(file_name)
                 field_name = input('Field name to check duplicates for: \n')
                 parse_duplicates(parsed_data, field_name)
-            except Exception as e: 
+            except Exception as e:
                 print('\nFile is invalid or not found. Error: {error} \n'.format(error=e))
                 menu()
         else:

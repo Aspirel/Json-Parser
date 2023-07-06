@@ -1,22 +1,18 @@
-[
-	{
-		"id": 1,
-		"name": "One",
-		"country": "UK"
-	},
-	{
-		"id": 2,
-		"name": "Two",
-		"country": "UK"
-	},
-	{
-		"id": 3,
-		"name": "Three",
-		"country": "UK"
-	},
-	{
-		"id": 4,
-		"name": "Two",
-		"country": "UK"
-	}
-]
+{
+	"result":[
+		{
+			"run":[
+				{
+					"action":"stop"
+				},
+				{
+					"action":"start"
+				},
+				{
+					"action":"start"
+				}
+			],
+			"find":true
+		}
+	]
+}

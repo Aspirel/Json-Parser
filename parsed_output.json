@@ -13,10 +13,5 @@
         "id": 3,
         "name": "Three",
         "country": "UK"
-    },
-    {
-        "id": 4,
-        "name": "Two",
-        "country": "UK"
     }
 ]
