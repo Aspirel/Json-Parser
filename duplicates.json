@@ -1,0 +1,6757 @@
+[
+    {
+        "id": 2,
+        "stationName": "Château-Arnoux—St-Auban",
+        "country": "FR",
+        "latitude": "44.0615651",
+        "longitude": "5.9973734"
+    },
+    {
+        "id": 5,
+        "stationName": "Digne-les-Bains",
+        "country": "FR",
+        "latitude": "44.08871013",
+        "longitude": "6.222982407"
+    },
+    {
+        "id": 10,
+        "stationName": "Menton",
+        "country": "FR",
+        "latitude": "43.774444",
+        "longitude": "7.4933"
+    },
+    {
+        "id": 13,
+        "stationName": "Vievola",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 14,
+        "stationName": "Vievola",
+        "country": "FR",
+        "latitude": "44.1125561",
+        "longitude": "7.5627976"
+    },
+    {
+        "id": 22,
+        "stationName": "St-Sever Calvados",
+        "country": "FR",
+        "latitude": "48.843608",
+        "longitude": "-1.0516979"
+    },
+    {
+        "id": 25,
+        "stationName": "Vire",
+        "country": "FR",
+        "latitude": "48.846329",
+        "longitude": "-0.882884"
+    },
+    {
+        "id": 28,
+        "stationName": "Marans",
+        "country": "FR",
+        "latitude": "46.30433",
+        "longitude": "-1.00127"
+    },
+    {
+        "id": 33,
+        "stationName": "Pontrieux",
+        "country": "FR",
+        "latitude": "48.7056437",
+        "longitude": "-3.1574281"
+    },
+    {
+        "id": 40,
+        "stationName": "Concarneau",
+        "country": "FR",
+        "latitude": "47.87767079",
+        "longitude": "-3.920531273"
+    },
+    {
+        "id": 44,
+        "stationName": "Colomiers",
+        "country": "FR",
+        "latitude": "43.603734",
+        "longitude": "1.334221"
+    },
+    {
+        "id": 54,
+        "stationName": "Lunel",
+        "country": "FR",
+        "latitude": "43.679392",
+        "longitude": "4.131086"
+    },
+    {
+        "id": 74,
+        "stationName": "Louverné",
+        "country": "FR",
+        "latitude": "48.1088564",
+        "longitude": "-0.7144109"
+    },
+    {
+        "id": 77,
+        "stationName": "Mayenne",
+        "country": "FR",
+        "latitude": "48.30645522",
+        "longitude": "-0.620588064"
+    },
+    {
+        "id": 80,
+        "stationName": "Arnage",
+        "country": "FR",
+        "latitude": "47.9285663",
+        "longitude": "0.1898826"
+    },
+    {
+        "id": 85,
+        "stationName": "Carnac",
+        "country": "FR",
+        "latitude": "47.58455897",
+        "longitude": "-3.082609177"
+    },
+    {
+        "id": 88,
+        "stationName": "St-Pierre-Quiberon",
+        "country": "FR",
+        "latitude": "47.5210574",
+        "longitude": "-3.138905"
+    },
+    {
+        "id": 91,
+        "stationName": "Forbach",
+        "country": "FR",
+        "latitude": "49.1892278",
+        "longitude": "6.9013184"
+    },
+    {
+        "id": 94,
+        "stationName": "Sarreguemines",
+        "country": "FR",
+        "latitude": "49.1073357",
+        "longitude": "7.0686398"
+    },
+    {
+        "id": 101,
+        "stationName": "Nomain",
+        "country": "FR",
+        "latitude": "50.5023744",
+        "longitude": "3.2063499"
+    },
+    {
+        "id": 107,
+        "stationName": "Jeumont",
+        "country": "FR",
+        "latitude": "50.29606",
+        "longitude": "4.08645"
+    },
+    {
+        "id": 109,
+        "stationName": "Bellegarde-sur-Valserine",
+        "country": "FR",
+        "latitude": "46.109425",
+        "longitude": "5.823483"
+    },
+    {
+        "id": 119,
+        "stationName": "Mertzwiller",
+        "country": "FR",
+        "latitude": "48.872013",
+        "longitude": "7.6781895"
+    },
+    {
+        "id": 126,
+        "stationName": "Thann",
+        "country": "FR",
+        "latitude": "47.8088208",
+        "longitude": "7.1069795"
+    },
+    {
+        "id": 130,
+        "stationName": "Aspach-le-Haut",
+        "country": "FR",
+        "latitude": "47.769396",
+        "longitude": "7.142379"
+    },
+    {
+        "id": 137,
+        "stationName": "Eu",
+        "country": "FR",
+        "latitude": "50.0541988",
+        "longitude": "1.416837"
+    },
+    {
+        "id": 142,
+        "stationName": "Harfleur",
+        "country": "FR",
+        "latitude": "49.5136336",
+        "longitude": "0.1989828"
+    },
+    {
+        "id": 144,
+        "stationName": "Montivilliers",
+        "country": "FR",
+        "latitude": "49.5429758",
+        "longitude": "0.189426"
+    },
+    {
+        "id": 157,
+        "stationName": "St-Hilaire-de-Riez",
+        "country": "FR",
+        "latitude": "46.7166736",
+        "longitude": "-1.9496838"
+    },
+    {
+        "id": 171,
+        "stationName": "Argenton-sur-Creuse",
+        "country": "FR",
+        "latitude": "46.592248",
+        "longitude": "1.518305"
+    },
+    {
+        "id": 897,
+        "stationName": "Châlons-en-Champagne",
+        "country": "FR",
+        "latitude": "48.955252",
+        "longitude": "4.348656"
+    },
+    {
+        "id": 900,
+        "stationName": "Paris Gare du Nord",
+        "country": "FR",
+        "latitude": "48.880185",
+        "longitude": "2.355151"
+    },
+    {
+        "id": 923,
+        "stationName": "Cannes",
+        "country": "FR",
+        "latitude": "43.553839",
+        "longitude": "7.019682"
+    },
+    {
+        "id": 998,
+        "stationName": "Chambourg",
+        "country": "FR",
+        "latitude": "47.1821629",
+        "longitude": "0.9648363"
+    },
+    {
+        "id": 1026,
+        "stationName": "Colmar",
+        "country": "FR",
+        "latitude": "48.083333",
+        "longitude": "7.366667"
+    },
+    {
+        "id": 1158,
+        "stationName": "Châteauroux",
+        "country": "FR",
+        "latitude": "46.816667",
+        "longitude": "1.7"
+    },
+    {
+        "id": 1205,
+        "stationName": "Clermont-Ferrand",
+        "country": "FR",
+        "latitude": "45.783333",
+        "longitude": "3.083333"
+    },
+    {
+        "id": 1423,
+        "stationName": "Dieppe",
+        "country": "FR",
+        "latitude": "49.933333",
+        "longitude": "1.083333"
+    },
+    {
+        "id": 1453,
+        "stationName": "Dourdan",
+        "country": "FR",
+        "latitude": "48.533333",
+        "longitude": "2.016667"
+    },
+    {
+        "id": 1488,
+        "stationName": "La Ferté-Macé",
+        "country": "FR",
+        "latitude": "48.589993",
+        "longitude": "-0.358"
+    },
+    {
+        "id": 1498,
+        "stationName": "Montauban-de-Bretagne",
+        "country": "FR",
+        "latitude": "48.190241",
+        "longitude": "-2.052675"
+    },
+    {
+        "id": 1592,
+        "stationName": "Roscoff",
+        "country": "FR",
+        "latitude": "48.723812",
+        "longitude": "-3.987093"
+    },
+    {
+        "id": 1655,
+        "stationName": "Bourgneuf-en-Retz",
+        "country": "FR",
+        "latitude": "47.05",
+        "longitude": "-1.95"
+    },
+    {
+        "id": 1780,
+        "stationName": "Angerville",
+        "country": "FR",
+        "latitude": "48.3112062",
+        "longitude": "2.0034931"
+    },
+    {
+        "id": 1788,
+        "stationName": "Monnerville",
+        "country": "FR",
+        "latitude": "48.3484915",
+        "longitude": "2.0320595"
+    },
+    {
+        "id": 1789,
+        "stationName": "Guillerval",
+        "country": "FR",
+        "latitude": "48.3744455",
+        "longitude": "2.0598748"
+    },
+    {
+        "id": 2061,
+        "stationName": "Assier",
+        "country": "FR",
+        "latitude": "44.6746197",
+        "longitude": "1.8697681"
+    },
+    {
+        "id": 2064,
+        "stationName": "Figeac",
+        "country": "FR",
+        "latitude": "44.603515",
+        "longitude": "2.037355"
+    },
+    {
+        "id": 2119,
+        "stationName": "Fontenay-le-Comte",
+        "country": "FR",
+        "latitude": "46.366667",
+        "longitude": "-0.733333"
+    },
+    {
+        "id": 2158,
+        "stationName": "Issoudun",
+        "country": "FR",
+        "latitude": "46.95",
+        "longitude": "2"
+    },
+    {
+        "id": 2261,
+        "stationName": "Soulac-sur-Mer",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 2555,
+        "stationName": "Grenoble",
+        "country": "FR",
+        "latitude": "45.166667",
+        "longitude": "5.716667"
+    },
+    {
+        "id": 2765,
+        "stationName": "Hombourg-Budange",
+        "country": "FR",
+        "latitude": "49.133333",
+        "longitude": "6.766667"
+    },
+    {
+        "id": 3061,
+        "stationName": "Hirson",
+        "country": "FR",
+        "latitude": "49.916667",
+        "longitude": "4.083333"
+    },
+    {
+        "id": 3071,
+        "stationName": "Chartres",
+        "country": "FR",
+        "latitude": "48.4482023",
+        "longitude": "1.4813128"
+    },
+    {
+        "id": 3393,
+        "stationName": "Neuvy-Sautour",
+        "country": "FR",
+        "latitude": "48.033333",
+        "longitude": "3.8"
+    },
+    {
+        "id": 3422,
+        "stationName": "Jussey",
+        "country": "FR",
+        "latitude": "47.816667",
+        "longitude": "5.9"
+    },
+    {
+        "id": 3431,
+        "stationName": "Joué-lès-Tours",
+        "country": "FR",
+        "latitude": "47.35",
+        "longitude": "0.666667"
+    },
+    {
+        "id": 3433,
+        "stationName": "Fréjus",
+        "country": "FR",
+        "latitude": "43.433333",
+        "longitude": "6.733333"
+    },
+    {
+        "id": 3471,
+        "stationName": "Le Havre",
+        "country": "FR",
+        "latitude": "49.493804",
+        "longitude": "0.107675"
+    },
+    {
+        "id": 3476,
+        "stationName": "Bologne",
+        "country": "FR",
+        "latitude": "48.2",
+        "longitude": "5.133333"
+    },
+    {
+        "id": 3491,
+        "stationName": "Le Locle",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 3495,
+        "stationName": "Le Mans",
+        "country": "FR",
+        "latitude": "48",
+        "longitude": "0.2"
+    },
+    {
+        "id": 3498,
+        "stationName": "Limoux",
+        "country": "FR",
+        "latitude": "43.066667",
+        "longitude": "2.233333"
+    },
+    {
+        "id": 3504,
+        "stationName": "Montluçon",
+        "country": "FR",
+        "latitude": "46.338101",
+        "longitude": "2.596159"
+    },
+    {
+        "id": 3534,
+        "stationName": "Ludon",
+        "country": "FR",
+        "latitude": "44.983333",
+        "longitude": "-0.6"
+    },
+    {
+        "id": 3538,
+        "stationName": "Laval",
+        "country": "FR",
+        "latitude": "48.066667",
+        "longitude": "-0.766667"
+    },
+    {
+        "id": 3545,
+        "stationName": "Meymac",
+        "country": "FR",
+        "latitude": "45.5302313",
+        "longitude": "2.1640905"
+    },
+    {
+        "id": 3564,
+        "stationName": "Margaux",
+        "country": "FR",
+        "latitude": "45.05",
+        "longitude": "-0.666667"
+    },
+    {
+        "id": 3570,
+        "stationName": "Mulhouse",
+        "country": "FR",
+        "latitude": "47.75",
+        "longitude": "7.333333"
+    },
+    {
+        "id": 3577,
+        "stationName": "Monnaie",
+        "country": "FR",
+        "latitude": "47.5",
+        "longitude": "0.783333"
+    },
+    {
+        "id": 3582,
+        "stationName": "Chaumont",
+        "country": "FR",
+        "latitude": "48.10976",
+        "longitude": "5.1346"
+    },
+    {
+        "id": 3586,
+        "stationName": "Moirans",
+        "country": "FR",
+        "latitude": "45.333333",
+        "longitude": "5.566667"
+    },
+    {
+        "id": 3588,
+        "stationName": "Mondoubleau",
+        "country": "FR",
+        "latitude": "47.983333",
+        "longitude": "0.9"
+    },
+    {
+        "id": 3603,
+        "stationName": "Moulis—Listrac",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 3605,
+        "stationName": "Masseret",
+        "country": "FR",
+        "latitude": "45.533333",
+        "longitude": "1.516667"
+    },
+    {
+        "id": 3612,
+        "stationName": "Montélimar",
+        "country": "FR",
+        "latitude": "44.559079",
+        "longitude": "4.744792"
+    },
+    {
+        "id": 3615,
+        "stationName": "Mont-sur-Meurthe",
+        "country": "FR",
+        "latitude": "48.55",
+        "longitude": "6.45"
+    },
+    {
+        "id": 3620,
+        "stationName": "Munster",
+        "country": "FR",
+        "latitude": "48.0383438",
+        "longitude": "7.1341728"
+    },
+    {
+        "id": 3628,
+        "stationName": "Metz",
+        "country": "FR",
+        "latitude": "49.119108",
+        "longitude": "6.172686"
+    },
+    {
+        "id": 3632,
+        "stationName": "Château-du-Loir",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 3654,
+        "stationName": "Nevers",
+        "country": "FR",
+        "latitude": "46.987282",
+        "longitude": "3.150743"
+    },
+    {
+        "id": 3656,
+        "stationName": "Charbonnières-les-Bains",
+        "country": "FR",
+        "latitude": "45.783333",
+        "longitude": "4.733333"
+    },
+    {
+        "id": 3658,
+        "stationName": "Nogent-sur-Seine",
+        "country": "FR",
+        "latitude": "48.533333",
+        "longitude": "3.5"
+    },
+    {
+        "id": 3661,
+        "stationName": "Fronville",
+        "country": "FR",
+        "latitude": "48.4",
+        "longitude": "5.15"
+    },
+    {
+        "id": 3669,
+        "stationName": "Aubenas",
+        "country": "FR",
+        "latitude": "44.61098203",
+        "longitude": "4.407202005"
+    },
+    {
+        "id": 3679,
+        "stationName": "Houlgate",
+        "country": "FR",
+        "latitude": "49.3",
+        "longitude": "-0.066667"
+    },
+    {
+        "id": 3702,
+        "stationName": "Paris Gare du Nord",
+        "country": "FR",
+        "latitude": "48.880185",
+        "longitude": "2.355151"
+    },
+    {
+        "id": 3716,
+        "stationName": "Montreuil-Bellay",
+        "country": "FR",
+        "latitude": "47.133333",
+        "longitude": "-0.15"
+    },
+    {
+        "id": 3730,
+        "stationName": "Périgueux",
+        "country": "FR",
+        "latitude": "45.183333",
+        "longitude": "0.716667"
+    },
+    {
+        "id": 3733,
+        "stationName": "Apach",
+        "country": "FR",
+        "latitude": "49.45",
+        "longitude": "6.366667"
+    },
+    {
+        "id": 3734,
+        "stationName": "Privas",
+        "country": "FR",
+        "latitude": "44.733333",
+        "longitude": "4.6"
+    },
+    {
+        "id": 3749,
+        "stationName": "Port-Bou",
+        "country": "ES",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 3750,
+        "stationName": "Port-Bou",
+        "country": "ES",
+        "latitude": "42.424725",
+        "longitude": "3.157847"
+    },
+    {
+        "id": 3760,
+        "stationName": "Poitiers",
+        "country": "FR",
+        "latitude": "46.583333",
+        "longitude": "0.333333"
+    },
+    {
+        "id": 3762,
+        "stationName": "Pau",
+        "country": "FR",
+        "latitude": "43.3",
+        "longitude": "-0.366667"
+    },
+    {
+        "id": 3765,
+        "stationName": "Le Puy-en-Velay",
+        "country": "FR",
+        "latitude": "45.033333",
+        "longitude": "3.883333"
+    },
+    {
+        "id": 3768,
+        "stationName": "Capvern",
+        "country": "FR",
+        "latitude": "43.1",
+        "longitude": "0.316667"
+    },
+    {
+        "id": 3771,
+        "stationName": "Parempuyre",
+        "country": "FR",
+        "latitude": "44.95",
+        "longitude": "-0.583333"
+    },
+    {
+        "id": 3774,
+        "stationName": "Pouzauges",
+        "country": "FR",
+        "latitude": "46.783333",
+        "longitude": "-0.833333"
+    },
+    {
+        "id": 3787,
+        "stationName": "Langres",
+        "country": "FR",
+        "latitude": "47.866667",
+        "longitude": "5.333333"
+    },
+    {
+        "id": 3797,
+        "stationName": "Château-Renault",
+        "country": "FR",
+        "latitude": "47.583333",
+        "longitude": "0.916667"
+    },
+    {
+        "id": 3817,
+        "stationName": "Carignan",
+        "country": "FR",
+        "latitude": "49.633333",
+        "longitude": "5.166667"
+    },
+    {
+        "id": 3821,
+        "stationName": "Azay-le-Rideau",
+        "country": "FR",
+        "latitude": "47.266667",
+        "longitude": "0.466667"
+    },
+    {
+        "id": 3829,
+        "stationName": "Romilly-sur-Seine",
+        "country": "FR",
+        "latitude": "48.483333",
+        "longitude": "3.733333"
+    },
+    {
+        "id": 3833,
+        "stationName": "Rennes",
+        "country": "FR",
+        "latitude": "48.103517",
+        "longitude": "-1.672744"
+    },
+    {
+        "id": 3849,
+        "stationName": "Dreux",
+        "country": "FR",
+        "latitude": "48.7314561",
+        "longitude": "1.3701604"
+    },
+    {
+        "id": 3857,
+        "stationName": "Cerizay",
+        "country": "FR",
+        "latitude": "46.816667",
+        "longitude": "-0.666667"
+    },
+    {
+        "id": 3863,
+        "stationName": "Bar-sur-Aube",
+        "country": "FR",
+        "latitude": "48.216667",
+        "longitude": "4.716667"
+    },
+    {
+        "id": 3867,
+        "stationName": "St-Amand-Longpré",
+        "country": "FR",
+        "latitude": "47.69413",
+        "longitude": "1.008203"
+    },
+    {
+        "id": 3888,
+        "stationName": "Sedan",
+        "country": "FR",
+        "latitude": "49.695024",
+        "longitude": "4.930373"
+    },
+    {
+        "id": 3889,
+        "stationName": "St-Dizier",
+        "country": "FR",
+        "latitude": "48.65",
+        "longitude": "4.816667"
+    },
+    {
+        "id": 3899,
+        "stationName": "St-Georges-d’Aurac",
+        "country": "FR",
+        "latitude": "45.15",
+        "longitude": "3.533333"
+    },
+    {
+        "id": 3905,
+        "stationName": "Segré",
+        "country": "FR",
+        "latitude": "47.7",
+        "longitude": "-0.45"
+    },
+    {
+        "id": 3918,
+        "stationName": "St-Léonard-de-Noblat",
+        "country": "FR",
+        "latitude": "45.833333",
+        "longitude": "1.483333"
+    },
+    {
+        "id": 3938,
+        "stationName": "Ste-Pazanne",
+        "country": "FR",
+        "latitude": "47.1055419",
+        "longitude": "-1.8138744"
+    },
+    {
+        "id": 3945,
+        "stationName": "Serres",
+        "country": "FR",
+        "latitude": "44.433333",
+        "longitude": "5.716667"
+    },
+    {
+        "id": 3955,
+        "stationName": "St-Valéry-en-Caux",
+        "country": "FR",
+        "latitude": "49.8",
+        "longitude": "1.316667"
+    },
+    {
+        "id": 3959,
+        "stationName": "Strasbourg",
+        "country": "FR",
+        "latitude": "48.58333",
+        "longitude": "7.74593"
+    },
+    {
+        "id": 3967,
+        "stationName": "Bitche",
+        "country": "FR",
+        "latitude": "49.05",
+        "longitude": "7.433333"
+    },
+    {
+        "id": 3968,
+        "stationName": "Château-Gontier",
+        "country": "FR",
+        "latitude": "47.85",
+        "longitude": "-0.95"
+    },
+    {
+        "id": 3975,
+        "stationName": "Neuillé-Pont-Pierre",
+        "country": "FR",
+        "latitude": "47.55",
+        "longitude": "0.55"
+    },
+    {
+        "id": 3978,
+        "stationName": "Torfou",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 3986,
+        "stationName": "Thiers",
+        "country": "FR",
+        "latitude": "45.8610502",
+        "longitude": "3.5431798"
+    },
+    {
+        "id": 4002,
+        "stationName": "Nantes",
+        "country": "FR",
+        "latitude": "47.217251",
+        "longitude": "-1.553364"
+    },
+    {
+        "id": 4017,
+        "stationName": "Genève",
+        "country": "CH",
+        "latitude": "46.208942",
+        "longitude": "6.145262"
+    },
+    {
+        "id": 4019,
+        "stationName": "Genève",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4020,
+        "stationName": "Tours",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4023,
+        "stationName": "Troyes",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4029,
+        "stationName": "Pierre-Buffière",
+        "country": "FR",
+        "latitude": "45.7",
+        "longitude": "1.35"
+    },
+    {
+        "id": 4218,
+        "stationName": "Gudmont",
+        "country": "FR",
+        "latitude": "48.35",
+        "longitude": "5.133333"
+    },
+    {
+        "id": 4262,
+        "stationName": "Urt",
+        "country": "FR",
+        "latitude": "43.4993785",
+        "longitude": "-1.3005564"
+    },
+    {
+        "id": 4266,
+        "stationName": "Aubusson",
+        "country": "FR",
+        "latitude": "45.95473011",
+        "longitude": "2.167289257"
+    },
+    {
+        "id": 4268,
+        "stationName": "Eurville",
+        "country": "FR",
+        "latitude": "48.583333",
+        "longitude": "5.033333"
+    },
+    {
+        "id": 4269,
+        "stationName": "Uzerche",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4280,
+        "stationName": "Le Verdon",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4283,
+        "stationName": "Vendeuvre",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4304,
+        "stationName": "Vitry-le-François",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4307,
+        "stationName": "Villedieu-les-Poêles",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4309,
+        "stationName": "Villers-sur-Mer",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4314,
+        "stationName": "La Voulte",
+        "country": "FR",
+        "latitude": "44.8",
+        "longitude": "4.783333"
+    },
+    {
+        "id": 4319,
+        "stationName": "Vignory",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4321,
+        "stationName": "Vierzon",
+        "country": "FR",
+        "latitude": "47.226497",
+        "longitude": "2.059822"
+    },
+    {
+        "id": 4331,
+        "stationName": "Ervy-le-Châtel",
+        "country": "FR",
+        "latitude": "48.033333",
+        "longitude": "3.916667"
+    },
+    {
+        "id": 4338,
+        "stationName": "Mirecourt",
+        "country": "FR",
+        "latitude": "48.3",
+        "longitude": "6.133333"
+    },
+    {
+        "id": 4340,
+        "stationName": "Longuyon",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4344,
+        "stationName": "Montmédy",
+        "country": "FR",
+        "latitude": "49.516667",
+        "longitude": "5.366667"
+    },
+    {
+        "id": 4346,
+        "stationName": "Cons-la-Grandville",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4349,
+        "stationName": "Longwy",
+        "country": "FR",
+        "latitude": "49.516667",
+        "longitude": "5.766667"
+    },
+    {
+        "id": 4353,
+        "stationName": "Sarrebourg",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4360,
+        "stationName": "Wissembourg",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4389,
+        "stationName": "Cagnes-sur-Mer",
+        "country": "FR",
+        "latitude": "43.666667",
+        "longitude": "7.15"
+    },
+    {
+        "id": 4397,
+        "stationName": "Dax",
+        "country": "FR",
+        "latitude": "43.710323",
+        "longitude": "-1.053658"
+    },
+    {
+        "id": 4406,
+        "stationName": "Hendaye",
+        "country": "FR",
+        "latitude": "43.366667",
+        "longitude": "-1.783333"
+    },
+    {
+        "id": 4449,
+        "stationName": "Saumur",
+        "country": "FR",
+        "latitude": "47.266667",
+        "longitude": "-0.083333"
+    },
+    {
+        "id": 4458,
+        "stationName": "Tourcoing",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4464,
+        "stationName": "Vendôme",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4487,
+        "stationName": "Basel SBB",
+        "country": "CH",
+        "latitude": "47.54707551",
+        "longitude": "7.589169996"
+    },
+    {
+        "id": 4493,
+        "stationName": "Zornhoff",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4517,
+        "stationName": "Froyennes",
+        "country": "BE",
+        "latitude": "50.62989",
+        "longitude": "3.354837"
+    },
+    {
+        "id": 4593,
+        "stationName": "Vernayaz",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4646,
+        "stationName": "Les Marécottes",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4650,
+        "stationName": "Martigny",
+        "country": "CH",
+        "latitude": "46.105834",
+        "longitude": "7.079122"
+    },
+    {
+        "id": 4656,
+        "stationName": "Vallorbe",
+        "country": "CH",
+        "latitude": "46.712427",
+        "longitude": "6.370529"
+    },
+    {
+        "id": 4675,
+        "stationName": "Salvan",
+        "country": "CH",
+        "latitude": "46.121584",
+        "longitude": "7.021078"
+    },
+    {
+        "id": 4703,
+        "stationName": "Vernayaz",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4704,
+        "stationName": "Lausanne",
+        "country": "CH",
+        "latitude": "46.516704",
+        "longitude": "6.62905"
+    },
+    {
+        "id": 4762,
+        "stationName": "Monthey",
+        "country": "CH",
+        "latitude": "46.255671",
+        "longitude": "6.95522"
+    },
+    {
+        "id": 4764,
+        "stationName": "Neuchâtel",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4765,
+        "stationName": "Neuchâtel",
+        "country": "CH",
+        "latitude": "46.996513",
+        "longitude": "6.935914"
+    },
+    {
+        "id": 4768,
+        "stationName": "Lausanne",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4770,
+        "stationName": "Rorschach",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4771,
+        "stationName": "St-Gallen",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4779,
+        "stationName": "Vallorbe",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4781,
+        "stationName": "Les Marécottes",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4782,
+        "stationName": "Finhaut",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4793,
+        "stationName": "Genève",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4796,
+        "stationName": "Martigny",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4839,
+        "stationName": "Irún",
+        "country": "ES",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4909,
+        "stationName": "Valencia de Alcántara",
+        "country": "ES",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4912,
+        "stationName": "Irún",
+        "country": "ES",
+        "latitude": "43.339404",
+        "longitude": "-1.80115"
+    },
+    {
+        "id": 4944,
+        "stationName": "Manzanares",
+        "country": "ES",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 4966,
+        "stationName": "Canfranc",
+        "country": "ES",
+        "latitude": "42.751258",
+        "longitude": "-0.513805"
+    },
+    {
+        "id": 5003,
+        "stationName": "Algeciras",
+        "country": "ES",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 5030,
+        "stationName": "Canfranc",
+        "country": "ES",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 5044,
+        "stationName": "Fuentes de Onoro",
+        "country": "ES",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 5056,
+        "stationName": "Irún",
+        "country": "ES",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 5075,
+        "stationName": "Port-Bou",
+        "country": "ES",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 5918,
+        "stationName": "Bitburg",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 6046,
+        "stationName": "Kehl",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 6061,
+        "stationName": "Konstanz",
+        "country": "DE",
+        "latitude": "47.658757",
+        "longitude": "9.177312"
+    },
+    {
+        "id": 6072,
+        "stationName": "Mittenwald",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 6084,
+        "stationName": "Puttgarden",
+        "country": "DE",
+        "latitude": "54.500941",
+        "longitude": "11.227832"
+    },
+    {
+        "id": 6541,
+        "stationName": "Ashford International",
+        "country": "UK",
+        "latitude": "51.14335294",
+        "longitude": "0.875167251"
+    },
+    {
+        "id": 6543,
+        "stationName": "London St-Pancras",
+        "country": "UK",
+        "latitude": "51.531831",
+        "longitude": "-0.126747"
+    },
+    {
+        "id": 6629,
+        "stationName": "Hull",
+        "country": "UK",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 6637,
+        "stationName": "Harwich International",
+        "country": "UK",
+        "latitude": "51.947701",
+        "longitude": "1.255167"
+    },
+    {
+        "id": 6765,
+        "stationName": "Hull",
+        "country": "UK",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 6766,
+        "stationName": "Weymouth",
+        "country": "UK",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 6770,
+        "stationName": "Gatwick",
+        "country": "UK",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 6812,
+        "stationName": "Ventimiglia",
+        "country": "IT",
+        "latitude": "43.792586",
+        "longitude": "7.609953"
+    },
+    {
+        "id": 6816,
+        "stationName": "Ventimiglia",
+        "country": "IT",
+        "latitude": "43.792458",
+        "longitude": "7.6098994"
+    },
+    {
+        "id": 6831,
+        "stationName": "Rodange",
+        "country": "LU",
+        "latitude": "49.551283",
+        "longitude": "5.845028"
+    },
+    {
+        "id": 6902,
+        "stationName": "Marvão Beira",
+        "country": "PT",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 6914,
+        "stationName": "Valença",
+        "country": "PT",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 6927,
+        "stationName": "Fátima",
+        "country": "PT",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 6938,
+        "stationName": "Luxembourg",
+        "country": "LU",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 6948,
+        "stationName": "Lexy",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 6973,
+        "stationName": "Rohrbach-lès-Bitche",
+        "country": "FR",
+        "latitude": "49.051977",
+        "longitude": "7.287078"
+    },
+    {
+        "id": 7070,
+        "stationName": "Clermont-Ferrand",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7137,
+        "stationName": "Albas",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7171,
+        "stationName": "Philippsbourg",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7172,
+        "stationName": "Bouzonville",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7176,
+        "stationName": "Ébersviller",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7177,
+        "stationName": "Kédange",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7179,
+        "stationName": "Kuntzig",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7190,
+        "stationName": "Rohrbach-lès-Bitche",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7192,
+        "stationName": "Enchenberg",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7205,
+        "stationName": "Calvi",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7228,
+        "stationName": "Tulle",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7237,
+        "stationName": "Magnières",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7256,
+        "stationName": "Creutzwald",
+        "country": "FR",
+        "latitude": "49.2",
+        "longitude": "6.683333"
+    },
+    {
+        "id": 7260,
+        "stationName": "Farébersviller",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7261,
+        "stationName": "Farschviller",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7264,
+        "stationName": "Brignoles",
+        "country": "FR",
+        "latitude": "43.4",
+        "longitude": "6.066667"
+    },
+    {
+        "id": 7306,
+        "stationName": "Ste-Croix",
+        "country": "FR",
+        "latitude": "46.566667",
+        "longitude": "5.25"
+    },
+    {
+        "id": 7324,
+        "stationName": "Cahors",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7351,
+        "stationName": "Mazamet",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7352,
+        "stationName": "Morhange",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7403,
+        "stationName": "Perros-Guirec",
+        "country": "FR",
+        "latitude": "48.816667",
+        "longitude": "-3.45"
+    },
+    {
+        "id": 7424,
+        "stationName": "Lavaur",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7444,
+        "stationName": "Trappes",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7453,
+        "stationName": "Issy-Val-de-Seine",
+        "country": "FR",
+        "latitude": "48.8295555",
+        "longitude": "2.2635936"
+    },
+    {
+        "id": 7467,
+        "stationName": "Torfou",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7469,
+        "stationName": "Les Moutiers-en-Retz",
+        "country": "FR",
+        "latitude": "47.0618983",
+        "longitude": "-2.0009628"
+    },
+    {
+        "id": 7470,
+        "stationName": "La Bernerie-en-Retz",
+        "country": "FR",
+        "latitude": "47.0832616",
+        "longitude": "-2.0341408"
+    },
+    {
+        "id": 7476,
+        "stationName": "Lunéville",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7502,
+        "stationName": "Zuydcoote",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7521,
+        "stationName": "Issy-les-Moulineaux",
+        "country": "FR",
+        "latitude": "48.8201001",
+        "longitude": "2.2593469"
+    },
+    {
+        "id": 7524,
+        "stationName": "Mirande",
+        "country": "FR",
+        "latitude": "43.516667",
+        "longitude": "0.416667"
+    },
+    {
+        "id": 7525,
+        "stationName": "Crancey",
+        "country": "FR",
+        "latitude": "48.516667",
+        "longitude": "3.633333"
+    },
+    {
+        "id": 7526,
+        "stationName": "Pont-sur-Seine",
+        "country": "FR",
+        "latitude": "48.516667",
+        "longitude": "3.6"
+    },
+    {
+        "id": 7529,
+        "stationName": "Pontivy",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7607,
+        "stationName": "Fénétrange",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7629,
+        "stationName": "Luzech",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7633,
+        "stationName": "Puy-l’Évêque",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7663,
+        "stationName": "Sézanne",
+        "country": "FR",
+        "latitude": "48.716667",
+        "longitude": "3.716667"
+    },
+    {
+        "id": 7692,
+        "stationName": "La Défense",
+        "country": "FR",
+        "latitude": "48.89308",
+        "longitude": "2.23763"
+    },
+    {
+        "id": 7702,
+        "stationName": "Puteaux",
+        "country": "FR",
+        "latitude": "48.88351",
+        "longitude": "2.2335"
+    },
+    {
+        "id": 7720,
+        "stationName": "Douelle",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7734,
+        "stationName": "Ventimiglia",
+        "country": "IT",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7737,
+        "stationName": "Mittersheim",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7742,
+        "stationName": "Aspach-le-Haut",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7845,
+        "stationName": "Sarraltroff",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7993,
+        "stationName": "Nogent-sur-Loir",
+        "country": "FR",
+        "latitude": "47.666667",
+        "longitude": "0.4"
+    },
+    {
+        "id": 7994,
+        "stationName": "Luxembourg",
+        "country": "LU",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 7998,
+        "stationName": "Domfront",
+        "country": "FR",
+        "latitude": "48.592079",
+        "longitude": "-0.645876"
+    },
+    {
+        "id": 7999,
+        "stationName": "Domfront",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8001,
+        "stationName": "Bagnoles-de-l’Orne",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8017,
+        "stationName": "Châtel-Guyon",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8029,
+        "stationName": "Pontivy",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8036,
+        "stationName": "St-Martin-de-Queyrières",
+        "country": "FR",
+        "latitude": "44.823186",
+        "longitude": "6.579008"
+    },
+    {
+        "id": 8054,
+        "stationName": "Boulogne-sur-Mer Maritime",
+        "country": "FR",
+        "latitude": "50.769634",
+        "longitude": "1.611385"
+    },
+    {
+        "id": 8087,
+        "stationName": "Vitry-la-Ville",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8088,
+        "stationName": "Brienon",
+        "country": "FR",
+        "latitude": "48",
+        "longitude": "3.616667"
+    },
+    {
+        "id": 8092,
+        "stationName": "Cérences",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8096,
+        "stationName": "Sanguinet",
+        "country": "FR",
+        "latitude": "44.483333",
+        "longitude": "-1.083333"
+    },
+    {
+        "id": 8110,
+        "stationName": "St-Denis",
+        "country": "FR",
+        "latitude": "48.9354933",
+        "longitude": "2.3459524"
+    },
+    {
+        "id": 8158,
+        "stationName": "Le Locle",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8182,
+        "stationName": "Villeneuve-St-Georges",
+        "country": "FR",
+        "latitude": "48.730113",
+        "longitude": "2.446011"
+    },
+    {
+        "id": 8216,
+        "stationName": "Pithiviers",
+        "country": "FR",
+        "latitude": "48.166667",
+        "longitude": "2.25"
+    },
+    {
+        "id": 8232,
+        "stationName": "Guzet-Neige",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8261,
+        "stationName": "Ploërmel",
+        "country": "FR",
+        "latitude": "47.933333",
+        "longitude": "-2.4"
+    },
+    {
+        "id": 8264,
+        "stationName": "Josselin",
+        "country": "FR",
+        "latitude": "47.95",
+        "longitude": "-2.55"
+    },
+    {
+        "id": 8270,
+        "stationName": "St-Martin-le-Beau",
+        "country": "FR",
+        "latitude": "47.35",
+        "longitude": "0.916667"
+    },
+    {
+        "id": 8273,
+        "stationName": "Marne-la-Vallée—Chessy",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8284,
+        "stationName": "Le Merlerault",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8289,
+        "stationName": "Écouché",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8291,
+        "stationName": "Évry",
+        "country": "FR",
+        "latitude": "48.63442",
+        "longitude": "2.45209"
+    },
+    {
+        "id": 8296,
+        "stationName": "Friedrichshafen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8329,
+        "stationName": "Montierchaume",
+        "country": "FR",
+        "latitude": "46.866667",
+        "longitude": "1.766667"
+    },
+    {
+        "id": 8333,
+        "stationName": "Sisteron",
+        "country": "FR",
+        "latitude": "44.2",
+        "longitude": "5.933333"
+    },
+    {
+        "id": 8343,
+        "stationName": "Sames—Guiches",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8444,
+        "stationName": "Luxembourg",
+        "country": "FR",
+        "latitude": "48.8493",
+        "longitude": "2.33"
+    },
+    {
+        "id": 8458,
+        "stationName": "Égletons",
+        "country": "FR",
+        "latitude": "45.4",
+        "longitude": "2.05"
+    },
+    {
+        "id": 8460,
+        "stationName": "Grasse",
+        "country": "FR",
+        "latitude": "43.666667",
+        "longitude": "6.916667"
+    },
+    {
+        "id": 8553,
+        "stationName": "Juvisy",
+        "country": "FR",
+        "latitude": "48.68917",
+        "longitude": "2.38267"
+    },
+    {
+        "id": 8561,
+        "stationName": "Piène-Basse",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8657,
+        "stationName": "La Motte",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8659,
+        "stationName": "Niederbronn",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8660,
+        "stationName": "Neufchâteau",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8662,
+        "stationName": "Pons",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8665,
+        "stationName": "Remiremont",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8666,
+        "stationName": "Reignac",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8667,
+        "stationName": "Saulxures",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8669,
+        "stationName": "Toul",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8676,
+        "stationName": "Le Bosquet",
+        "country": "FR",
+        "latitude": "43.5515285",
+        "longitude": "6.9816599"
+    },
+    {
+        "id": 8677,
+        "stationName": "Laroquebrou",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8678,
+        "stationName": "Lauterbourg",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8679,
+        "stationName": "La Frayère",
+        "country": "FR",
+        "latitude": "43.5581088",
+        "longitude": "6.9720902"
+    },
+    {
+        "id": 8680,
+        "stationName": "Labruguière",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8682,
+        "stationName": "Mauriac",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8687,
+        "stationName": "Lutterbach",
+        "country": "FR",
+        "latitude": "47.7582136",
+        "longitude": "7.276994"
+    },
+    {
+        "id": 8688,
+        "stationName": "Lunery",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8689,
+        "stationName": "Louviers",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8693,
+        "stationName": "Lezoux",
+        "country": "FR",
+        "latitude": "45.82742",
+        "longitude": "3.38142"
+    },
+    {
+        "id": 8696,
+        "stationName": "Morlaix",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8698,
+        "stationName": "Montastruc",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8699,
+        "stationName": "Montargis",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8700,
+        "stationName": "Mirande",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8701,
+        "stationName": "Meursault",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8704,
+        "stationName": "Pontgibaud",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8709,
+        "stationName": "Paulhaguet",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8727,
+        "stationName": "Ax-les-Thermes",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8730,
+        "stationName": "Anzeling",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8731,
+        "stationName": "Amiens",
+        "country": "FR",
+        "latitude": "49.894144",
+        "longitude": "2.296565"
+    },
+    {
+        "id": 8732,
+        "stationName": "Albias",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8733,
+        "stationName": "Aire-sur-l’Adour",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8734,
+        "stationName": "Béziers",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8735,
+        "stationName": "Bénestroff",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8737,
+        "stationName": "Barisey-la-Côte",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8738,
+        "stationName": "Castres",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8739,
+        "stationName": "Castelnaudary",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8740,
+        "stationName": "Carcassonne",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8741,
+        "stationName": "Brouvelieures",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8743,
+        "stationName": "Gosselming",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8745,
+        "stationName": "Foix",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8746,
+        "stationName": "Distroff",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8747,
+        "stationName": "Keskastel",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8749,
+        "stationName": "Gundershoffen",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8750,
+        "stationName": "Les Cabannes",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8755,
+        "stationName": "Metzervisse",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8756,
+        "stationName": "Poix-Terron",
+        "country": "FR",
+        "latitude": "49.6500011",
+        "longitude": "4.6365346"
+    },
+    {
+        "id": 8758,
+        "stationName": "Pamiers",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8762,
+        "stationName": "Réhon",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8765,
+        "stationName": "Sisteron",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8766,
+        "stationName": "Sellières",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8768,
+        "stationName": "Schopperten",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8769,
+        "stationName": "Sarrewerden",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8778,
+        "stationName": "Toulon",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8783,
+        "stationName": "Ussel",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8784,
+        "stationName": "Vougeot",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8787,
+        "stationName": "Villefranche-sur-Cher",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8789,
+        "stationName": "Villefranche-de-Rouergue",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8793,
+        "stationName": "Mattaincourt",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8795,
+        "stationName": "Audun-le-Roman",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8796,
+        "stationName": "Ancenis",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8798,
+        "stationName": "Châtillon-sur-Seine",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8800,
+        "stationName": "Brioude",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8801,
+        "stationName": "Cornimont",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8803,
+        "stationName": "Fresse",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8804,
+        "stationName": "Dompaire",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8805,
+        "stationName": "Dommartin",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8806,
+        "stationName": "La Bresse",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8807,
+        "stationName": "Jonzac",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8808,
+        "stationName": "Issoire",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8809,
+        "stationName": "Igney—Avricourt",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8812,
+        "stationName": "Le Thillot",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8814,
+        "stationName": "Ambert",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8815,
+        "stationName": "Bourges",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8819,
+        "stationName": "Bessay",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8824,
+        "stationName": "Champagnole",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8825,
+        "stationName": "Bussang",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8826,
+        "stationName": "Brétigny",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8827,
+        "stationName": "Bretenoux—Biars",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8831,
+        "stationName": "Cormery",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8832,
+        "stationName": "Corgoloin",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8833,
+        "stationName": "Cloyes",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8835,
+        "stationName": "Gramat",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8836,
+        "stationName": "Gargenville",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8837,
+        "stationName": "Ermont—Eaubonne",
+        "country": "FR",
+        "latitude": "48.98032",
+        "longitude": "2.27176"
+    },
+    {
+        "id": 8840,
+        "stationName": "Juvisy",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8841,
+        "stationName": "Guiscriff",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8842,
+        "stationName": "Guéret",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8844,
+        "stationName": "Le Breuil-sur-Couze",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8850,
+        "stationName": "Montmorillon",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8852,
+        "stationName": "Pontmort",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8853,
+        "stationName": "Pont-du-Château",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8854,
+        "stationName": "Plaintel",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8856,
+        "stationName": "St-Florent-sur-Cher",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8861,
+        "stationName": "Rennes",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8862,
+        "stationName": "Quintin",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8863,
+        "stationName": "Puy-Guillaume",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8864,
+        "stationName": "Prayssac",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8869,
+        "stationName": "Touzac",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8877,
+        "stationName": "Carmaux",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8880,
+        "stationName": "Coulommiers",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8888,
+        "stationName": "Vatimont",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8889,
+        "stationName": "Varilhes",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8910,
+        "stationName": "Pontchâteau",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 8912,
+        "stationName": "Uzel",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 9465,
+        "stationName": "Burgdorf",
+        "country": "DE",
+        "latitude": "52.449001",
+        "longitude": "10.00289"
+    },
+    {
+        "id": 9863,
+        "stationName": "Forbach",
+        "country": "DE",
+        "latitude": "48.680399",
+        "longitude": "8.361487"
+    },
+    {
+        "id": 10572,
+        "stationName": "Kutzenhausen",
+        "country": "DE",
+        "latitude": "48.334773",
+        "longitude": "10.696336"
+    },
+    {
+        "id": 14070,
+        "stationName": "Husum",
+        "country": "DE",
+        "latitude": "54.472724",
+        "longitude": "9.055193"
+    },
+    {
+        "id": 14149,
+        "stationName": "Münsingen",
+        "country": "DE",
+        "latitude": "48.409716",
+        "longitude": "9.490271"
+    },
+    {
+        "id": 14879,
+        "stationName": "Elsterwerda",
+        "country": "DE",
+        "latitude": "51.459666",
+        "longitude": "13.516827"
+    },
+    {
+        "id": 14882,
+        "stationName": "Düsseldorf Flughafen",
+        "country": "DE",
+        "latitude": "51.277706",
+        "longitude": "6.767286"
+    },
+    {
+        "id": 14883,
+        "stationName": "Groß Gerau",
+        "country": "DE",
+        "latitude": "49.921701",
+        "longitude": "8.493925"
+    },
+    {
+        "id": 14887,
+        "stationName": "Kassel",
+        "country": "DE",
+        "latitude": "51.315946",
+        "longitude": "9.470378"
+    },
+    {
+        "id": 14909,
+        "stationName": "Annonay",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 14930,
+        "stationName": "Bettembourg Frontière",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 14939,
+        "stationName": "La Ferté-Gaucher",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 14973,
+        "stationName": "La Ferté-Gaucher",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 14990,
+        "stationName": "Espère",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 14991,
+        "stationName": "La Châtre",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 14998,
+        "stationName": "Labastide",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15057,
+        "stationName": "Henvic",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15080,
+        "stationName": "Canfranc",
+        "country": "FR",
+        "latitude": "42.75143",
+        "longitude": "-0.51467"
+    },
+    {
+        "id": 15093,
+        "stationName": "Lauterbourg",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15095,
+        "stationName": "Gaillac",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15096,
+        "stationName": "Naucelle",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15097,
+        "stationName": "Rodez",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15099,
+        "stationName": "Tanus",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15230,
+        "stationName": "Pétange",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15243,
+        "stationName": "Revel",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15259,
+        "stationName": "Rodange",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15294,
+        "stationName": "Ribeauvillé",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15315,
+        "stationName": "Serrigny",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15316,
+        "stationName": "Saulieu",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15317,
+        "stationName": "Portet—Saint-Simon",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15318,
+        "stationName": "Pins-Justaret",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15319,
+        "stationName": "Saverdun",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15323,
+        "stationName": "Tarascon-sur-Ariège",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15344,
+        "stationName": "Aéroport CDG T",
+        "country": "FR",
+        "latitude": "49.00419",
+        "longitude": "2.576641"
+    },
+    {
+        "id": 15349,
+        "stationName": "Aéroport CDG T",
+        "country": "FR",
+        "latitude": "49.013306",
+        "longitude": "2.542104"
+    },
+    {
+        "id": 15356,
+        "stationName": "La Tour-de-Faure",
+        "country": "FR",
+        "latitude": "44.46899466",
+        "longitude": "1.688922644"
+    },
+    {
+        "id": 15374,
+        "stationName": "Trilport",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15454,
+        "stationName": "Erce",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15455,
+        "stationName": "Lacourt",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15456,
+        "stationName": "Mérens-les-Vals",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15457,
+        "stationName": "Porté-Puymorens",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15464,
+        "stationName": "Verfeil",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15465,
+        "stationName": "Dréfféac",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15479,
+        "stationName": "Bruyères",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15481,
+        "stationName": "Domgermain",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15483,
+        "stationName": "Vaucouleurs",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15484,
+        "stationName": "Darnieulles",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15485,
+        "stationName": "Marville",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15486,
+        "stationName": "Villette",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15490,
+        "stationName": "Gondrexange",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15493,
+        "stationName": "Welferding",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15496,
+        "stationName": "St-Yorre",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15498,
+        "stationName": "Gray",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15503,
+        "stationName": "Frebecourt",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15513,
+        "stationName": "Bussang",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15523,
+        "stationName": "Cocheren Village",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15542,
+        "stationName": "Agen",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15543,
+        "stationName": "Albine",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15545,
+        "stationName": "Argèles-Gazost",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15546,
+        "stationName": "Arzviller",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15569,
+        "stationName": "Montdidier",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15570,
+        "stationName": "Roye",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 15801,
+        "stationName": "Schaerbeek",
+        "country": "BE",
+        "latitude": "50.878405",
+        "longitude": "4.378654"
+    },
+    {
+        "id": 15806,
+        "stationName": "Essen",
+        "country": "BE",
+        "latitude": "51.462641",
+        "longitude": "4.450999"
+    },
+    {
+        "id": 15815,
+        "stationName": "Erquelinnes",
+        "country": "BE",
+        "latitude": "50.30368",
+        "longitude": "4.112295"
+    },
+    {
+        "id": 15816,
+        "stationName": "Quevy",
+        "country": "BE",
+        "latitude": "50.34068",
+        "longitude": "3.909372"
+    },
+    {
+        "id": 15830,
+        "stationName": "Châtelet",
+        "country": "BE",
+        "latitude": "50.409555",
+        "longitude": "4.52054"
+    },
+    {
+        "id": 15887,
+        "stationName": "Mouscron",
+        "country": "BE",
+        "latitude": "50.740133",
+        "longitude": "3.227702"
+    },
+    {
+        "id": 15922,
+        "stationName": "Hove",
+        "country": "BE",
+        "latitude": "51.153107",
+        "longitude": "4.465733"
+    },
+    {
+        "id": 16023,
+        "stationName": "Comines",
+        "country": "BE",
+        "latitude": "50.771757",
+        "longitude": "2.998199"
+    },
+    {
+        "id": 16054,
+        "stationName": "Lens",
+        "country": "BE",
+        "latitude": "50.558875",
+        "longitude": "3.903358"
+    },
+    {
+        "id": 16071,
+        "stationName": "Leval",
+        "country": "BE",
+        "latitude": "50.429637",
+        "longitude": "4.210565"
+    },
+    {
+        "id": 16089,
+        "stationName": "Herne",
+        "country": "BE",
+        "latitude": "50.724366",
+        "longitude": "4.013521"
+    },
+    {
+        "id": 16229,
+        "stationName": "Melle",
+        "country": "BE",
+        "latitude": "51.002537",
+        "longitude": "3.797448"
+    },
+    {
+        "id": 16269,
+        "stationName": "Aigle",
+        "country": "CH",
+        "latitude": "46.316856",
+        "longitude": "6.963655"
+    },
+    {
+        "id": 16271,
+        "stationName": "St-Maurice",
+        "country": "CH",
+        "latitude": "46.216357",
+        "longitude": "7.002039"
+    },
+    {
+        "id": 16273,
+        "stationName": "Sion",
+        "country": "CH",
+        "latitude": "46.22746062",
+        "longitude": "7.359364629"
+    },
+    {
+        "id": 16276,
+        "stationName": "Leuk",
+        "country": "CH",
+        "latitude": "46.311903",
+        "longitude": "7.642628"
+    },
+    {
+        "id": 16341,
+        "stationName": "Le Locle",
+        "country": "CH",
+        "latitude": "47.057855",
+        "longitude": "6.746152"
+    },
+    {
+        "id": 16356,
+        "stationName": "Chiasso",
+        "country": "CH",
+        "latitude": "45.832167",
+        "longitude": "9.031426"
+    },
+    {
+        "id": 16361,
+        "stationName": "Bellinzona",
+        "country": "CH",
+        "latitude": "46.195286",
+        "longitude": "9.028522"
+    },
+    {
+        "id": 16401,
+        "stationName": "Meiringen",
+        "country": "CH",
+        "latitude": "46.727313",
+        "longitude": "8.184219"
+    },
+    {
+        "id": 16475,
+        "stationName": "Reichenbach im Kandertal",
+        "country": "CH",
+        "latitude": "46.625645",
+        "longitude": "7.690343"
+    },
+    {
+        "id": 16490,
+        "stationName": "Koblenz Bahnhof",
+        "country": "CH",
+        "latitude": "47.600381",
+        "longitude": "8.226604"
+    },
+    {
+        "id": 16519,
+        "stationName": "Nesslau-Neu St. Johann",
+        "country": "CH",
+        "latitude": "47.226852",
+        "longitude": "9.19787"
+    },
+    {
+        "id": 16544,
+        "stationName": "Taverne-Torricella",
+        "country": "CH",
+        "latitude": "46.058102",
+        "longitude": "8.930081"
+    },
+    {
+        "id": 16573,
+        "stationName": "Locarno",
+        "country": "CH",
+        "latitude": "46.17249",
+        "longitude": "8.800358"
+    },
+    {
+        "id": 16591,
+        "stationName": "Cadenazzo",
+        "country": "CH",
+        "latitude": "46.152219",
+        "longitude": "8.944042"
+    },
+    {
+        "id": 16593,
+        "stationName": "Meiringen Luftseilbahn",
+        "country": "CH",
+        "latitude": "46.728364",
+        "longitude": "8.19053"
+    },
+    {
+        "id": 16598,
+        "stationName": "Chiasso",
+        "country": "CH",
+        "latitude": "45.832194",
+        "longitude": "9.032127"
+    },
+    {
+        "id": 16880,
+        "stationName": "Tirano",
+        "country": "IT",
+        "latitude": "46.215152",
+        "longitude": "10.166763"
+    },
+    {
+        "id": 16893,
+        "stationName": "Tirano",
+        "country": "IT",
+        "latitude": "46.2093",
+        "longitude": "10.166682"
+    },
+    {
+        "id": 16897,
+        "stationName": "Malles / Mals",
+        "country": "IT",
+        "latitude": "46.684362",
+        "longitude": "10.54912"
+    },
+    {
+        "id": 16901,
+        "stationName": "Wasserbillig",
+        "country": "LU",
+        "latitude": "49.712828",
+        "longitude": "6.499353"
+    },
+    {
+        "id": 16902,
+        "stationName": "Bettembourg",
+        "country": "LU",
+        "latitude": "49.516585",
+        "longitude": "6.10141"
+    },
+    {
+        "id": 16903,
+        "stationName": "Esch-sur-Alzette",
+        "country": "LU",
+        "latitude": "49.493869",
+        "longitude": "5.985602"
+    },
+    {
+        "id": 16952,
+        "stationName": "Borne",
+        "country": "NL",
+        "latitude": "52.298719",
+        "longitude": "6.748417"
+    },
+    {
+        "id": 16995,
+        "stationName": "Haren",
+        "country": "NL",
+        "latitude": "53.174988",
+        "longitude": "6.618326"
+    },
+    {
+        "id": 16999,
+        "stationName": "Heerenveen",
+        "country": "NL",
+        "latitude": "52.960936",
+        "longitude": "5.915153"
+    },
+    {
+        "id": 17044,
+        "stationName": "Oss",
+        "country": "NL",
+        "latitude": "51.765029",
+        "longitude": "5.530361"
+    },
+    {
+        "id": 17070,
+        "stationName": "Soest",
+        "country": "NL",
+        "latitude": "52.172816",
+        "longitude": "5.310125"
+    },
+    {
+        "id": 17105,
+        "stationName": "Zwijndrecht",
+        "country": "NL",
+        "latitude": "51.815162",
+        "longitude": "4.641238"
+    },
+    {
+        "id": 17113,
+        "stationName": "Hengelo",
+        "country": "NL",
+        "latitude": "52.261854",
+        "longitude": "6.793723"
+    },
+    {
+        "id": 17116,
+        "stationName": "Zutphen",
+        "country": "NL",
+        "latitude": "52.144833",
+        "longitude": "6.194143"
+    },
+    {
+        "id": 17117,
+        "stationName": "Heerlen",
+        "country": "NL",
+        "latitude": "50.890694",
+        "longitude": "5.975839"
+    },
+    {
+        "id": 17124,
+        "stationName": "Kutno",
+        "country": "PL",
+        "latitude": "52.226958",
+        "longitude": "19.348615"
+    },
+    {
+        "id": 17132,
+        "stationName": "Rzepin",
+        "country": "PL",
+        "latitude": "52.350218",
+        "longitude": "14.815076"
+    },
+    {
+        "id": 17198,
+        "stationName": "Alba",
+        "country": "IT",
+        "latitude": "44.697755",
+        "longitude": "8.030854"
+    },
+    {
+        "id": 17521,
+        "stationName": "Limone",
+        "country": "IT",
+        "latitude": "44.203627",
+        "longitude": "7.577915"
+    },
+    {
+        "id": 17549,
+        "stationName": "Domodossola",
+        "country": "IT",
+        "latitude": "46.115453",
+        "longitude": "8.296666"
+    },
+    {
+        "id": 17577,
+        "stationName": "Magenta",
+        "country": "IT",
+        "latitude": "45.468212",
+        "longitude": "8.88074"
+    },
+    {
+        "id": 17579,
+        "stationName": "Luino",
+        "country": "IT",
+        "latitude": "45.995483",
+        "longitude": "8.73578"
+    },
+    {
+        "id": 19119,
+        "stationName": "Borgo",
+        "country": "IT",
+        "latitude": "40.845906",
+        "longitude": "14.784207"
+    },
+    {
+        "id": 19275,
+        "stationName": "Bastia",
+        "country": "IT",
+        "latitude": "43.07178",
+        "longitude": "12.54728"
+    },
+    {
+        "id": 19284,
+        "stationName": "Lison",
+        "country": "IT",
+        "latitude": "45.75166667",
+        "longitude": "12.75916667"
+    },
+    {
+        "id": 19318,
+        "stationName": "Chiasso",
+        "country": "IT",
+        "latitude": "45.83222222",
+        "longitude": "9.033888889"
+    },
+    {
+        "id": 19701,
+        "stationName": "Napoli Marittima",
+        "country": "IT",
+        "latitude": "40.83884248",
+        "longitude": "14.25619841"
+    },
+    {
+        "id": 19877,
+        "stationName": "Sant’Antonio",
+        "country": "IT",
+        "latitude": "46.17011292",
+        "longitude": "9.062519073"
+    },
+    {
+        "id": 19915,
+        "stationName": "Statte",
+        "country": "IT",
+        "latitude": "40.56568762",
+        "longitude": "17.2125721"
+    },
+    {
+        "id": 20222,
+        "stationName": "Villeneuve",
+        "country": "IT",
+        "latitude": "45.7066",
+        "longitude": "7.21349"
+    },
+    {
+        "id": 20341,
+        "stationName": "Guarda",
+        "country": "IT",
+        "latitude": "44.615",
+        "longitude": "11.63305556"
+    },
+    {
+        "id": 20474,
+        "stationName": "Lugo",
+        "country": "IT",
+        "latitude": "44.4145",
+        "longitude": "11.9145"
+    },
+    {
+        "id": 20492,
+        "stationName": "Derby",
+        "country": "IT",
+        "latitude": "45.7304",
+        "longitude": "7.0865"
+    },
+    {
+        "id": 20653,
+        "stationName": "Hamburg Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20654,
+        "stationName": "Hamburg Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20656,
+        "stationName": "Hamburg Altona",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20657,
+        "stationName": "Bielefeld Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20658,
+        "stationName": "Bielefeld Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20659,
+        "stationName": "Essen Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20660,
+        "stationName": "Essen Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20661,
+        "stationName": "Hagen Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20662,
+        "stationName": "Hagen Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20663,
+        "stationName": "Koblenz Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20664,
+        "stationName": "Koblenz Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20665,
+        "stationName": "Stuttgart Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20666,
+        "stationName": "Stuttgart Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20667,
+        "stationName": "Hannover Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20668,
+        "stationName": "Torino Porta Susa",
+        "country": "IT",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20669,
+        "stationName": "Torino Porta Susa",
+        "country": "IT",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20670,
+        "stationName": "Ashford International",
+        "country": "UK",
+        "latitude": "51.143673",
+        "longitude": "0.873628"
+    },
+    {
+        "id": 20671,
+        "stationName": "Ebbsfleet International",
+        "country": "UK",
+        "latitude": "51.442961",
+        "longitude": "0.320921"
+    },
+    {
+        "id": 20672,
+        "stationName": "Tübingen Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20673,
+        "stationName": "Zaragoza Delicias",
+        "country": "ES",
+        "latitude": "41.658439",
+        "longitude": "-0.909906"
+    },
+    {
+        "id": 20674,
+        "stationName": "Reutlingen Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20675,
+        "stationName": "Lübeck Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20676,
+        "stationName": "Oldenburg (Oldb)",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20677,
+        "stationName": "Passau Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20678,
+        "stationName": "Hof Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20679,
+        "stationName": "Aschaffenburg Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20680,
+        "stationName": "Marburg (Lahn)",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20681,
+        "stationName": "Paderborn Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20682,
+        "stationName": "Singen (Hohentwiel)",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20683,
+        "stationName": "Enschede",
+        "country": "NL",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20684,
+        "stationName": "Neuenburg (Baden)",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20685,
+        "stationName": "Celle",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20686,
+        "stationName": "Bremen Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20687,
+        "stationName": "Warszawa-Centralna",
+        "country": "PL",
+        "latitude": "52.228744",
+        "longitude": "21.003318"
+    },
+    {
+        "id": 20688,
+        "stationName": "Basel Badischer Bahnhof",
+        "country": "CH",
+        "latitude": "47.56642",
+        "longitude": "7.607418"
+    },
+    {
+        "id": 20689,
+        "stationName": "Göttingen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20690,
+        "stationName": "Pforzheim Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20691,
+        "stationName": "Ingolstadt Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20692,
+        "stationName": "Hildesheim Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20693,
+        "stationName": "Bayreuth Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20694,
+        "stationName": "Kufstein",
+        "country": "AT",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20695,
+        "stationName": "Gelsenkirchen Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20696,
+        "stationName": "Northeim (Han)",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20697,
+        "stationName": "Lippstadt",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20698,
+        "stationName": "Rheine",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20699,
+        "stationName": "Bocholt",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20700,
+        "stationName": "Mülheim (Ruhr) Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20701,
+        "stationName": "Wesel",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20702,
+        "stationName": "Bregenz",
+        "country": "AT",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20703,
+        "stationName": "Aalen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20704,
+        "stationName": "Neustadt (Weinstr) Hbf",
+        "country": "DE",
+        "latitude": "49.341556",
+        "longitude": "8.157063"
+    },
+    {
+        "id": 20705,
+        "stationName": "Worms Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20706,
+        "stationName": "Leer (Ostfriesl)",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20707,
+        "stationName": "Goslar",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20708,
+        "stationName": "Schweinfurt Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20709,
+        "stationName": "Memmingen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20710,
+        "stationName": "Schwerte (Ruhr)",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20711,
+        "stationName": "Euskirchen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20712,
+        "stationName": "Minden (Westf)",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20713,
+        "stationName": "Emden Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20714,
+        "stationName": "Friedberg (Hess)",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20715,
+        "stationName": "Unna",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20716,
+        "stationName": "Göppingen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20717,
+        "stationName": "Freilassing",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20718,
+        "stationName": "Frankfurt (Oder)",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20719,
+        "stationName": "Eschwege",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20720,
+        "stationName": "Fürth (Bay) Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20721,
+        "stationName": "Hameln",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20722,
+        "stationName": "Solingen Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20723,
+        "stationName": "Andernach",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20724,
+        "stationName": "Betzdorf (Sieg)",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20725,
+        "stationName": "Neuwied",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20726,
+        "stationName": "Itzehoe",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20727,
+        "stationName": "Kostrzyn",
+        "country": "PL",
+        "latitude": "52.39336",
+        "longitude": "17.224689"
+    },
+    {
+        "id": 20728,
+        "stationName": "Budapest",
+        "country": "HU",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20729,
+        "stationName": "Dobova",
+        "country": "SI",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20730,
+        "stationName": "Jesenice",
+        "country": "SI",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20731,
+        "stationName": "Neumünster",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20732,
+        "stationName": "Rendsburg",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20733,
+        "stationName": "Flensburg",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20734,
+        "stationName": "Bad Schwartau",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20735,
+        "stationName": "Hamburg-Altona",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20736,
+        "stationName": "Augsburg Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20737,
+        "stationName": "Hamburg",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20738,
+        "stationName": "Helgoland",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20739,
+        "stationName": "Berlin-Rummelsburg",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20740,
+        "stationName": "Berlin-Schöneweide",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20741,
+        "stationName": "Hannover-Nordstadt",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20742,
+        "stationName": "Cottbus",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20743,
+        "stationName": "Ahnatal-Weimar",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20744,
+        "stationName": "Malsfeld",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20745,
+        "stationName": "Bebra",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20746,
+        "stationName": "Bad Hersfeld",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20747,
+        "stationName": "Hainewalde",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20748,
+        "stationName": "Zwota-Zechenbach",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20749,
+        "stationName": "Zwota",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20750,
+        "stationName": "Stenn",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20751,
+        "stationName": "Voigtsgrün",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20752,
+        "stationName": "Irfersgrün",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20753,
+        "stationName": "Rodewisch",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20754,
+        "stationName": "Treuen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20755,
+        "stationName": "Weischlitz",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20756,
+        "stationName": "Pirk",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20757,
+        "stationName": "Hundsgrün",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20758,
+        "stationName": "Bad Elster",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20759,
+        "stationName": "Sohl",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20760,
+        "stationName": "Raun",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20761,
+        "stationName": "Bad Brambach",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20762,
+        "stationName": "Barthmühle",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20763,
+        "stationName": "Hamburg",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20764,
+        "stationName": "Hosena",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20765,
+        "stationName": "Erkrath-Nord",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20766,
+        "stationName": "Düsseldorf-Reisholz",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20767,
+        "stationName": "Wuppertal Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20768,
+        "stationName": "Heroldsberg Nord",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20769,
+        "stationName": "Düsseldorf-Bilk",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20770,
+        "stationName": "Wuppertal-Langerfeld",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20771,
+        "stationName": "Seddin",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20772,
+        "stationName": "St Egidien",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20773,
+        "stationName": "Heidenau",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20774,
+        "stationName": "Mosel",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20775,
+        "stationName": "Nossen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20776,
+        "stationName": "Wittenberge",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20777,
+        "stationName": "Seifhennersdorf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20778,
+        "stationName": "Wilhermsdorf Mitte",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20779,
+        "stationName": "Dortmund Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20780,
+        "stationName": "Essen-Altenessen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20781,
+        "stationName": "Emmerich",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20782,
+        "stationName": "Duisburg Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20783,
+        "stationName": "Duisburg Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20784,
+        "stationName": "Dortmund Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20785,
+        "stationName": "Soest",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20786,
+        "stationName": "Bochum-Langendreer",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20787,
+        "stationName": "Frankfurt-Höchst",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20788,
+        "stationName": "Mainz-Gustavsburg",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20789,
+        "stationName": "Wetzlar",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20790,
+        "stationName": "Dillenburg",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20791,
+        "stationName": "Helmstedt",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20792,
+        "stationName": "Peine",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20793,
+        "stationName": "Düsseldorf-Rath",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20794,
+        "stationName": "Uelzen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20795,
+        "stationName": "Mannheim Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20796,
+        "stationName": "Karlsruhe-Hagsfeld",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20797,
+        "stationName": "Weil am Rhein",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20798,
+        "stationName": "Waldshut",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20799,
+        "stationName": "Kaldenkirchen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20800,
+        "stationName": "Düren",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20801,
+        "stationName": "Leipzig Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20802,
+        "stationName": "Troisdorf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20803,
+        "stationName": "Mechterstädt",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20804,
+        "stationName": "Bretleben",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20805,
+        "stationName": "Rentzschmühle",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20806,
+        "stationName": "Lübeck Flughafen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20807,
+        "stationName": "Mannheim Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20808,
+        "stationName": "Hinterweidenthal Ost",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20809,
+        "stationName": "Rosenheim",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20810,
+        "stationName": "Waldkraiburg",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20811,
+        "stationName": "München-Pasing",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20812,
+        "stationName": "München Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20813,
+        "stationName": "München Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20814,
+        "stationName": "Ingolstadt Nord",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20815,
+        "stationName": "München Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20816,
+        "stationName": "München Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20817,
+        "stationName": "München Ost",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20818,
+        "stationName": "Reckenfeld",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20819,
+        "stationName": "Wilhelmshaven Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20820,
+        "stationName": "Asselheim",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20821,
+        "stationName": "Grünstadt Nord",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20822,
+        "stationName": "Würzburg Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20823,
+        "stationName": "Würzburg Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20824,
+        "stationName": "Coburg",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20825,
+        "stationName": "Magdeburg-Rothensee",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20826,
+        "stationName": "Schönebeck-Frohse",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20827,
+        "stationName": "Berlin Ostkreuz",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20828,
+        "stationName": "Igel",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20829,
+        "stationName": "Emmelshausen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20830,
+        "stationName": "Ehr",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20831,
+        "stationName": "Schirnding",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20832,
+        "stationName": "Regensburg Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20833,
+        "stationName": "Wittenberge",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20834,
+        "stationName": "Berlin-Stresow",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20835,
+        "stationName": "Prenzlau",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20836,
+        "stationName": "Sassnitz",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20837,
+        "stationName": "Sindelfingen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20838,
+        "stationName": "Calw",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20839,
+        "stationName": "Weingarten Berg",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20840,
+        "stationName": "Berlin Attilastraße",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20841,
+        "stationName": "Zirndorf Kneippallee",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20842,
+        "stationName": "Neidenfels",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20843,
+        "stationName": "Boppard Süd",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20844,
+        "stationName": "Hamburg-Allermöhe",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20845,
+        "stationName": "Chemnitz-Borna Hp",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20846,
+        "stationName": "Liederbach",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20847,
+        "stationName": "Kelkheim-Münster",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20848,
+        "stationName": "Bad St. Peter-Ording",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20849,
+        "stationName": "Felde",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20850,
+        "stationName": "Garding",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20851,
+        "stationName": "Harblek",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20852,
+        "stationName": "Katharinenheerd",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20853,
+        "stationName": "Kating",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20854,
+        "stationName": "Sandwehle",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20855,
+        "stationName": "Tating",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20856,
+        "stationName": "Tönning",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20857,
+        "stationName": "Witzwort",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20858,
+        "stationName": "Dagebüll Mole",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20859,
+        "stationName": "Neidenstein",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20860,
+        "stationName": "Waibstadt",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20861,
+        "stationName": "Eschelbronn",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20862,
+        "stationName": "Aglasterhausen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20863,
+        "stationName": "Lenggries",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20864,
+        "stationName": "Tegernsee",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20865,
+        "stationName": "Potsdam-Babelsberg",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20866,
+        "stationName": "Cottbus",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20867,
+        "stationName": "Trossingen Stadt",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20868,
+        "stationName": "Pirna",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20869,
+        "stationName": "Mulsum-Essel",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20870,
+        "stationName": "Gera Ost",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20871,
+        "stationName": "Wünschendorf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20872,
+        "stationName": "Wünschendorf Nord",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20873,
+        "stationName": "Zwickau Zentrum",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20874,
+        "stationName": "Greiz",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20875,
+        "stationName": "Greiz-Dölau",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20876,
+        "stationName": "Elsterberg",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20877,
+        "stationName": "Gera-Liebschwitz",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20878,
+        "stationName": "Nidderau",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20879,
+        "stationName": "Dreieich-Weibelfeld",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20880,
+        "stationName": "Metzingen-Neuhausen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20881,
+        "stationName": "Herrenberg Zwerchweg",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20882,
+        "stationName": "Berlin",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20883,
+        "stationName": "Zierenberg-Rosental",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20884,
+        "stationName": "Walsrode",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20885,
+        "stationName": "Peine",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20886,
+        "stationName": "Singen Industriegebiet",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20887,
+        "stationName": "Ulm-Donautal",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20888,
+        "stationName": "Dormagen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20889,
+        "stationName": "Pulheim",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20890,
+        "stationName": "Berlin Hbf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20891,
+        "stationName": "Greiz",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20892,
+        "stationName": "Offenbach-Waldhof",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20893,
+        "stationName": "Eiswoog",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20894,
+        "stationName": "Altenstadt-Höchst",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20895,
+        "stationName": "Wolfsgefärth",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20896,
+        "stationName": "Selm",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20897,
+        "stationName": "Lübeck St. Jürgen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20898,
+        "stationName": "Cottbus-Sandow",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20899,
+        "stationName": "Speyer Nord-West",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20900,
+        "stationName": "Mosbach West",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20901,
+        "stationName": "Julbach",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20902,
+        "stationName": "Mügeln Bf",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20903,
+        "stationName": "Ahlbeck Grenze",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20904,
+        "stationName": "Ahlbeck Ostseetherme",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20905,
+        "stationName": "Heringsdorf Neuhof",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20906,
+        "stationName": "Stubbenfelde",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20907,
+        "stationName": "Völklingen",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20908,
+        "stationName": "Vilseck",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20909,
+        "stationName": "Greifswald",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20910,
+        "stationName": "Filderstadt",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20911,
+        "stationName": "Dettingen-Mitte",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20912,
+        "stationName": "Bibelöd",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20913,
+        "stationName": "Eschwege-Niederhone",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20914,
+        "stationName": "Salzburg Hbf",
+        "country": "AT",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20915,
+        "stationName": "Parma",
+        "country": "IT",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20916,
+        "stationName": "Deventer",
+        "country": "NL",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20917,
+        "stationName": "Gouda Goverwelle",
+        "country": "NL",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20918,
+        "stationName": "Glanerbrug",
+        "country": "NL",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20919,
+        "stationName": "Vevey",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20920,
+        "stationName": "Bazancourt",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20921,
+        "stationName": "Ettendorf",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20922,
+        "stationName": "Chatenois",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20923,
+        "stationName": "Sentheim",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20924,
+        "stationName": "Lauw",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20925,
+        "stationName": "Lauw",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20926,
+        "stationName": "Masevaux",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20927,
+        "stationName": "Sickert",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20928,
+        "stationName": "Niederbruck",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20929,
+        "stationName": "Kirchberg",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20930,
+        "stationName": "Kirchberg",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20931,
+        "stationName": "Wegscheid",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20932,
+        "stationName": "Oberbruck",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20933,
+        "stationName": "Dolleren",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20934,
+        "stationName": "Sewen",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20935,
+        "stationName": "Sewen",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20936,
+        "stationName": "Hattmatt",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20937,
+        "stationName": "Steinbourg",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20938,
+        "stationName": "Monswiller",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20939,
+        "stationName": "Monswiller",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20940,
+        "stationName": "Saverne",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20941,
+        "stationName": "Saverne",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20942,
+        "stationName": "Saverne",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20943,
+        "stationName": "Saverne",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20944,
+        "stationName": "Bouxwiller",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20945,
+        "stationName": "Menchhoffen",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20946,
+        "stationName": "Wimmenau",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20947,
+        "stationName": "Frohmuhl",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20948,
+        "stationName": "Lichtenberg",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20949,
+        "stationName": "Lichtenberg",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20950,
+        "stationName": "Wimmenau",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20951,
+        "stationName": "Rouffach",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20952,
+        "stationName": "Illfurth",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20953,
+        "stationName": "Brumath",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20954,
+        "stationName": "Wilwisheim",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20955,
+        "stationName": "Pfaffenhoffen",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20956,
+        "stationName": "Adamswiller",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20957,
+        "stationName": "Gambsheim",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20958,
+        "stationName": "Gambsheim",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20959,
+        "stationName": "Hoerdt",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20960,
+        "stationName": "Hoerdt",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20961,
+        "stationName": "Kurtzenhouse",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20962,
+        "stationName": "Kurtzenhouse",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20963,
+        "stationName": "Bischwiller",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20964,
+        "stationName": "Oderen",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20965,
+        "stationName": "Fellering",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20966,
+        "stationName": "Moosch",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20967,
+        "stationName": "Ingolsheim",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20968,
+        "stationName": "Mutzig",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20969,
+        "stationName": "Gresswiller",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20970,
+        "stationName": "Wisches",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20971,
+        "stationName": "Saulxures",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20972,
+        "stationName": "Saales",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20973,
+        "stationName": "Eguelshardt",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20974,
+        "stationName": "Neubourg",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20975,
+        "stationName": "Buswiller",
+        "country": "FR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20976,
+        "stationName": "London",
+        "country": "UK",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20988,
+        "stationName": "Feldkirch",
+        "country": "AT",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 20995,
+        "stationName": "Passau Hbf",
+        "country": "DE",
+        "latitude": "48.574237",
+        "longitude": "13.451269"
+    },
+    {
+        "id": 20996,
+        "stationName": "Pocking",
+        "country": "DE",
+        "latitude": "48.40622",
+        "longitude": "13.313168"
+    },
+    {
+        "id": 21002,
+        "stationName": "Bülach",
+        "country": "CH",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 21011,
+        "stationName": "Frankfurt (Oder)",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 21012,
+        "stationName": "Frankfurt (Oder)",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 21013,
+        "stationName": "Berlin Friedrichstr",
+        "country": "DE",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 21057,
+        "stationName": "San Giuliano d’Arezzo",
+        "country": "IT",
+        "latitude": "43.45721799",
+        "longitude": "11.82686806"
+    },
+    {
+        "id": 21110,
+        "stationName": "Bologna San Vitale",
+        "country": "IT",
+        "latitude": "44.4961",
+        "longitude": "11.3728"
+    },
+    {
+        "id": 21111,
+        "stationName": "Pisa Aeroporto",
+        "country": "IT",
+        "latitude": "43.698541",
+        "longitude": "10.398469"
+    },
+    {
+        "id": 21184,
+        "stationName": "Neufchâteau",
+        "country": "BE",
+        "latitude": "49.854318",
+        "longitude": "5.452559"
+    },
+    {
+        "id": 21350,
+        "stationName": "Leeuwarden",
+        "country": "NL",
+        "latitude": "53.19583511",
+        "longitude": "5.792222023"
+    },
+    {
+        "id": 21364,
+        "stationName": "Oldenzaal",
+        "country": "NL",
+        "latitude": "52.30638885",
+        "longitude": "6.934722424"
+    },
+    {
+        "id": 21393,
+        "stationName": "Venlo",
+        "country": "NL",
+        "latitude": "51.36360931",
+        "longitude": "6.172777653"
+    },
+    {
+        "id": 21592,
+        "stationName": "Berlin-Schöneweide",
+        "country": "DE",
+        "latitude": "52.455629",
+        "longitude": "13.509506"
+    },
+    {
+        "id": 21624,
+        "stationName": "Karlsruhe Hbf Südausgang",
+        "country": "DE",
+        "latitude": "48.99148",
+        "longitude": "8.40051"
+    },
+    {
+        "id": 21706,
+        "stationName": "Arenys de Mar",
+        "country": "ES",
+        "latitude": "41.577465",
+        "longitude": "2.549457"
+    },
+    {
+        "id": 21707,
+        "stationName": "Arévalo",
+        "country": "ES",
+        "latitude": "41.047613",
+        "longitude": "-4.702005"
+    },
+    {
+        "id": 21902,
+        "stationName": "Cullera",
+        "country": "ES",
+        "latitude": "39.17792",
+        "longitude": "-0.263365"
+    },
+    {
+        "id": 22386,
+        "stationName": "Santa Lucia",
+        "country": "ES",
+        "latitude": "42.87503",
+        "longitude": "-5.639571"
+    },
+    {
+        "id": 22411,
+        "stationName": "Sevilla Santa Justa",
+        "country": "ES",
+        "latitude": "37.391925",
+        "longitude": "-5.975264"
+    },
+    {
+        "id": 22416,
+        "stationName": "Silla",
+        "country": "ES",
+        "latitude": "39.361748",
+        "longitude": "-0.415"
+    },
+    {
+        "id": 22449,
+        "stationName": "Torralba",
+        "country": "ES",
+        "latitude": "41.136625",
+        "longitude": "-2.49296"
+    },
+    {
+        "id": 22470,
+        "stationName": "Utebo",
+        "country": "ES",
+        "latitude": "41.710864",
+        "longitude": "-0.998404"
+    },
+    {
+        "id": 22744,
+        "stationName": "Belmont",
+        "country": "UK",
+        "latitude": "51.344086",
+        "longitude": "-0.199471"
+    },
+    {
+        "id": 22881,
+        "stationName": "Brunswick",
+        "country": "UK",
+        "latitude": "53.382153",
+        "longitude": "-2.975665"
+    },
+    {
+        "id": 23145,
+        "stationName": "Dormans",
+        "country": "UK",
+        "latitude": "51.15567",
+        "longitude": "-0.005183"
+    },
+    {
+        "id": 23473,
+        "stationName": "Hever",
+        "country": "UK",
+        "latitude": "51.180912",
+        "longitude": "0.094648"
+    },
+    {
+        "id": 24066,
+        "stationName": "Roche",
+        "country": "UK",
+        "latitude": "50.418911",
+        "longitude": "-4.830658"
+    },
+    {
+        "id": 24354,
+        "stationName": "Torre",
+        "country": "UK",
+        "latitude": "50.472664",
+        "longitude": "-3.547292"
+    },
+    {
+        "id": 24727,
+        "stationName": "Enfield",
+        "country": "UK",
+        "latitude": "51.645",
+        "longitude": "-0.06"
+    },
+    {
+        "id": 24751,
+        "stationName": "Malling",
+        "country": "UK",
+        "latitude": "51.2917",
+        "longitude": "0.41521"
+    },
+    {
+        "id": 24858,
+        "stationName": "Montauban",
+        "country": "FR",
+        "latitude": "44.01667",
+        "longitude": "1.35"
+    },
+    {
+        "id": 25350,
+        "stationName": "Arce",
+        "country": "ES",
+        "latitude": "43.40953",
+        "longitude": "-3.94221"
+    },
+    {
+        "id": 25352,
+        "stationName": "Breda",
+        "country": "ES",
+        "latitude": "41.749901",
+        "longitude": "2.55855"
+    },
+    {
+        "id": 25353,
+        "stationName": "Pau",
+        "country": "ES",
+        "latitude": "42.3162558",
+        "longitude": "3.1168153"
+    },
+    {
+        "id": 26307,
+        "stationName": "Sande",
+        "country": "NO",
+        "latitude": "59.586966",
+        "longitude": "10.203502"
+    },
+    {
+        "id": 26385,
+        "stationName": "Katowice",
+        "country": "PL",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 26467,
+        "stationName": "Faro",
+        "country": "PT",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 26472,
+        "stationName": "Viana do Castelo",
+        "country": "PT",
+        "latitude": "41.695268",
+        "longitude": "-8.831371"
+    },
+    {
+        "id": 26558,
+        "stationName": "Opatija-Matulji",
+        "country": "HR",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 26559,
+        "stationName": "Pula",
+        "country": "HR",
+        "latitude": "44.879588",
+        "longitude": "13.847594"
+    },
+    {
+        "id": 26568,
+        "stationName": "Ploče",
+        "country": "HR",
+        "latitude": "43.044477",
+        "longitude": "17.446543"
+    },
+    {
+        "id": 26575,
+        "stationName": "Bitola",
+        "country": "MK",
+        "latitude": "41.020064",
+        "longitude": "21.342503"
+    },
+    {
+        "id": 26579,
+        "stationName": "Skopje",
+        "country": "MK",
+        "latitude": "41.991175",
+        "longitude": "21.446014"
+    },
+    {
+        "id": 26835,
+        "stationName": "Andora",
+        "country": "IT",
+        "latitude": "43.9600479",
+        "longitude": "8.138332"
+    },
+    {
+        "id": 27074,
+        "stationName": "Berlin Ostkreuz",
+        "country": "DE",
+        "latitude": "52.503035",
+        "longitude": "13.469104"
+    },
+    {
+        "id": 27185,
+        "stationName": "Friedrichshafen",
+        "country": "DE",
+        "latitude": "47.652758",
+        "longitude": "9.473237"
+    },
+    {
+        "id": 27189,
+        "stationName": "Bolzano/Bozen",
+        "country": "IT",
+        "latitude": "46.4961167",
+        "longitude": "11.3546747"
+    },
+    {
+        "id": 27216,
+        "stationName": "Bitburg",
+        "country": "DE",
+        "latitude": "49.9664145",
+        "longitude": "6.5298603"
+    },
+    {
+        "id": 27307,
+        "stationName": "Mezzana",
+        "country": "IT",
+        "latitude": "46.3176669",
+        "longitude": "10.8011991"
+    },
+    {
+        "id": 27326,
+        "stationName": "Dover",
+        "country": "UK",
+        "latitude": "51.128079",
+        "longitude": "1.315"
+    },
+    {
+        "id": 27769,
+        "stationName": "Cerdeira",
+        "country": "ES",
+        "latitude": "42.34619",
+        "longitude": "-7.31632"
+    },
+    {
+        "id": 28479,
+        "stationName": "Os",
+        "country": "ES",
+        "latitude": "41.87286",
+        "longitude": "0.72068"
+    },
+    {
+        "id": 28708,
+        "stationName": "Roa",
+        "country": "ES",
+        "latitude": "41.69699",
+        "longitude": "-3.92782"
+    },
+    {
+        "id": 29319,
+        "stationName": "Lagos",
+        "country": "ES",
+        "latitude": "36.7447222",
+        "longitude": "-4.0194444"
+    },
+    {
+        "id": 31423,
+        "stationName": "Buzet",
+        "country": "HR",
+        "latitude": "45.4108095",
+        "longitude": "13.9691569"
+    },
+    {
+        "id": 31774,
+        "stationName": "Mellingen",
+        "country": "DE",
+        "latitude": "47.4179544",
+        "longitude": "8.2727454"
+    },
+    {
+        "id": 31835,
+        "stationName": "Novi Pazar",
+        "country": "RS",
+        "latitude": "43.14303234",
+        "longitude": "20.52159002"
+    },
+    {
+        "id": 32792,
+        "stationName": "Trstenik",
+        "country": "HR",
+        "latitude": "42.91786",
+        "longitude": "17.41084"
+    },
+    {
+        "id": 32968,
+        "stationName": "Lunde",
+        "country": "SE",
+        "latitude": "62.8778608",
+        "longitude": "17.8645563"
+    },
+    {
+        "id": 33015,
+        "stationName": "Ramsen",
+        "country": "CH",
+        "latitude": "47.707829",
+        "longitude": "8.8210207"
+    },
+    {
+        "id": 33068,
+        "stationName": "Château-Gontier",
+        "country": "FR",
+        "latitude": "47.823496",
+        "longitude": "-0.70802"
+    },
+    {
+        "id": 33240,
+        "stationName": "Colombier",
+        "country": "CH",
+        "latitude": "46.96764",
+        "longitude": "6.848869"
+    },
+    {
+        "id": 33410,
+        "stationName": "Vevey (funi)",
+        "country": "CH",
+        "latitude": "46.468272",
+        "longitude": "6.835437"
+    },
+    {
+        "id": 33427,
+        "stationName": "Blumenau",
+        "country": "CH",
+        "latitude": "47.22367",
+        "longitude": "8.842383"
+    },
+    {
+        "id": 33491,
+        "stationName": "Bern Europaplatz",
+        "country": "CH",
+        "latitude": "46.943441",
+        "longitude": "7.407465"
+    },
+    {
+        "id": 33528,
+        "stationName": "Oberkirch",
+        "country": "CH",
+        "latitude": "47.155232",
+        "longitude": "8.114222"
+    },
+    {
+        "id": 33539,
+        "stationName": "St-Léonard",
+        "country": "CH",
+        "latitude": "46.251483",
+        "longitude": "7.41957"
+    },
+    {
+        "id": 33543,
+        "stationName": "Reutlingen",
+        "country": "CH",
+        "latitude": "47.529655",
+        "longitude": "8.752132"
+    },
+    {
+        "id": 33762,
+        "stationName": "Berg",
+        "country": "CH",
+        "latitude": "47.582253",
+        "longitude": "9.17451"
+    },
+    {
+        "id": 33778,
+        "stationName": "Steinen",
+        "country": "CH",
+        "latitude": "47.047664",
+        "longitude": "8.607435"
+    },
+    {
+        "id": 33875,
+        "stationName": "Kempten",
+        "country": "CH",
+        "latitude": "47.332037",
+        "longitude": "8.804705"
+    },
+    {
+        "id": 33933,
+        "stationName": "La Plaine",
+        "country": "CH",
+        "latitude": "46.17866",
+        "longitude": "5.999996"
+    },
+    {
+        "id": 33999,
+        "stationName": "Speicher",
+        "country": "CH",
+        "latitude": "47.410557",
+        "longitude": "9.443321"
+    },
+    {
+        "id": 34070,
+        "stationName": "La Ferrière",
+        "country": "CH",
+        "latitude": "47.142688",
+        "longitude": "6.894529"
+    },
+    {
+        "id": 34133,
+        "stationName": "St-Éloi",
+        "country": "CH",
+        "latitude": "46.720298",
+        "longitude": "6.532572"
+    },
+    {
+        "id": 34146,
+        "stationName": "Bellavista",
+        "country": "CH",
+        "latitude": "45.911114",
+        "longitude": "9.00114"
+    },
+    {
+        "id": 34185,
+        "stationName": "Langendorf",
+        "country": "CH",
+        "latitude": "47.217939",
+        "longitude": "7.513006"
+    },
+    {
+        "id": 34303,
+        "stationName": "Guarda",
+        "country": "CH",
+        "latitude": "46.771517",
+        "longitude": "10.150534"
+    },
+    {
+        "id": 34376,
+        "stationName": "Les Marécottes",
+        "country": "CH",
+        "latitude": "46.112312",
+        "longitude": "7.011692"
+    },
+    {
+        "id": 34414,
+        "stationName": "Feldbach",
+        "country": "CH",
+        "latitude": "47.239198",
+        "longitude": "8.783482"
+    },
+    {
+        "id": 34456,
+        "stationName": "Griesbach",
+        "country": "CH",
+        "latitude": "47.044332",
+        "longitude": "7.742117"
+    },
+    {
+        "id": 34537,
+        "stationName": "Monthey",
+        "country": "CH",
+        "latitude": "46.255646",
+        "longitude": "6.955228"
+    },
+    {
+        "id": 34563,
+        "stationName": "Koblenz",
+        "country": "CH",
+        "latitude": "47.600336",
+        "longitude": "8.227023"
+    },
+    {
+        "id": 34575,
+        "stationName": "Cenon",
+        "country": "FR",
+        "latitude": "44.8563465",
+        "longitude": "-0.5336487"
+    },
+    {
+        "id": 34992,
+        "stationName": "Serres",
+        "country": "GR",
+        "latitude": "41.07725",
+        "longitude": "23.542306"
+    },
+    {
+        "id": 34994,
+        "stationName": "Sopot",
+        "country": "BG",
+        "latitude": "42.653697",
+        "longitude": "24.756533"
+    },
+    {
+        "id": 35023,
+        "stationName": "Valga",
+        "country": "EE",
+        "latitude": "57.775278",
+        "longitude": "26.05167"
+    },
+    {
+        "id": 35048,
+        "stationName": "Arnes",
+        "country": "ES",
+        "latitude": "40.91046",
+        "longitude": "0.26105"
+    },
+    {
+        "id": 35071,
+        "stationName": "Banos",
+        "country": "ES",
+        "latitude": "42.232868",
+        "longitude": "-7.00842"
+    },
+    {
+        "id": 35175,
+        "stationName": "Ger",
+        "country": "ES",
+        "latitude": "42.41059",
+        "longitude": "1.84536"
+    },
+    {
+        "id": 35194,
+        "stationName": "Melide",
+        "country": "ES",
+        "latitude": "42.9139507",
+        "longitude": "-8.0146915"
+    },
+    {
+        "id": 35197,
+        "stationName": "Monreal",
+        "country": "ES",
+        "latitude": "42.70604",
+        "longitude": "-1.523025"
+    },
+    {
+        "id": 35204,
+        "stationName": "Olmedo",
+        "country": "ES",
+        "latitude": "41.290647",
+        "longitude": "-4.680728"
+    },
+    {
+        "id": 35242,
+        "stationName": "Zambra",
+        "country": "ES",
+        "latitude": "37.3853343",
+        "longitude": "-4.3870307"
+    },
+    {
+        "id": 35254,
+        "stationName": "Favara",
+        "country": "IT",
+        "latitude": "37.316399",
+        "longitude": "13.6598"
+    },
+    {
+        "id": 35257,
+        "stationName": "Nave",
+        "country": "IT",
+        "latitude": "45.5859779",
+        "longitude": "10.2886207"
+    },
+    {
+        "id": 35265,
+        "stationName": "Belmonte",
+        "country": "PT",
+        "latitude": "40.3598503",
+        "longitude": "-7.3481786"
+    },
+    {
+        "id": 35707,
+        "stationName": "Parga",
+        "country": "GR",
+        "latitude": "39.284841",
+        "longitude": "20.411212"
+    },
+    {
+        "id": 35712,
+        "stationName": "Srem",
+        "country": "BG",
+        "latitude": "42.051989",
+        "longitude": "26.48024"
+    },
+    {
+        "id": 35717,
+        "stationName": "Bara",
+        "country": "SK",
+        "latitude": "48.422704",
+        "longitude": "21.708421"
+    },
+    {
+        "id": 35805,
+        "stationName": "Polichno",
+        "country": "PL",
+        "latitude": "51.45924032",
+        "longitude": "19.78064239"
+    },
+    {
+        "id": 37113,
+        "stationName": "Armadale",
+        "country": "Australia",
+        "latitude": "-32.1791895",
+        "longitude": "116.1066784"
+    },
+    {
+        "id": 37143,
+        "stationName": "Ballan",
+        "country": "Australia",
+        "latitude": "-37.599505",
+        "longitude": "144.2267258"
+    },
+    {
+        "id": 37243,
+        "stationName": "Burnley",
+        "country": "Australia",
+        "latitude": "53.7907262",
+        "longitude": "-2.2439196"
+    },
+    {
+        "id": 37270,
+        "stationName": "Cardiff",
+        "country": "Australia",
+        "latitude": "51.4816546",
+        "longitude": "-3.1791934"
+    },
+    {
+        "id": 37292,
+        "stationName": "Charleville",
+        "country": "Australia",
+        "latitude": "48.813549",
+        "longitude": "3.6664318"
+    },
+    {
+        "id": 37327,
+        "stationName": "Coburg",
+        "country": "Australia",
+        "latitude": "50.258112",
+        "longitude": "10.964463"
+    },
+    {
+        "id": 37335,
+        "stationName": "Como",
+        "country": "Australia",
+        "latitude": "45.9394759",
+        "longitude": "9.149410145"
+    },
+    {
+        "id": 37365,
+        "stationName": "Croydon",
+        "country": "Australia",
+        "latitude": "51.3713049",
+        "longitude": "-0.101957"
+    },
+    {
+        "id": 37474,
+        "stationName": "Exeter",
+        "country": "Australia",
+        "latitude": "50.725562",
+        "longitude": "-3.5269108"
+    },
+    {
+        "id": 37553,
+        "stationName": "Granville",
+        "country": "Australia",
+        "latitude": "48.8376284",
+        "longitude": "-1.5959213"
+    },
+    {
+        "id": 37588,
+        "stationName": "Heidelberg",
+        "country": "Australia",
+        "latitude": "49.4093582",
+        "longitude": "8.694724"
+    },
+    {
+        "id": 37600,
+        "stationName": "High Street",
+        "country": "Australia",
+        "latitude": "55.9498387",
+        "longitude": "-3.1900463"
+    },
+    {
+        "id": 37669,
+        "stationName": "Kilkenny",
+        "country": "Australia",
+        "latitude": "52.6510216",
+        "longitude": "-7.2484948"
+    },
+    {
+        "id": 37722,
+        "stationName": "Liverpool",
+        "country": "Australia",
+        "latitude": "53.407154",
+        "longitude": "-2.991665"
+    },
+    {
+        "id": 37748,
+        "stationName": "Malvern",
+        "country": "Australia",
+        "latitude": "52.1159559",
+        "longitude": "-2.3258985"
+    },
+    {
+        "id": 37784,
+        "stationName": "Melton",
+        "country": "Australia",
+        "latitude": "52.8117106",
+        "longitude": "-0.859286729"
+    },
+    {
+        "id": 37812,
+        "stationName": "Miranda",
+        "country": "Australia",
+        "latitude": "10.25",
+        "longitude": "-66.416667"
+    },
+    {
+        "id": 37941,
+        "stationName": "Orange",
+        "country": "Australia",
+        "latitude": "33.7500378",
+        "longitude": "-117.8704931"
+    },
+    {
+        "id": 37982,
+        "stationName": "Penrith",
+        "country": "Australia",
+        "latitude": "54.6639133",
+        "longitude": "-2.7522047"
+    },
+    {
+        "id": 38049,
+        "stationName": "Roma",
+        "country": "Australia",
+        "latitude": "41.8933203",
+        "longitude": "12.4829321"
+    },
+    {
+        "id": 38092,
+        "stationName": "Shannon",
+        "country": "New Zealand",
+        "latitude": "37.1498052",
+        "longitude": "-91.4328245"
+    },
+    {
+        "id": 38123,
+        "stationName": "St Leonards",
+        "country": "Australia",
+        "latitude": "-33.8225666",
+        "longitude": "151.1923402"
+    },
+    {
+        "id": 38125,
+        "stationName": "St Peters",
+        "country": "Australia",
+        "latitude": "38.791612",
+        "longitude": "-90.5958468"
+    },
+    {
+        "id": 38189,
+        "stationName": "Thomastown",
+        "country": "Australia",
+        "latitude": "-37.63221065",
+        "longitude": "144.9924349"
+    },
+    {
+        "id": 38241,
+        "stationName": "Virginia",
+        "country": "Australia",
+        "latitude": "37.1232245",
+        "longitude": "-78.4927721"
+    }
+]

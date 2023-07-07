@@ -10,8 +10,15 @@ def files_length(files):
 
 # writes data into a give file
 def write_file(data, file_name):
-    with open(os.path.join(sys.path[0], file_name), 'w') as f:
-        json.dump(data, f, indent=4)
+    with open(os.path.join(sys.path[0], file_name), 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
+    f.close()
+
+
+# writes all the duplicate values to a file
+def write_duplicates(data, file_name):
+    with open(os.path.join(sys.path[0], file_name), 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
     f.close()
 
 
@@ -28,16 +35,20 @@ def parse_duplicates(file_data, field):
     print('Starting duplicate removal tool...')
     result_items = []
     added_keys = []
+    duplicates = []
     for i, item in enumerate(file_data):
         if len(result_items) == 0 or item[field] not in added_keys:
             result_items.append(item)
             added_keys.append(item[field])
+        else:
+            duplicates.append(item)
         print('Parsing ' + str(i + 1) + ' of ' + str(len(file_data)))
 
     write_file(result_items, 'parsed_output.json')
+    write_duplicates(duplicates, 'duplicates.json')
     print('\nNumber of duplicates ', len(file_data) - len(result_items))
-    print('\nCompleted! A new file has been created. Continue? (y/n)')
-    if input() == 'yes' or input() == 'y':
+    userinput = input('\nCompleted! A new file has been created. Continue? (y/n)')
+    if userinput == 'yes' or userinput == 'y':
         menu()
 
 
