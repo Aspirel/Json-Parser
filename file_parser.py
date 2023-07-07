@@ -4,7 +4,8 @@ import sys
 
 
 # method that takes json files and returns their lengths 
-def files_length(files):
+def files_length(file):
+    print(len(file))
     menu()
 
 
@@ -61,7 +62,9 @@ def menu():
 
     if len(option) > 0:
         if option == '1':
-            print('test')
+            file_name = input('File name: ')
+            parsed_data = read_file(file_name)
+            files_length(parsed_data)
             menu()
         elif option == '2':
             file_name = input('File name: ')

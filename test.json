@@ -1,10 +1,10 @@
-[
-	{
-	   "id": 1,
-	   "name": "Château-Arnoux—St-Auban",
-	   "country": "FR",
-	   "latitude": "44.08179",
-	   "longitude": "6.001625"
+{
+	"test":[{
+		"id": 1,
+		"name": "Château-Arnoux—St-Auban",
+		"country": "FR",
+		"latitude": "44.08179",
+		"longitude": "6.001625"
 	},
 	{
 		"id": 2,
@@ -20,5 +20,5 @@
 		"id": 4,
 		"name": "Two",
 		"country": "UK"
-	}
-]
+	}]
+}
