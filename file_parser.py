@@ -17,7 +17,7 @@ def write_file(data, file_name):
 
 # reads a json file and parses its data 
 def read_file(file_name):
-    file = open(file_name, 'r')
+    file = open(file_name, 'r', encoding="utf8")
     file_data = file.read()
     file.close()
     return json.loads(file_data)
@@ -28,13 +28,14 @@ def parse_duplicates(file_data, field):
     print('Starting duplicate removal tool...')
     result_items = []
     added_keys = []
-    for i, item1 in enumerate(file_data):
-        for item2 in file_data:
-            if len(result_items) == 0 or item1[field] != item2[field] and item2[field] not in added_keys:
-                result_items.append(item2)
-                added_keys.append(item2[field])
-        print('Parsing ' + str(i + 1) + ' of ' + str(len(file_data)) + ' ')
+    for i, item in enumerate(file_data):
+        if len(result_items) == 0 or item[field] not in added_keys:
+            result_items.append(item)
+            added_keys.append(item[field])
+        print('Parsing ' + str(i + 1) + ' of ' + str(len(file_data)))
+
     write_file(result_items, 'parsed_output.json')
+    print('\nNumber of duplicates ', len(file_data) - len(result_items))
     print('\nCompleted! A new file has been created. Continue? (y/n)')
     if input() == 'yes' or input() == 'y':
         menu()
@@ -69,7 +70,6 @@ def menu():
 
 
 menu()
-
 
 # TODO deal with nested values
 # def check_nested(file_data):
