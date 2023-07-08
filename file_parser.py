@@ -11,14 +11,16 @@ def files_length(file):
 
 # writes data into a give file
 def write_file(data, file_name):
-    with open(os.path.join(sys.path[0], file_name), 'w', encoding='utf-8') as f:
+    application_path = get_os_file_path()
+    with open(os.path.join(application_path, file_name), 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
     f.close()
 
 
 # writes all the duplicate values to a file
 def write_duplicates(data, file_name):
-    with open(os.path.join(sys.path[0], file_name), 'w', encoding='utf-8') as f:
+    application_path = get_os_file_path()
+    with open(os.path.join(application_path, file_name), 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
     f.close()
 
@@ -29,6 +31,14 @@ def read_file(file_name):
     file_data = file.read()
     file.close()
     return json.loads(file_data)
+
+
+# gets the current location of the program in the os
+def get_os_file_path():
+    if getattr(sys, 'frozen', False):
+        return os.path.dirname(sys.executable)
+    elif __file__:
+        return os.path.dirname(__file__)
 
 
 # checks a json file for duplicates and creates a new output file without them
