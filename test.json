@@ -1,5 +1,5 @@
-{
-	"test":[{
+[
+	{
 		"id": 1,
 		"name": "Château-Arnoux—St-Auban",
 		"country": "FR",
@@ -20,5 +20,5 @@
 		"id": 4,
 		"name": "Two",
 		"country": "UK"
-	}]
-}
+	}
+]

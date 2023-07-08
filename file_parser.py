@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+import time
 
 
 # method that takes json files and returns their lengths 
@@ -44,6 +45,7 @@ def get_os_file_path():
 # checks a json file for duplicates and creates a new output file without them
 def parse_duplicates(file_data, field):
     print('Starting duplicate removal tool...')
+    start_time = time.time()
     result_items = []
     added_keys = []
     duplicates = []
@@ -56,8 +58,10 @@ def parse_duplicates(file_data, field):
         print('Parsing ' + str(i + 1) + ' of ' + str(len(file_data)))
 
     write_file(result_items, 'parsed_output.json')
-    write_duplicates(duplicates, 'duplicates.json')
+    write_duplicates(duplicates, 'parsed_duplicates.json')
     print('\nNumber of duplicates ', len(file_data) - len(result_items))
+    print("\nParse completed! Parsed and duplicates files have been created. It took %s seconds" %
+          round((time.time() - start_time), 2))
     userinput = input('\nCompleted! A new file has been created. Continue? (y/n)')
     if userinput == 'yes' or userinput == 'y':
         menu()
@@ -66,10 +70,13 @@ def parse_duplicates(file_data, field):
 # the user menu with options for different funtions
 def menu():
     print('Please choose an option:')
-    print('1 - Compare files lengths')
-    print('2 - Remove duplicates - Array of objects')
-    option = input()
+    print('1 - Files length')
+    print('2 - Remove duplicates - Array of objects [{}]')
+    # print('3 - Remove duplicates - Nested objects')
+    # print('4 - Add to file - no duplicates')
+    # print('5 - Remove from file')
 
+    option = input()
     if len(option) > 0:
         if option == '1':
             file_name = input('File name: ')
