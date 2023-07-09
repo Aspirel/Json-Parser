@@ -6,8 +6,7 @@ import time
 
 # method that takes json files and returns their lengths 
 def files_length(file):
-    print(len(file))
-    menu()
+    print('\nFile length: {length}'.format(length=len(file)))
 
 
 # writes data into a give file
@@ -62,7 +61,16 @@ def parse_duplicates(file_data, field):
     print('\nNumber of duplicates ', len(file_data) - len(result_items))
     print("\nParse completed! Parsed and duplicates files have been created. It took %s seconds" %
           round((time.time() - start_time), 2))
-    userinput = input('\nCompleted! A new file has been created. Continue? (y/n)')
+
+
+# method to remove duplicates from json files with nested arrays of objects
+def parse_nested_arrays(file_data):
+    menu()
+
+
+# Simple continue or not user prompt
+def continue_prompt():
+    userinput = input('\nContinue? yes/no (y/n) ')
     if userinput == 'yes' or userinput == 'y':
         menu()
 
@@ -72,7 +80,7 @@ def menu():
     print('Please choose an option:')
     print('1 - Files length')
     print('2 - Remove duplicates - Array of objects [{}]')
-    # print('3 - Remove duplicates - Nested objects')
+    print('3 - Remove duplicates - Json, nested arrays of objects {"example":[{}]}')
     # print('4 - Add to file - no duplicates')
     # print('5 - Remove from file')
 
@@ -82,19 +90,22 @@ def menu():
             file_name = input('File name: ')
             parsed_data = read_file(file_name)
             files_length(parsed_data)
-            menu()
+            continue_prompt()
         elif option == '2':
             file_name = input('File name: ')
             try:
                 parsed_data = read_file(file_name)
                 field_name = input('Field name to check duplicates for: ')
                 parse_duplicates(parsed_data, field_name)
+                continue_prompt()
             except Exception as e:
                 print('\nFile is invalid or not found. Error: {error} \n'.format(error=e))
                 menu()
-        else:
-            print('Invalid option')
-            menu()
+        elif option == '3':
+            file_name = input('File name: ')
+            parsed_data = read_file(file_name)
+            parse_nested_arrays(parsed_data)
+            continue_prompt()
     else:
         print('Something went wrong')
         menu()
