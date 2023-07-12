@@ -42,18 +42,36 @@ def get_os_file_path():
 
 
 # checks a json file for duplicates and creates a new output file without them
-def parse_duplicates(file_data, field):
+def parse_duplicates(file_data, fields):
     print('Starting duplicate removal tool...')
     start_time = time.time()
     result_items = []
-    added_keys = []
+    added_objects = []
     duplicates = []
+
     for i, item in enumerate(file_data):
-        if len(result_items) == 0 or item[field] not in added_keys:
-            result_items.append(item)
-            added_keys.append(item[field])
+        item_object = {}
+
+        if isinstance(fields, str):
+            if len(result_items) == 0 or item[fields] not in added_objects:
+                result_items.append(item)
+                added_objects.append(item[fields])
+            else:
+                duplicates.append(item)
         else:
-            duplicates.append(item)
+            for key, value in item.items():
+                for field in fields:
+                    if field == key:
+                        item_object[key] = value
+
+            if len(item_object) > 0:
+                if len(result_items) == 0 or item_object not in added_objects:
+                    result_items.append(item)
+                    added_objects.append(item_object)
+                else:
+                    duplicates.append(item)
+
+
         print('Parsing ' + str(i + 1) + ' of ' + str(len(file_data)))
 
     write_file(result_items, 'parsed_output.json')
@@ -78,9 +96,9 @@ def continue_prompt():
 # the user menu with options for different funtions
 def menu():
     print('Please choose an option:')
-    print('1 - Files length')
+    print('1 - File(1) length')
     print('2 - Remove duplicates - Array of objects [{}]')
-    print('3 - Remove duplicates - Json, nested arrays of objects {"example":[{}]}')
+    # print('3 - Remove duplicates - Json, nested arrays of objects {"example":[{}]}')
     # print('4 - Add to file - no duplicates')
     # print('5 - Remove from file')
 
@@ -95,8 +113,14 @@ def menu():
             file_name = input('File name: ')
             try:
                 parsed_data = read_file(file_name)
-                field_name = input('Field name to check duplicates for: ')
-                parse_duplicates(parsed_data, field_name)
+                field_names = input('Fields to check (comma separated): ')
+                if ',' in field_names:
+                    field_names = field_names.replace(' ', '')
+                    field_names = field_names.split(',')
+                elif ' ' in field_names:
+                    field_names = field_names.split(' ')
+
+                parse_duplicates(parsed_data, field_names)
                 continue_prompt()
             except Exception as e:
                 print('\nFile is invalid or not found. Error: {error} \n'.format(error=e))
