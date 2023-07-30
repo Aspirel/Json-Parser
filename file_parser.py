@@ -25,7 +25,7 @@ def write_duplicates(data, file_name):
     f.close()
 
 
-# reads a json file and parses its data 
+# reads a json file and parss its data
 def read_file(file_name):
     file = open(file_name, 'r', encoding="utf8")
     file_data = file.read()
@@ -74,8 +74,8 @@ def parse_duplicates(file_data, fields):
 
         print('Parsing ' + str(i + 1) + ' of ' + str(len(file_data)))
 
-    write_file(result_items, 'parsed_output.json')
-    write_duplicates(duplicates, 'parsed_duplicates.json')
+    write_file(result_items, 'removed_duplicates.json')
+    write_duplicates(duplicates, 'file_duplicates.json')
     print('\nNumber of duplicates ', len(file_data) - len(result_items))
     print("\nParse completed! Parsed and duplicates files have been created. It took %s seconds" %
           round((time.time() - start_time), 2))
@@ -93,10 +93,27 @@ def continue_prompt():
         menu()
 
 
-# the user menu with options for different funtions
+# Checks if the file exists and is valid
+def validate_file(file_name):
+    try:
+        return read_file(file_name)
+    except Exception as e:
+        print('\nFile is invalid or not found. Error: {error} \n'.format(error=e))
+        menu()
+
+
+# Checks if the fields to check duplicates for exist in the json array
+def validate_search_fields(data, fields):
+    for field in fields:
+        if field not in data[0]:
+            print('{field} does not exist\n'.format(field=field))
+            menu()
+
+
+# The user menu with options for different funtions
 def menu():
     print('Please choose an option:')
-    print('1 - File(1) length')
+    print('1 - File length')
     print('2 - Remove duplicates - Array of objects [{}]')
     # print('3 - Remove duplicates - Json, nested arrays of objects {"example":[{}]}')
     # print('4 - Add to file - no duplicates')
@@ -106,25 +123,22 @@ def menu():
     if len(option) > 0:
         if option == '1':
             file_name = input('File name: ')
-            parsed_data = read_file(file_name)
+            parsed_data = validate_file(file_name)
             files_length(parsed_data)
             continue_prompt()
         elif option == '2':
             file_name = input('File name: ')
-            try:
-                parsed_data = read_file(file_name)
-                field_names = input('Fields to check (comma separated): ')
-                if ',' in field_names:
-                    field_names = field_names.replace(' ', '')
-                    field_names = field_names.split(',')
-                elif ' ' in field_names:
-                    field_names = field_names.split(' ')
+            parsed_data = validate_file(file_name)
+            field_names = input('Fields to check duplicates for (comma or space separated): ')
+            if ',' in field_names:
+                field_names = field_names.replace(' ', '')
+                field_names = field_names.split(',')
+            elif ' ' in field_names:
+                field_names = field_names.split(' ')
 
-                parse_duplicates(parsed_data, field_names)
-                continue_prompt()
-            except Exception as e:
-                print('\nFile is invalid or not found. Error: {error} \n'.format(error=e))
-                menu()
+            validate_search_fields(parsed_data, field_names)
+            parse_duplicates(parsed_data, field_names)
+            continue_prompt()
         elif option == '3':
             file_name = input('File name: ')
             parsed_data = read_file(file_name)
