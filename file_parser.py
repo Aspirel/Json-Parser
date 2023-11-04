@@ -71,6 +71,31 @@ def parse_duplicates(file_data, fields):
           round((time.time() - start_time), 2))
 
 
+# Removes empty objects from the file based on empty fields
+def parse_empty_fields(file_data, fields):
+    print('Starting empty removal tool...')
+    start_time = time.time()
+    result_items = []
+    empty_items = []
+
+    for i, item in enumerate(file_data):
+        for field in fields:
+            if field in item:
+                if item[field] is None or len(item[field]) <= 0:
+                    if item not in empty_items:
+                        empty_items.append(item)
+                else:
+                    if item not in result_items:
+                        result_items.append(item)
+        print('Parsing ' + str(i + 1) + ' of ' + str(len(file_data)))
+
+    write_file(result_items, 'no_empties.json')
+    write_file(empty_items, 'empties.json')
+    print('\nNumber of empty items ', len(empty_items))
+    print("\nParse completed! Parsed and empties files have been created. It took %s seconds" %
+          round((time.time() - start_time), 2))
+
+
 # method to remove duplicates from json files with nested arrays of objects
 def parse_nested_arrays(file_data):
     menu()
@@ -109,31 +134,6 @@ def format_search_fields(field_names):
         field_names = field_names.split(' ')
 
     return field_names
-
-
-# Removes empty objects from the file based on empty fields
-def parse_empty_fields(file_data, fields):
-    print('Starting empty removal tool...')
-    start_time = time.time()
-    result_items = []
-    empty_items = []
-
-    for i, item in enumerate(file_data):
-        for field in fields:
-            if field in item:
-                if item[field] is None or len(item[field]) <= 0:
-                    if item not in empty_items:
-                        empty_items.append(item)
-                else:
-                    if item not in result_items:
-                        result_items.append(item)
-        print('Parsing ' + str(i + 1) + ' of ' + str(len(file_data)))
-
-    write_file(result_items, 'no_empties.json')
-    write_file(empty_items, 'empties.json')
-    print('\nNumber of empty items ', len(empty_items))
-    print("\nParse completed! Parsed and empties files have been created. It took %s seconds" %
-          round((time.time() - start_time), 2))
 
 
 # The user menu with options for different funtions
