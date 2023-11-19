@@ -96,11 +96,6 @@ def parse_empty_fields(file_data, fields):
           round((time.time() - start_time), 2))
 
 
-# method to remove duplicates from json files with nested arrays of objects
-def parse_nested_arrays(file_data):
-    menu()
-
-
 # Simple continue or not user prompt
 def continue_prompt():
     userinput = input('\nContinue? yes/no (y/n) ')
