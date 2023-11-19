@@ -78,15 +78,30 @@ def parse_empty_fields(file_data, fields):
     result_items = []
     empty_items = []
 
+    def is_empty(json_data, target_field):
+        if isinstance(json_data, dict):
+            for key, value in json_data.items():
+                if key == target_field:
+                    if not value:
+                        if item not in empty_items:
+                            empty_items.append(item)
+                    else:
+                        if item not in result_items:
+                            result_items.append(item)
+                elif isinstance(value, (dict, list)):
+                    is_empty(value, target_field)
+            if item not in empty_items and item not in result_items:
+                result_items.append(item)
+        elif isinstance(json_data, list):
+            for list_item in json_data:
+                is_empty(list_item, target_field)
+
     for i, item in enumerate(file_data):
-        for field in fields:
-            if field in item:
-                if item[field] is None or len(item[field]) <= 0:
-                    if item not in empty_items:
-                        empty_items.append(item)
-                else:
-                    if item not in result_items:
-                        result_items.append(item)
+        if isinstance(fields, str):
+            is_empty(item, fields)
+        else:
+            for field in fields:
+                is_empty(item, field)
         print('Parsing ' + str(i + 1) + ' of ' + str(len(file_data)))
 
     write_file(result_items, 'no_empties.json')
@@ -98,8 +113,8 @@ def parse_empty_fields(file_data, fields):
 
 # Simple continue or not user prompt
 def continue_prompt():
-    userinput = input('\nContinue? yes/no (y/n) ')
-    if userinput == 'yes' or userinput == 'y':
+    user_input = input('\nContinue? yes/no (y/n) ')
+    if user_input == 'yes' or user_input == 'y':
         menu()
 
 
@@ -113,15 +128,7 @@ def validate_file(file_name):
         menu()
 
 
-# Checks if the fields to check duplicates for exist in the json array
-def validate_search_fields(data, fields):
-    for field in fields:
-        if field not in data[0]:
-            print('{field} does not exist\n'.format(field=field))
-            menu()
-
-
-# Removes search fiel names spaces and commas
+# Removes search field names spaces and commas
 def format_search_fields(field_names):
     if ',' in field_names:
         field_names = field_names.replace(' ', '')
@@ -132,7 +139,7 @@ def format_search_fields(field_names):
     return field_names
 
 
-# The user menu with options for different funtions
+# The user menu with options for different functions
 def menu():
     print('Please choose an option:')
     print('1 - File length')
@@ -152,7 +159,6 @@ def menu():
             field_names = input(
                 'Fields to check duplicates for (comma or space separated): ')
             field_names = format_search_fields(field_names)
-            validate_search_fields(parsed_data, field_names)
             parse_duplicates(parsed_data, field_names)
             continue_prompt()
         elif option == '3':
@@ -161,7 +167,6 @@ def menu():
             field_names = input(
                 'Fields to check empty for (comma or space separated): ')
             field_names = format_search_fields(field_names)
-            validate_search_fields(parsed_data, field_names)
             parse_empty_fields(parsed_data, field_names)
             continue_prompt()
     else:

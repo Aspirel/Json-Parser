@@ -16,13 +16,13 @@
         "name": "John",
         "address": {
             "city": "",
-            "zip": "hello"
+            "zip": ""
         }
     },
     {
         "id": 4,
         "name": "Bob",
-        "latitude": "",
+        "latitude": "1",
         "longitude": ""
     },
     {
@@ -49,6 +49,32 @@
         "address": {
             "city": "New York",
             "zip": "10001"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Dan",
+        "latitude": "",
+        "longitude": "",
+        "address": {
+            "city": "New York",
+            "zip": "10001",
+            "street": {
+                "number": ""
+            }
+        }
+    },
+    {
+        "id": 9,
+        "name": "Dan",
+        "latitude": "",
+        "longitude": "",
+        "address": {
+            "city": "New York",
+            "zip": "10001",
+            "street": {
+                "number": "10"
+            }
         }
     }
 ]
