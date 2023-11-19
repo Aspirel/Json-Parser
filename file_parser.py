@@ -33,6 +33,34 @@ def get_os_file_path():
         return os.path.dirname(__file__)
 
 
+# Simple continue or not user prompt
+def continue_prompt():
+    user_input = input('\nContinue? yes/no (y/n) ')
+    if user_input == 'yes' or user_input == 'y':
+        menu()
+
+
+# Checks if the file exists and is valid
+def validate_file(file_name):
+    try:
+        return read_file(file_name)
+    except Exception as e:
+        print(
+            '\nFile is invalid or not found. Error: {error} \n'.format(error=e))
+        menu()
+
+
+# Removes search field names spaces and commas
+def format_search_fields(field_names):
+    if ',' in field_names:
+        field_names = field_names.replace(' ', '')
+        field_names = field_names.split(',')
+    elif ' ' in field_names:
+        field_names = field_names.split(' ')
+
+    return field_names
+
+
 # checks a json file for duplicates and creates a new output file without them
 def parse_duplicates(file_data, fields):
     print('Starting empty removal tool...')
@@ -113,34 +141,6 @@ def parse_empty_fields(file_data, fields):
     print('\nNumber of empty items ', len(empty_items))
     print("\nParse completed! Parsed and empties files have been created. It took %s seconds" %
           round((time.time() - start_time), 2))
-
-
-# Simple continue or not user prompt
-def continue_prompt():
-    user_input = input('\nContinue? yes/no (y/n) ')
-    if user_input == 'yes' or user_input == 'y':
-        menu()
-
-
-# Checks if the file exists and is valid
-def validate_file(file_name):
-    try:
-        return read_file(file_name)
-    except Exception as e:
-        print(
-            '\nFile is invalid or not found. Error: {error} \n'.format(error=e))
-        menu()
-
-
-# Removes search field names spaces and commas
-def format_search_fields(field_names):
-    if ',' in field_names:
-        field_names = field_names.replace(' ', '')
-        field_names = field_names.split(',')
-    elif ' ' in field_names:
-        field_names = field_names.split(' ')
-
-    return field_names
 
 
 # The user menu with options for different functions
