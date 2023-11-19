@@ -40,7 +40,7 @@ def parse_duplicates(file_data, fields):
     result_items = []
     added_objects = []
     duplicates = []
-
+    # TODO apply same logic as empties here
     for i, item in enumerate(file_data):
         item_object = {}
 
@@ -102,6 +102,7 @@ def parse_empty_fields(file_data, fields):
         else:
             for field in fields:
                 is_empty(item, field)
+                # TODO handle multiple field inputs
         print('Parsing ' + str(i + 1) + ' of ' + str(len(file_data)))
 
     write_file(result_items, 'no_empties.json')
