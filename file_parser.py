@@ -74,16 +74,18 @@ def parse_duplicates(file_data, fields):
             for key, value in json_data.items():
                 if key == target_field:
                     item_object = {key: value}
-                    if len(result_items) == 0 or (item_object not in checked_objects and value):
-                        result_items.append(item)
+                    if len(result_items) == 0 or (
+                            item_object not in checked_objects and value):
+                        if item not in result_items:
+                            result_items.append(item)
                         checked_objects.append(item_object)
                     # TODO when a UI is made, include option to include empty/null values
-                    elif value:
+                    elif value and item not in duplicates:
                         duplicates.append(item)
                 elif isinstance(value, (dict, list)):
                     is_duplicate(value, target_field)
-            if item not in duplicates and item not in result_items:
-                result_items.append(item)
+            if json_data not in duplicates and json_data not in result_items:
+                result_items.append(json_data)
         elif isinstance(json_data, list):
             for list_item in json_data:
                 is_duplicate(list_item, target_field)
