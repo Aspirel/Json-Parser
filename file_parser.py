@@ -35,34 +35,38 @@ def get_os_file_path():
 
 # checks a json file for duplicates and creates a new output file without them
 def parse_duplicates(file_data, fields):
-    print('Starting duplicate removal tool...')
+    print('Starting empty removal tool...')
     start_time = time.time()
     result_items = []
-    added_objects = []
     duplicates = []
-    # TODO apply same logic as empties here
-    for i, item in enumerate(file_data):
-        item_object = {}
+    checked_objects = []
 
-        if isinstance(fields, str):
-            if len(result_items) == 0 or item[fields] not in added_objects:
+    def is_duplicate(json_data, target_field):
+        if isinstance(json_data, dict):
+            for key, value in json_data.items():
+                if key == target_field:
+                    item_object = {key: value}
+                    if len(result_items) == 0 or (item_object not in checked_objects and value):
+                        result_items.append(item)
+                        checked_objects.append(item_object)
+                    # TODO when a UI is made, include option to include empty/null values
+                    elif value:
+                        duplicates.append(item)
+                elif isinstance(value, (dict, list)):
+                    is_duplicate(value, target_field)
+            if item not in duplicates and item not in result_items:
                 result_items.append(item)
-                added_objects.append(item[fields])
-            else:
-                duplicates.append(item)
-        else:
-            for key, value in item.items():
-                for field in fields:
-                    if field == key:
-                        item_object[key] = value
+        elif isinstance(json_data, list):
+            for list_item in json_data:
+                is_duplicate(list_item, target_field)
 
-            if len(item_object) > 0:
-                if len(result_items) == 0 or item_object not in added_objects:
-                    result_items.append(item)
-                    added_objects.append(item_object)
-                else:
-                    duplicates.append(item)
-        print('Parsing ' + str(i + 1) + ' of ' + str(len(file_data)))
+    for i, item in enumerate(file_data):
+        if isinstance(fields, str):
+            is_duplicate(item, fields)
+        else:
+            for field in fields:
+                is_duplicate(item, field)
+        print(f'Parsing: {int((i / len(file_data)) * 100)}%')
 
     write_file(result_items, 'no_duplicates.json')
     write_file(duplicates, 'duplicates.json')
@@ -102,8 +106,7 @@ def parse_empty_fields(file_data, fields):
         else:
             for field in fields:
                 is_empty(item, field)
-                # TODO handle multiple field inputs
-        print('Parsing ' + str(i + 1) + ' of ' + str(len(file_data)))
+        print(f'Parsing: {int((i / len(file_data)) * 100)}%')
 
     write_file(result_items, 'no_empties.json')
     write_file(empty_items, 'empties.json')
