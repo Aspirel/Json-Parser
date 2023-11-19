@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "name": "John",
+        "latitude": "44.35",
+        "longitude": "6.35"
+    },
+    {
+        "id": 2,
+        "name": "Jane",
+        "latitude": "44.35",
+        "longitude": "6.35"
+    },
+    {
+        "id": 3,
+        "name": "John",
+        "address": {
+            "city": "",
+            "zip": "hello"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Bob",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 5,
+        "name": "Alice",
+        "latitude": "",
+        "longitude": ""
+    },
+    {
+        "id": 6,
+        "name": "Alice",
+        "latitude": "",
+        "longitude": "",
+        "address": {
+            "city": "New York",
+            "zip": "10001"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Alice",
+        "latitude": "",
+        "longitude": "",
+        "address": {
+            "city": "New York",
+            "zip": "10001"
+        }
+    }
+]

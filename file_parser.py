@@ -4,7 +4,7 @@ import sys
 import time
 
 
-# method that takes json files and returns their lengths 
+# method that takes json files and returns their lengths
 def files_length(file):
     print('\nFile length: {length}'.format(length=len(file)))
 
@@ -113,7 +113,8 @@ def validate_file(file_name):
     try:
         return read_file(file_name)
     except Exception as e:
-        print('\nFile is invalid or not found. Error: {error} \n'.format(error=e))
+        print(
+            '\nFile is invalid or not found. Error: {error} \n'.format(error=e))
         menu()
 
 
@@ -141,8 +142,7 @@ def menu():
     print('Please choose an option:')
     print('1 - File length')
     print('2 - Remove duplicates - Array of objects [{}]')
-    # print('3 - Remove duplicates - Json, nested arrays of objects {"example":[{}]}')
-    print('4 - Remove from file based on empty fields')
+    print('3 - Remove from file based on empty fields')
 
     option = input()
     if len(option) > 0:
@@ -154,7 +154,8 @@ def menu():
         elif option == '2':
             file_name = input('File name: ')
             parsed_data = validate_file(file_name)
-            field_names = input('Fields to check duplicates for (comma or space separated): ')
+            field_names = input(
+                'Fields to check duplicates for (comma or space separated): ')
             field_names = format_search_fields(field_names)
             validate_search_fields(parsed_data, field_names)
             parse_duplicates(parsed_data, field_names)
@@ -162,12 +163,8 @@ def menu():
         elif option == '3':
             file_name = input('File name: ')
             parsed_data = validate_file(file_name)
-            parse_nested_arrays(parsed_data)
-            continue_prompt()
-        elif option == '4':
-            file_name = input('File name: ')
-            parsed_data = validate_file(file_name)
-            field_names = input('Fields to check empty for (comma or space separated): ')
+            field_names = input(
+                'Fields to check empty for (comma or space separated): ')
             field_names = format_search_fields(field_names)
             validate_search_fields(parsed_data, field_names)
             parse_empty_fields(parsed_data, field_names)
@@ -178,27 +175,3 @@ def menu():
 
 
 menu()
-
-# TODO deal with nested values 
-# def check_nested(file_data):
-#     if isinstance(file_data, dict):
-#         print('is dict')
-#     elif isinstance(file_data, list):
-#         print('list')
-#
-#     for key, value in file_data.items():
-#         if isinstance(value, dict):
-#             print('value dict')
-#         elif isinstance(value, list):
-#             for val in value:
-#                 if isinstance(val, str):
-#                     print('value str')
-#                     pass
-#                 elif isinstance(val, list):
-#                     print('value list')
-#                     pass
-#                 elif isinstance(val, dict):
-#                     print('value dict')
-#                     pass
-#                 else:
-#                     parse_duplicates(file_data, 'field')
