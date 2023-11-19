@@ -1,0 +1,32 @@
+{
+  "name": "json-parser",
+  "version": "1.0.0",
+  "description": "A application to parse json files",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "import": "electron-forge import",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": "git+https://github.com/Aspirel/Json-Parser.git",
+  "author": "Daniel Alves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aspirel/Json-Parser/issues"
+  },
+  "homepage": "https://github.com/Aspirel/Json-Parser#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.1.0",
+    "@electron-forge/maker-deb": "^7.1.0",
+    "@electron-forge/maker-rpm": "^7.1.0",
+    "@electron-forge/maker-squirrel": "^7.1.0",
+    "@electron-forge/maker-zip": "^7.1.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.1.0",
+    "electron": "^27.1.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}
