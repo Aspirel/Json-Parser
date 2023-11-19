@@ -1,0 +1,23 @@
+{
+  "name": "json-parser",
+  "version": "1.0.0",
+  "description": "Json files parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aspirel/Json-Parser.git"
+  },
+  "author": "Daniel Alves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aspirel/Json-Parser/issues"
+  },
+  "homepage": "https://github.com/Aspirel/Json-Parser#readme",
+  "devDependencies": {
+    "electron": "^27.1.0"
+  }
+}

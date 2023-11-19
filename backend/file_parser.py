@@ -98,8 +98,8 @@ def parse_duplicates(file_data, fields):
                 is_duplicate(item, field)
         print(f'Parsing: {int((i / len(file_data)) * 100)}%')
 
-    write_file(result_items, 'no_duplicates.json')
-    write_file(duplicates, 'duplicates.json')
+    write_file(result_items, '../no_duplicates.json')
+    write_file(duplicates, '../duplicates.json')
     print('\nNumber of duplicates ', len(duplicates))
     print("\nParse completed! Parsed and duplicates files have been created. It took %s seconds" %
           round((time.time() - start_time), 2))
