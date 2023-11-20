@@ -9,6 +9,7 @@ class App(QMainWindow):
         self.ui = UploadFile()
         self.ui.setup_ui(self)
 
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
 
