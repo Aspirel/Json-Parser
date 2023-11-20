@@ -1,8 +1,7 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
-from main_window import MainWindow
-from upload_file import UploadFile
-from parsing_progress import ParsingProgress
+from src.UI.Python.upload_file import UploadFile
+
 
 class App(QMainWindow):
     def __init__(self):
