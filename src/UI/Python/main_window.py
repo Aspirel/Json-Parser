@@ -14,20 +14,13 @@ class MainWindow(object):
         self.gridLayout_2 = QGridLayout(self.centralwidget)
         self.gridLayout_2.setObjectName(u"gridLayout_2")
         self.gridLayout = QGridLayout()
+
+        # Tabs
         self.gridLayout.setObjectName(u"gridLayout")
         self.tabWidget = QTabWidget(self.centralwidget)
         self.tabWidget.setObjectName(u"tabWidget")
-        self.tab_3 = QWidget()
-        self.tab_3.setObjectName(u"tab_3")
-        self.gridLayout_4 = QGridLayout(self.tab_3)
-        self.gridLayout_4.setObjectName(u"gridLayout_4")
-        self.plainTextEdit_3 = QPlainTextEdit(self.tab_3)
-        self.plainTextEdit_3.setObjectName(u"plainTextEdit_3")
-        self.plainTextEdit_3.setToolTipDuration(0)
-        self.plainTextEdit_3.setReadOnly(False)
-        self.plainTextEdit_3.setBackgroundVisible(False)
-        self.gridLayout_4.addWidget(self.plainTextEdit_3, 0, 0, 1, 1)
-        self.tabWidget.addTab(self.tab_3, "")
+
+        # tab 1
         self.tab = QWidget()
         self.tab.setObjectName(u"tab")
         self.gridLayout_3 = QGridLayout(self.tab)
@@ -36,6 +29,8 @@ class MainWindow(object):
         self.plainTextEdit.setObjectName(u"plainTextEdit")
         self.gridLayout_3.addWidget(self.plainTextEdit, 0, 0, 1, 1)
         self.tabWidget.addTab(self.tab, "")
+
+        # tab 2
         self.tab_2 = QWidget()
         self.tab_2.setObjectName(u"tab_2")
         self.gridLayout_5 = QGridLayout(self.tab_2)
@@ -47,7 +42,24 @@ class MainWindow(object):
         self.plainTextEdit_2.setBackgroundVisible(False)
         self.gridLayout_5.addWidget(self.plainTextEdit_2, 0, 0, 1, 1)
         self.tabWidget.addTab(self.tab_2, "")
+
+        # tab 3
+        self.tab_3 = QWidget()
+        self.tab_3.setObjectName(u"tab_3")
+        self.gridLayout_4 = QGridLayout(self.tab_3)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.plainTextEdit_3 = QPlainTextEdit(self.tab_3)
+        self.plainTextEdit_3.setObjectName(u"plainTextEdit_3")
+        self.plainTextEdit_3.setToolTipDuration(0)
+        self.plainTextEdit_3.setReadOnly(False)
+        self.plainTextEdit_3.setBackgroundVisible(False)
+        self.gridLayout_4.addWidget(self.plainTextEdit_3, 0, 0, 1, 1)
+        self.tabWidget.addTab(self.tab_3, "")
+
         self.gridLayout.addWidget(self.tabWidget, 0, 1, 1, 1)
+        # End tabs
+
+        # radio buttons vertical layout
         self.verticalLayout_2 = QVBoxLayout()
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.radioButton_5 = QRadioButton(self.centralwidget)
@@ -66,6 +78,8 @@ class MainWindow(object):
         self.radioButton_8.setObjectName(u"radioButton_8")
         self.radioButton_8.setAutoExclusive(False)
         self.verticalLayout_2.addWidget(self.radioButton_8)
+
+        # start parsing button
         self.pushButton = QPushButton(self.centralwidget)
         self.pushButton.setObjectName(u"pushButton")
         self.verticalLayout_2.addWidget(self.pushButton)
@@ -75,19 +89,19 @@ class MainWindow(object):
         self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 1)
         currentWindow.setCentralWidget(self.centralwidget)
         self.translate_ui(currentWindow)
-        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(0)
         QMetaObject.connectSlotsByName(currentWindow)
 
-        print(selected_file)
+        self.plainTextEdit.setPlainText(selected_file[0])
 
     def translate_ui(self, main_window):
-        main_window.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3),
-                                  QCoreApplication.translate("MainWindow", u"Page", None))
+        main_window.setWindowTitle(QCoreApplication.translate("MainWindow", u"JSON Parser", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab),
-                                  QCoreApplication.translate("MainWindow", u"Page", None))
+                                  QCoreApplication.translate("MainWindow", u"Original", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2),
-                                  QCoreApplication.translate("MainWindow", u"Tab 2", None))
+                                  QCoreApplication.translate("MainWindow", u"Duplicates", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3),
+                                  QCoreApplication.translate("MainWindow", u"No Duplicates", None))
         self.radioButton_5.setText(QCoreApplication.translate("MainWindow", u"Check file length", None))
         self.radioButton_6.setText(QCoreApplication.translate("MainWindow", u"Remove duplicate values", None))
         self.radioButton_7.setText(QCoreApplication.translate("MainWindow", u"Remove empty values", None))

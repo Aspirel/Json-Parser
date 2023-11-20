@@ -16,15 +16,10 @@ class UploadFile(object):
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.pushButton = QPushButton(self.centralwidget)
         self.pushButton.setObjectName(u"pushButton")
-
         self.verticalLayout.addWidget(self.pushButton, 0, Qt.AlignHCenter | Qt.AlignVCenter)
-
         upload_file.setCentralWidget(self.centralwidget)
-
         self.translate_ui(upload_file)
-
         QMetaObject.connectSlotsByName(upload_file)
-
         self.pushButton.clicked.connect(self.upload_file)
 
     def upload_file(self):
