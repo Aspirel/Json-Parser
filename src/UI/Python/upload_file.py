@@ -1,7 +1,6 @@
 from PySide6.QtCore import (QCoreApplication, QMetaObject, Qt)
 from PySide6.QtWidgets import (QPushButton, QVBoxLayout, QWidget, QFileDialog)
-
-from src.UI.Python.main_window import MainWindow
+from UI.Python.main_window import MainWindow
 
 
 class UploadFile(object):

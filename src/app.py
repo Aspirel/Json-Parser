@@ -1,6 +1,6 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
-from src.UI.Python.upload_file import UploadFile
+from UI.Python.upload_file import UploadFile
 
 
 class App(QMainWindow):
