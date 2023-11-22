@@ -4,11 +4,18 @@ from .main_window import MainWindow
 
 
 class UploadFile(object):
+    def __init__(self):
+        self.main_window = None
+        self.pushButton = None
+        self.verticalLayout = None
+        self.centralwidget = None
+        self.current_window = None
+
     def setup_ui(self, upload_file):
         self.current_window = upload_file
         if not upload_file.objectName():
             upload_file.setObjectName(u"MainWindow")
-        upload_file.resize(250, 66)
+        upload_file.resize(400, 66)
         self.centralwidget = QWidget(upload_file)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -30,5 +37,5 @@ class UploadFile(object):
             self.main_window.setup_ui(self.current_window, selected_file)
 
     def translate_ui(self, upload_file):
-        upload_file.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        upload_file.setWindowTitle(QCoreApplication.translate("MainWindow", u"JSON Parser", None))
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Upload file", None))
