@@ -1,8 +1,8 @@
 from PySide6.QtCore import (QCoreApplication, QMetaObject)
 from PySide6.QtWidgets import (QGridLayout, QPlainTextEdit,
                                QPushButton, QRadioButton, QSizePolicy, QSpacerItem,
-                               QTabWidget, QVBoxLayout, QWidget, QMainWindow)
-
+                               QTabWidget, QVBoxLayout, QWidget, QMainWindow, QProgressBar)
+import time
 from .parsing_progress import ParsingProgress
 
 
@@ -115,7 +115,18 @@ class MainWindow(object):
         # start parsing button
         self.pushButton = QPushButton(self.centralwidget)
         self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setStyleSheet("QProgressBar { max-width: 170 }")
         self.verticalLayout_2.addWidget(self.pushButton)
+
+        self.progressBar = QProgressBar(self.centralwidget)
+        self.progressBar.setObjectName(u"progressBar")
+        self.progressBar.setStyleSheet("QProgressBar { "
+                                       "max-width: 170; "
+                                       "text-align: center;"
+                                       "color: #ffffff }")
+
+        self.verticalLayout_2.addWidget(self.progressBar)
+
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
         self.verticalLayout_2.addItem(self.verticalSpacer)
         self.gridLayout.addLayout(self.verticalLayout_2, 0, 0, 1, 1)
@@ -123,17 +134,23 @@ class MainWindow(object):
         currentWindow.setCentralWidget(self.centralwidget)
         self.translate_ui(currentWindow)
         self.tabWidget.setCurrentIndex(0)
-        QMetaObject.connectSlotsByName(currentWindow)
-
         self.fileContent = selected_file[0]
         self.plainTextEdit.setPlainText(self.fileContent)
         self.pushButton.clicked.connect(self.start_parse)
 
+        QMetaObject.connectSlotsByName(currentWindow)
+
+    def parse(self, value):
+        for i in range(100):
+            time.sleep(0.01)
+            self.progressBar.setValue(i + 1)
+
     def start_parse(self):
-        self.window = QMainWindow()
-        parsing_progress = ParsingProgress(self.window)
-        self.window.show()
-        parsing_progress.parse(self.fileContent)
+        self.parse(self.fileContent)
+        # self.window = QMainWindow()
+        # parsing_progress = ParsingProgress(self.window)
+        # self.window.show()
+        # parsing_progress.parse(self.fileContent)
 
     def translate_ui(self, main_window):
         main_window.setWindowTitle(QCoreApplication.translate("MainWindow", u"JSON Parser", None))

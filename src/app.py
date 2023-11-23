@@ -1,5 +1,5 @@
 import sys
-from PySide6.QtWidgets import QApplication, QMainWindow
+from PySide6.QtWidgets import (QApplication, QMainWindow)
 from UI.Python.upload_file import UploadFile
 
 
