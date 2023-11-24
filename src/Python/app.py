@@ -1,6 +1,5 @@
 import sys
 
-from PySide6.QtGui import QScreen
 from PySide6.QtWidgets import (QApplication, QMainWindow)
 
 from upload_file import UploadFile
@@ -11,7 +10,7 @@ class App(QMainWindow):
     def __init__(self):
         super(App, self).__init__()
         self.upload_file = UploadFile()
-        self.upload_file.setup_ui(self)
+        self.upload_file.setupUi(self)
 
 
 if __name__ == "__main__":
