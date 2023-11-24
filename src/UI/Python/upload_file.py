@@ -1,5 +1,5 @@
-from PySide6.QtCore import (QCoreApplication, QMetaObject, Qt)
-from PySide6.QtWidgets import (QApplication, QPushButton, QVBoxLayout, QWidget, QFileDialog)
+from PySide6.QtCore import (QCoreApplication, Qt)
+from PySide6.QtWidgets import (QPushButton, QVBoxLayout, QWidget, QFileDialog)
 
 from .main_window import MainWindow
 
@@ -11,7 +11,6 @@ class UploadFile(object):
         self.verticalLayout = None
         self.centralwidget = None
         self.current_window = None
-        QApplication.setStyle("Fusion")
 
     def setup_ui(self, upload_file):
         self.current_window = upload_file
@@ -37,9 +36,7 @@ class UploadFile(object):
         # General setup
         self.verticalLayout.addWidget(self.pushButton, 0, Qt.AlignHCenter | Qt.AlignVCenter)
         self.current_window.setCentralWidget(self.centralwidget)
-        # upload_file.setWindowTitle(QCoreApplication.translate("MainWindow", u"JSON Parser", None))
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Upload file", None))
-        # QMetaObject.connectSlotsByName(self.current_window)
 
     def upload_file(self):
         file_dialog = QFileDialog()

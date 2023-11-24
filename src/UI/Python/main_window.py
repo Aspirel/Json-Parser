@@ -1,6 +1,5 @@
 import time
 
-from PySide6.QtCore import (QCoreApplication, QMetaObject)
 from PySide6.QtWidgets import (QGridLayout, QPlainTextEdit,
                                QPushButton, QRadioButton, QSizePolicy, QSpacerItem,
                                QTabWidget, QVBoxLayout, QWidget, QProgressBar)
@@ -45,6 +44,7 @@ class MainWindow(object):
         self.currentWindow.resize(1000, 600)
         self.centralwidget = QWidget(self.currentWindow)
         self.centralwidget.setObjectName(u"centralwidget")
+        currentWindow.setCentralWidget(self.centralwidget)
 
         # Main grid
         self.gridLayout = QGridLayout()
@@ -123,6 +123,7 @@ class MainWindow(object):
                                       "max-width: 170;"
                                       "font-weight: bold;"
                                       "font-size: 12px }")
+        self.pushButton.clicked.connect(self.start_parse)
         self.verticalLayout_2.addWidget(self.pushButton)
 
         # Progress bar
@@ -141,19 +142,15 @@ class MainWindow(object):
                                        "}")
 
         self.verticalLayout_2.addWidget(self.progressBar)
-
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
         self.verticalLayout_2.addItem(self.verticalSpacer)
         self.gridLayout.addLayout(self.verticalLayout_2, 0, 0, 1, 1)
         self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 1)
-        currentWindow.setCentralWidget(self.centralwidget)
-        self.translate_ui(currentWindow)
+        self.translate_ui()
+
         self.tabWidget.setCurrentIndex(0)
         self.fileContent = selectedFile[0]
         self.plainTextEdit.setPlainText(self.fileContent)
-        self.pushButton.clicked.connect(self.start_parse)
-
-        QMetaObject.connectSlotsByName(currentWindow)
 
     def parse(self, value):
         for i in range(100):
@@ -162,22 +159,13 @@ class MainWindow(object):
 
     def start_parse(self):
         self.parse(self.fileContent)
-        # self.window = QMainWindow()
-        # parsing_progress = ParsingProgress(self.window)
-        # self.window.show()
-        # parsing_progress.parse(self.fileContent)
 
-    def translate_ui(self, main_window):
-        main_window.setWindowTitle(QCoreApplication.translate("MainWindow", u"JSON Parser", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.originalFileTab),
-                                  QCoreApplication.translate("MainWindow", u"Original", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.optionNegativeTab),
-                                  QCoreApplication.translate("MainWindow", u"Duplicates", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.optionPositiveTab),
-                                  QCoreApplication.translate("MainWindow", u"No Duplicates", None))
-        self.fileLengthRadioButton.setText(QCoreApplication.translate("MainWindow", u"Check file length", None))
-        self.removeDuplicatesRadioButton.setText(
-            QCoreApplication.translate("MainWindow", u"Remove duplicate values", None))
-        self.removeEmptyRadioButton.setText(QCoreApplication.translate("MainWindow", u"Remove empty values", None))
-        self.removeNullRadioButton.setText(QCoreApplication.translate("MainWindow", u"Remove null values", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Start parse", None))
+    def translate_ui(self):
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.originalFileTab), "Original")
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.optionNegativeTab), "Duplicates")
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.optionPositiveTab), "No Duplicates")
+        self.fileLengthRadioButton.setText("Check file length")
+        self.removeDuplicatesRadioButton.setText("Remove duplicate values")
+        self.removeEmptyRadioButton.setText("Remove empty values")
+        self.removeNullRadioButton.setText("Remove null values")
+        self.pushButton.setText("Start parse")
