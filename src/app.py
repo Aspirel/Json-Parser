@@ -1,5 +1,6 @@
 import sys
 from PySide6.QtWidgets import (QApplication, QMainWindow)
+from PySide6 import QtGui
 from UI.Python.upload_file import UploadFile
 
 
@@ -13,5 +14,7 @@ class App(QMainWindow):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = App()
+    window.setWindowTitle("Json Parser")
+    # window.setWindowIcon(QtGui.QIcon("./icon.png"))
     window.show()
     sys.exit(app.exec())
