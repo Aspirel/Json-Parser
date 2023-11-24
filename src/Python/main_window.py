@@ -4,6 +4,8 @@ from PySide6.QtWidgets import (QGridLayout, QPlainTextEdit,
                                QPushButton, QRadioButton, QSizePolicy, QSpacerItem,
                                QTabWidget, QVBoxLayout, QWidget, QProgressBar)
 
+from utils import centerWindow
+
 
 class MainWindow(object):
 
@@ -42,6 +44,8 @@ class MainWindow(object):
         if not self.currentWindow.objectName():
             self.currentWindow.setObjectName(u"JSONParser")
         self.currentWindow.resize(1000, 600)
+        centerWindow(self.currentWindow)
+
         self.centralwidget = QWidget(self.currentWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         currentWindow.setCentralWidget(self.centralwidget)
@@ -94,6 +98,7 @@ class MainWindow(object):
         self.gridLayout_4.addWidget(self.plainTextEdit_3, 0, 0, 1, 1)
         self.tabWidget.addTab(self.optionPositiveTab, "")
         self.gridLayout.addWidget(self.tabWidget, 0, 1, 1, 1)
+        self.tabWidget.setCurrentIndex(0)
         # End tabs
 
         # radio buttons vertical layout
@@ -148,7 +153,7 @@ class MainWindow(object):
         self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 1)
         self.translate_ui()
 
-        self.tabWidget.setCurrentIndex(0)
+        # Main parser functionality
         self.fileContent = selectedFile[0]
         self.plainTextEdit.setPlainText(self.fileContent)
 

@@ -1,6 +1,10 @@
 import sys
+
+from PySide6.QtGui import QScreen
 from PySide6.QtWidgets import (QApplication, QMainWindow)
+
 from upload_file import UploadFile
+from utils import centerWindow
 
 
 class App(QMainWindow):
@@ -16,5 +20,6 @@ if __name__ == "__main__":
     window = App()
     window.setWindowTitle("Json Parser")
     # window.setWindowIcon(QtGui.QIcon("./icon.png"))
+    centerWindow(window)
     window.show()
     sys.exit(app.exec())
