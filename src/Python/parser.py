@@ -23,7 +23,7 @@ def write_file(data, file_name):
 
 # method that takes json files and returns their lengths
 def filesLength(file):
-    return len(json.loads(file))
+    return len(file)
 
 
 # gets the current location of the program in the os
@@ -43,6 +43,23 @@ def validate_file(file_name):
         print(
             '\nFile is invalid or not found. Error: {error} \n'.format(error=e))
         return False
+
+
+# Gets all the keys in the file
+def getAllKeys(jsonData):
+    keys = set()
+
+    def getKeys(data):
+        if isinstance(data, dict):
+            for key, value in data.items():
+                keys.add(key)
+                getKeys(value)
+        elif isinstance(data, list):
+            for item in data:
+                getKeys(item)
+
+    getKeys(jsonData)
+    return list(keys)
 
 
 # checks a json file for duplicates and creates a new output file without them
@@ -174,7 +191,7 @@ def parseNull(window, fields):
 def parse(window):
     if window.fileData:
         if window.fileLengthRadioButton.isChecked():
-            print(filesLength(window.fileData))
+            print(filesLength(json.loads(window.fileData)))
         elif window.removeDuplicatesRadioButton.isChecked():
             parseDuplicates(window, "")
             setResultTabs(window, "Duplicates", "No duplicates")

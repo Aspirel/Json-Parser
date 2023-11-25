@@ -13,8 +13,8 @@ def FileUploadLayout(window):
                              "color: white; "
                              "font-weight: bold;"
                              "font-size: 15px;"
-                             "width: 150px; "
-                             "height: 25px}")
+                             "width: 250px; "
+                             "height: 50px}")
     pushButton.clicked.connect(window.setupFile)
     pushButton.setText("Upload file")
     verticalLayout.addWidget(pushButton, 0, Qt.AlignHCenter | Qt.AlignVCenter)

@@ -2,9 +2,9 @@ from PySide6.QtGui import QFont
 from PySide6.QtWidgets import (QMainWindow, QGridLayout, QRadioButton, QSizePolicy, QSpacerItem,
                                QWidget, QProgressBar, QFileDialog)
 
+from Layouts.tabsLayout import TabLayout
+from Layouts.uploadFileLayout import *
 from parser import *
-from src.Python.Layouts.tabsLayout import TabLayout
-from src.Python.Layouts.uploadFileLayout import *
 from utils import *
 
 
