@@ -2,6 +2,7 @@ import json
 import os
 import sys
 import time
+from Layouts.tabsLayout import ResultTabs
 
 
 # reads files
@@ -21,8 +22,8 @@ def write_file(data, file_name):
 
 
 # method that takes json files and returns their lengths
-def files_length(file):
-    print('\nFile length: {length}'.format(length=len(file)))
+def filesLength(file):
+    return len(json.loads(file))
 
 
 # gets the current location of the program in the os
@@ -45,7 +46,7 @@ def validate_file(file_name):
 
 
 # checks a json file for duplicates and creates a new output file without them
-def parse_duplicates(file_data, fields):
+def parseDuplicates(window, fields):
     print('Starting empty removal tool...')
     start_time = time.time()
     result_items = []
@@ -73,13 +74,14 @@ def parse_duplicates(file_data, fields):
             for list_item in json_data:
                 is_duplicate(list_item, target_field)
 
-    for i, item in enumerate(file_data):
+    for i, item in enumerate(window.fileData):
         if isinstance(fields, str):
             is_duplicate(item, fields)
         else:
             for field in fields:
                 is_duplicate(item, field)
-        print(f'Parsing: {int((i / len(file_data)) * 100)}%')
+        window.progressBar.setValue(int((i / len(window.fileData)) * 100))
+    window.progressBar.setValue(100)
 
     write_file(result_items, 'no_duplicates.json')
     write_file(duplicates, 'duplicates.json')
@@ -89,7 +91,7 @@ def parse_duplicates(file_data, fields):
 
 
 # Removes empty objects from the file based on empty fields
-def parse_empty_fields(file_data, fields):
+def parseEmpty(file_data, fields):
     print('Starting empty removal tool...')
     start_time = time.time()
     result_items = []
@@ -99,7 +101,7 @@ def parse_empty_fields(file_data, fields):
         if isinstance(json_data, dict):
             for key, value in json_data.items():
                 if key == target_field:
-                    if not value:
+                    if value.strip() == "":
                         if item not in empty_items:
                             empty_items.append(item)
                     else:
@@ -128,7 +130,60 @@ def parse_empty_fields(file_data, fields):
           round((time.time() - start_time), 2))
 
 
-def parse(window, value):
-    for i in range(100):
-        time.sleep(0.01)
-        window.progressBar.setValue(i + 1)
+def parseNull(file_data, fields):
+    print('Starting empty removal tool...')
+    start_time = time.time()
+    result_items = []
+    empty_items = []
+
+    def isNull(json_data, target_field):
+        if isinstance(json_data, dict):
+            for key, value in json_data.items():
+                if key == target_field:
+                    if value is None:
+                        if item not in empty_items:
+                            empty_items.append(item)
+                    else:
+                        if item not in result_items:
+                            result_items.append(item)
+                elif isinstance(value, (dict, list)):
+                    isNull(value, target_field)
+            if item not in empty_items and item not in result_items:
+                result_items.append(item)
+        elif isinstance(json_data, list):
+            for list_item in json_data:
+                isNull(list_item, target_field)
+
+    for i, item in enumerate(file_data):
+        if isinstance(fields, str):
+            isNull(item, fields)
+        else:
+            for field in fields:
+                isNull(item, field)
+        print(f'Parsing: {int((i / len(file_data)) * 100)}%')
+
+    write_file(result_items, 'no_empties.json')
+    write_file(empty_items, 'empties.json')
+    print('\nNumber of empty items ', len(empty_items))
+    print("\nParse completed! Parsed and empties files have been created. It took %s seconds" %
+          round((time.time() - start_time), 2))
+
+
+def parse(window):
+    if window.fileData:
+        if window.fileLengthRadioButton.isChecked():
+            print(filesLength(window.fileData))
+        elif window.removeDuplicatesRadioButton.isChecked():
+            parseDuplicates(window, "")
+            setResultTabs(window, "Duplicates", "No duplicates")
+        elif window.removeEmptyRadioButton.isChecked():
+            parseEmpty(window.fileData, "")
+            setResultTabs(window, "Empty", "No empty")
+        elif window.removeNullRadioButton.isChecked():
+            parseNull(window.fileData, "")
+            setResultTabs(window, "Null", "No null")
+
+
+def setResultTabs(window, tab1, tab2):
+    if not window.optionPositiveTab and not window.optionNegativeTab:
+        ResultTabs(window, tab1, tab2)

@@ -3,7 +3,7 @@ from PySide6.QtWidgets import (QMainWindow, QGridLayout, QRadioButton, QSizePoli
                                QWidget, QProgressBar, QFileDialog)
 
 from parser_ui import *
-from src.Python.Layouts.tabsLayout import TabLayout, ResultTabs
+from src.Python.Layouts.tabsLayout import TabLayout
 from src.Python.Layouts.uploadFileLayout import *
 from utils import *
 
@@ -40,6 +40,7 @@ class MainWindow(QMainWindow):
         self.gridLayout_2 = None
         self.centralwidget = None
         self.fileData = None
+        self.option = None
 
     def setup_ui(self, window):
         if not window.objectName():
@@ -72,7 +73,6 @@ class MainWindow(QMainWindow):
 
         self.fileLengthRadioButton = QRadioButton(self.centralwidget)
         self.fileLengthRadioButton.setObjectName(u"radioButton_5")
-        self.fileLengthRadioButton.setAutoExclusive(False)
         self.fileLengthRadioButton.setFont(fontSize)
         self.fileLengthRadioButton.setText("Check file length")
         self.fileLengthRadioButton.setAutoExclusive(True)
@@ -80,7 +80,6 @@ class MainWindow(QMainWindow):
 
         self.removeDuplicatesRadioButton = QRadioButton(self.centralwidget)
         self.removeDuplicatesRadioButton.setObjectName(u"radioButton_6")
-        self.removeDuplicatesRadioButton.setAutoExclusive(False)
         self.removeDuplicatesRadioButton.setFont(fontSize)
         self.removeDuplicatesRadioButton.setText("Remove duplicates")
         self.removeDuplicatesRadioButton.setAutoExclusive(True)
@@ -88,7 +87,6 @@ class MainWindow(QMainWindow):
 
         self.removeEmptyRadioButton = QRadioButton(self.centralwidget)
         self.removeEmptyRadioButton.setObjectName(u"radioButton_7")
-        self.removeEmptyRadioButton.setAutoExclusive(False)
         self.removeEmptyRadioButton.setFont(fontSize)
         self.removeEmptyRadioButton.setText("Remove empty")
         self.removeEmptyRadioButton.setAutoExclusive(True)
@@ -96,7 +94,6 @@ class MainWindow(QMainWindow):
 
         self.removeNullRadioButton = QRadioButton(self.centralwidget)
         self.removeNullRadioButton.setObjectName(u"radioButton_8")
-        self.removeNullRadioButton.setAutoExclusive(False)
         self.removeNullRadioButton.setFont(fontSize)
         self.removeNullRadioButton.setText("Remove null")
         self.removeNullRadioButton.setAutoExclusive(True)
@@ -147,6 +144,4 @@ class MainWindow(QMainWindow):
                 self.plainTextEdit.setPlainText(self.fileData)
 
     def parse(self):
-        parse(self, self.fileData)
-        time.sleep(1)
-        ResultTabs(self, "Duplicates", "No Duplicates")
+        parse(self)
