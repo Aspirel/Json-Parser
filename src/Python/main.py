@@ -1,5 +1,5 @@
 from PySide6.QtCore import QCoreApplication
-from PySide6.QtGui import QPixmap, QGuiApplication
+from PySide6.QtGui import QPixmap, QGuiApplication, QFont
 from PySide6.QtWidgets import (QMainWindow, QGridLayout, QRadioButton, QSizePolicy, QSpacerItem,
                                QWidget, QProgressBar, QFileDialog, QSplashScreen)
 
@@ -26,7 +26,7 @@ class MainWindow(QMainWindow):
         self.removeDuplicatesRadioButton = None
         self.removeEmptyRadioButton = None
         self.removeNullRadioButton = None
-        self.verticalLayout_2 = None
+        self.menuVerticalLayout = None
         self.plainTextEdit = None
         self.plainTextEdit2 = None
         self.plainTextEdit3 = None
@@ -48,6 +48,10 @@ class MainWindow(QMainWindow):
         window.resize(1000, 600)
         centerWindow(window)
 
+        fontSize = QFont()
+        fontSize.setBold(True)
+        fontSize.setPointSize(10)
+
         self.centralwidget = QWidget(window)
         self.centralwidget.setObjectName(u"centralwidget")
         window.setCentralWidget(self.centralwidget)
@@ -64,24 +68,33 @@ class MainWindow(QMainWindow):
         FileUploadLayout(self)
 
         # radio buttons vertical layout
-        self.verticalLayout_2 = QVBoxLayout()
-        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.menuVerticalLayout = QVBoxLayout()
+        self.menuVerticalLayout.setObjectName(u"verticalLayout_2")
+
         self.fileLengthRadioButton = QRadioButton(self.centralwidget)
         self.fileLengthRadioButton.setObjectName(u"radioButton_5")
         self.fileLengthRadioButton.setAutoExclusive(False)
-        self.verticalLayout_2.addWidget(self.fileLengthRadioButton)
+        self.fileLengthRadioButton.setFont(fontSize)
+        self.menuVerticalLayout.addWidget(self.fileLengthRadioButton)
+
         self.removeDuplicatesRadioButton = QRadioButton(self.centralwidget)
         self.removeDuplicatesRadioButton.setObjectName(u"radioButton_6")
         self.removeDuplicatesRadioButton.setAutoExclusive(False)
-        self.verticalLayout_2.addWidget(self.removeDuplicatesRadioButton)
+        self.removeDuplicatesRadioButton.setFont(fontSize)
+        self.menuVerticalLayout.addWidget(self.removeDuplicatesRadioButton)
+
         self.removeEmptyRadioButton = QRadioButton(self.centralwidget)
         self.removeEmptyRadioButton.setObjectName(u"radioButton_7")
         self.removeEmptyRadioButton.setAutoExclusive(False)
-        self.verticalLayout_2.addWidget(self.removeEmptyRadioButton)
+        self.removeEmptyRadioButton.setFont(fontSize)
+        self.menuVerticalLayout.addWidget(self.removeEmptyRadioButton)
+
         self.removeNullRadioButton = QRadioButton(self.centralwidget)
         self.removeNullRadioButton.setObjectName(u"radioButton_8")
         self.removeNullRadioButton.setAutoExclusive(False)
-        self.verticalLayout_2.addWidget(self.removeNullRadioButton)
+        self.removeNullRadioButton.setFont(fontSize)
+
+        self.menuVerticalLayout.addWidget(self.removeNullRadioButton)
 
         # start parsing button
         self.pushButton = QPushButton(self.centralwidget)
@@ -91,7 +104,7 @@ class MainWindow(QMainWindow):
                                       "font-weight: bold;"
                                       "font-size: 12px }")
         self.pushButton.clicked.connect(self.parse)
-        self.verticalLayout_2.addWidget(self.pushButton)
+        self.menuVerticalLayout.addWidget(self.pushButton)
 
         # Progress bar
         self.progressBar = QProgressBar(self.centralwidget)
@@ -108,15 +121,15 @@ class MainWindow(QMainWindow):
                                        "background-color : #2cde85;"
                                        "}")
 
-        self.verticalLayout_2.addWidget(self.progressBar)
+        self.menuVerticalLayout.addWidget(self.progressBar)
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
-        self.verticalLayout_2.addItem(self.verticalSpacer)
-        self.gridLayout.addLayout(self.verticalLayout_2, 0, 0, 1, 1)
+        self.menuVerticalLayout.addItem(self.verticalSpacer)
+        self.gridLayout.addLayout(self.menuVerticalLayout, 0, 0, 1, 1)
         self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 1)
         self.fileLengthRadioButton.setText("Check file length")
-        self.removeDuplicatesRadioButton.setText("Remove duplicate values")
-        self.removeEmptyRadioButton.setText("Remove empty values")
-        self.removeNullRadioButton.setText("Remove null values")
+        self.removeDuplicatesRadioButton.setText("Remove duplicates")
+        self.removeEmptyRadioButton.setText("Remove empty")
+        self.removeNullRadioButton.setText("Remove null")
         self.pushButton.setText("Start parse")
 
     def setupFile(self):
