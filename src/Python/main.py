@@ -1,15 +1,15 @@
-from PySide6.QtGui import QFont
-from PySide6.QtWidgets import (QMainWindow, QGridLayout, QPlainTextEdit,
-                               QPushButton, QRadioButton, QSizePolicy, QSpacerItem,
-                               QTabWidget, QVBoxLayout, QWidget, QProgressBar)
+from PySide6.QtWidgets import (QMainWindow, QGridLayout, QRadioButton, QSizePolicy, QSpacerItem,
+                               QWidget, QProgressBar, QFileDialog)
 
 from parser_ui import *
+from src.Python.Layouts.tabsLayout import TabLayout
+from src.Python.Layouts.uploadFileLayout import *
 from utils import *
 
 
 class MainWindow(QMainWindow):
 
-    def __init__(self, selectedFile):
+    def __init__(self):
         super(MainWindow, self).__init__()
         self.progressBar = None
         self.window = None
@@ -38,17 +38,16 @@ class MainWindow(QMainWindow):
         self.gridLayout = None
         self.gridLayout_2 = None
         self.centralwidget = None
-        self.setup_ui(selectedFile)
 
-    def setup_ui(self, selectedFile):
-        if not self.objectName():
-            self.setObjectName(u"JSONParser")
-        self.resize(1000, 600)
-        centerWindow(self)
+    def setup_ui(self, window):
+        if not window.objectName():
+            window.setObjectName(u"JSONParser")
+        window.resize(1000, 600)
+        centerWindow(window)
 
-        self.centralwidget = QWidget(self)
+        self.centralwidget = QWidget(window)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.setCentralWidget(self.centralwidget)
+        window.setCentralWidget(self.centralwidget)
 
         # Main grid
         self.gridLayout = QGridLayout()
@@ -58,52 +57,8 @@ class MainWindow(QMainWindow):
         self.gridLayout_2 = QGridLayout(self.centralwidget)
         self.gridLayout_2.setObjectName(u"gridLayout_2")
 
-        # Tabs
-        self.tabWidget = QTabWidget(self.centralwidget)
-        self.tabWidget.setObjectName(u"tabWidget")
-        self.tabWidget.setStyleSheet("QTabWidget { "
-                                     "font-weight: bold;"
-                                     "font-size: 12px }")
-        jsonFontSize = QFont()
-        jsonFontSize.setPointSize(12)
-
-        # tab 1
-        self.originalFileTab = QWidget()
-        self.originalFileTab.setObjectName(u"tab")
-        self.gridLayout_3 = QGridLayout(self.originalFileTab)
-        self.gridLayout_3.setObjectName(u"gridLayout_3")
-        self.plainTextEdit = QPlainTextEdit(self.originalFileTab)
-        self.plainTextEdit.setObjectName(u"plainTextEdit")
-        self.plainTextEdit.setReadOnly(True)
-        self.plainTextEdit.setFont(jsonFontSize)
-        self.gridLayout_3.addWidget(self.plainTextEdit, 0, 0, 1, 1)
-        self.tabWidget.addTab(self.originalFileTab, "")
-
-        # tab 2
-        self.optionNegativeTab = QWidget()
-        self.optionNegativeTab.setObjectName(u"tab_2")
-        self.gridLayout_5 = QGridLayout(self.optionNegativeTab)
-        self.gridLayout_5.setObjectName(u"gridLayout_5")
-        self.plainTextEdit2 = QPlainTextEdit(self.optionNegativeTab)
-        self.plainTextEdit2.setObjectName(u"plainTextEdit_2")
-        self.plainTextEdit2.setReadOnly(True)
-        self.plainTextEdit2.setFont(jsonFontSize)
-        self.gridLayout_5.addWidget(self.plainTextEdit2, 0, 0, 1, 1)
-        self.tabWidget.addTab(self.optionNegativeTab, "")
-
-        # tab 3
-        self.optionPositiveTab = QWidget()
-        self.optionPositiveTab.setObjectName(u"tab_3")
-        self.gridLayout_4 = QGridLayout(self.optionPositiveTab)
-        self.gridLayout_4.setObjectName(u"gridLayout_4")
-        self.plainTextEdit3 = QPlainTextEdit(self.optionPositiveTab)
-        self.plainTextEdit3.setObjectName(u"plainTextEdit_3")
-        self.plainTextEdit3.setReadOnly(True)
-        self.gridLayout_4.addWidget(self.plainTextEdit3, 0, 0, 1, 1)
-        self.tabWidget.addTab(self.optionPositiveTab, "")
-        self.gridLayout.addWidget(self.tabWidget, 0, 1, 1, 1)
-        self.tabWidget.setCurrentIndex(0)
-        # End tabs
+        # Initial layout for the upload file button
+        FileUploadLayout(self)
 
         # radio buttons vertical layout
         self.verticalLayout_2 = QVBoxLayout()
@@ -155,16 +110,11 @@ class MainWindow(QMainWindow):
         self.verticalLayout_2.addItem(self.verticalSpacer)
         self.gridLayout.addLayout(self.verticalLayout_2, 0, 0, 1, 1)
         self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 1)
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.originalFileTab), "Original")
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.optionNegativeTab), "Duplicates")
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.optionPositiveTab), "No Duplicates")
         self.fileLengthRadioButton.setText("Check file length")
         self.removeDuplicatesRadioButton.setText("Remove duplicate values")
         self.removeEmptyRadioButton.setText("Remove empty values")
         self.removeNullRadioButton.setText("Remove null values")
         self.pushButton.setText("Start parse")
-
-        self.setupFiles(selectedFile[0])
 
     def setupFiles(self, filePath):
         fileData = readFile(filePath)
@@ -177,3 +127,12 @@ class MainWindow(QMainWindow):
         for i in range(100):
             time.sleep(0.01)
             self.progressBar.setValue(i + 1)
+
+    def setupFile(self):
+        file_dialog = QFileDialog()
+        selected_file = file_dialog.getOpenFileName(None, "Select File")
+
+        if isinstance(selected_file, tuple) and selected_file[0]:
+            fileData = readFile(selected_file[0])
+            TabLayout(self)
+            self.plainTextEdit.setPlainText(json.loads(fileData))
