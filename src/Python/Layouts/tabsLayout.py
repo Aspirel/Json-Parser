@@ -40,7 +40,7 @@ def ResultTabs(window, tabName1, tabName2):
     window.plainTextEdit2.setReadOnly(True)
     window.plainTextEdit2.setFont(jsonFontSize)
     window.gridLayout_5.addWidget(window.plainTextEdit2, 0, 0, 1, 1)
-    window.tabWidget.addTab(window.optionNegativeTab, "")
+    window.tabWidget.addTab(window.optionNegativeTab, tabName1)
 
     # tab 3
     window.optionPositiveTab = QWidget()
@@ -51,8 +51,4 @@ def ResultTabs(window, tabName1, tabName2):
     window.plainTextEdit3.setObjectName(u"plainTextEdit_3")
     window.plainTextEdit3.setReadOnly(True)
     window.gridLayout_4.addWidget(window.plainTextEdit3, 0, 0, 1, 1)
-    window.tabWidget.addTab(window.optionPositiveTab, "")
-
-    # window.tabWidget.setCurrentIndex(1)
-    window.tabWidget.setTabText(window.tabWidget.indexOf(window.optionNegativeTab), tabName1)
-    window.tabWidget.setTabText(window.tabWidget.indexOf(window.optionPositiveTab), tabName2)
+    window.tabWidget.addTab(window.optionPositiveTab, tabName2)
