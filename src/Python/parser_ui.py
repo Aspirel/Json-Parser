@@ -91,7 +91,7 @@ def parseDuplicates(window, fields):
 
 
 # Removes empty objects from the file based on empty fields
-def parseEmpty(file_data, fields):
+def parseEmpty(window, fields):
     print('Starting empty removal tool...')
     start_time = time.time()
     result_items = []
@@ -115,22 +115,23 @@ def parseEmpty(file_data, fields):
             for list_item in json_data:
                 is_empty(list_item, target_field)
 
-    for i, item in enumerate(file_data):
+    for i, item in enumerate(window.fileData):
         if isinstance(fields, str):
             is_empty(item, fields)
         else:
             for field in fields:
                 is_empty(item, field)
-        print(f'Parsing: {int((i / len(file_data)) * 100)}%')
+        window.progressBar.setValue(int((i / len(window.fileData)) * 100))
+    window.progressBar.setValue(100)
 
-    write_file(result_items, 'no_empties.json')
-    write_file(empty_items, 'empties.json')
+    write_file(result_items, 'no_empty.json')
+    write_file(empty_items, 'empty.json')
     print('\nNumber of empty items ', len(empty_items))
     print("\nParse completed! Parsed and empties files have been created. It took %s seconds" %
           round((time.time() - start_time), 2))
 
 
-def parseNull(file_data, fields):
+def parseNull(window, fields):
     print('Starting empty removal tool...')
     start_time = time.time()
     result_items = []
@@ -154,16 +155,17 @@ def parseNull(file_data, fields):
             for list_item in json_data:
                 isNull(list_item, target_field)
 
-    for i, item in enumerate(file_data):
+    for i, item in enumerate(window.fileData):
         if isinstance(fields, str):
             isNull(item, fields)
         else:
             for field in fields:
                 isNull(item, field)
-        print(f'Parsing: {int((i / len(file_data)) * 100)}%')
+        window.progressBar.setValue(int((i / len(window.fileData)) * 100))
+    window.progressBar.setValue(100)
 
-    write_file(result_items, 'no_empties.json')
-    write_file(empty_items, 'empties.json')
+    write_file(result_items, 'no_null.json')
+    write_file(empty_items, 'null.json')
     print('\nNumber of empty items ', len(empty_items))
     print("\nParse completed! Parsed and empties files have been created. It took %s seconds" %
           round((time.time() - start_time), 2))
@@ -177,10 +179,10 @@ def parse(window):
             parseDuplicates(window, "")
             setResultTabs(window, "Duplicates", "No duplicates")
         elif window.removeEmptyRadioButton.isChecked():
-            parseEmpty(window.fileData, "")
+            parseEmpty(window, "")
             setResultTabs(window, "Empty", "No empty")
         elif window.removeNullRadioButton.isChecked():
-            parseNull(window.fileData, "")
+            parseNull(window, "")
             setResultTabs(window, "Null", "No null")
 
 
