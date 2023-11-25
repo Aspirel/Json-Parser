@@ -33,32 +33,15 @@ def get_os_file_path():
         return os.path.dirname(__file__)
 
 
-# Simple continue or not user prompt
-def continue_prompt():
-    user_input = input('\nContinue? yes/no (y/n) ')
-    if user_input == 'yes' or user_input == 'y':
-        menu()
-
-
 # Checks if the file exists and is valid
 def validate_file(file_name):
     try:
-        return readFile(file_name)
+        readFile(file_name)
+        return True
     except Exception as e:
         print(
             '\nFile is invalid or not found. Error: {error} \n'.format(error=e))
-        menu()
-
-
-# Removes search field names spaces and commas
-def format_search_fields(field_names):
-    if ',' in field_names:
-        field_names = field_names.replace(' ', '')
-        field_names = field_names.split(',')
-    elif ' ' in field_names:
-        field_names = field_names.split(' ')
-
-    return field_names
+        return False
 
 
 # checks a json file for duplicates and creates a new output file without them
@@ -145,11 +128,7 @@ def parse_empty_fields(file_data, fields):
           round((time.time() - start_time), 2))
 
 
-def startParse(self):
-    self.parse(self.filePath)
-
-
-def parse(self, value):
+def parse(window, value):
     for i in range(100):
         time.sleep(0.01)
-        self.progressBar.setValue(i + 1)
+        window.progressBar.setValue(i + 1)

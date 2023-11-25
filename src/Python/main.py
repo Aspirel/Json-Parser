@@ -1,8 +1,10 @@
+from PySide6.QtCore import QCoreApplication
+from PySide6.QtGui import QPixmap, QGuiApplication
 from PySide6.QtWidgets import (QMainWindow, QGridLayout, QRadioButton, QSizePolicy, QSpacerItem,
-                               QWidget, QProgressBar, QFileDialog)
+                               QWidget, QProgressBar, QFileDialog, QSplashScreen)
 
 from parser_ui import *
-from src.Python.Layouts.tabsLayout import TabLayout
+from src.Python.Layouts.tabsLayout import TabLayout, ResultTabs
 from src.Python.Layouts.uploadFileLayout import *
 from utils import *
 
@@ -38,6 +40,7 @@ class MainWindow(QMainWindow):
         self.gridLayout = None
         self.gridLayout_2 = None
         self.centralwidget = None
+        self.fileData = None
 
     def setup_ui(self, window):
         if not window.objectName():
@@ -87,7 +90,7 @@ class MainWindow(QMainWindow):
                                       "max-width: 170;"
                                       "font-weight: bold;"
                                       "font-size: 12px }")
-        self.pushButton.clicked.connect(self.start_parse)
+        self.pushButton.clicked.connect(self.parse)
         self.verticalLayout_2.addWidget(self.pushButton)
 
         # Progress bar
@@ -116,23 +119,18 @@ class MainWindow(QMainWindow):
         self.removeNullRadioButton.setText("Remove null values")
         self.pushButton.setText("Start parse")
 
-    def setupFiles(self, filePath):
-        fileData = readFile(filePath)
-        self.plainTextEdit.setPlainText(json.loads(fileData))
-
-    def start_parse(self):
-        self.parse(self.filePath)
-
-    def parse(self, value):
-        for i in range(100):
-            time.sleep(0.01)
-            self.progressBar.setValue(i + 1)
-
     def setupFile(self):
         file_dialog = QFileDialog()
-        selected_file = file_dialog.getOpenFileName(None, "Select File")
+        selected_file = file_dialog.getOpenFileName(None, "Select file")
 
         if isinstance(selected_file, tuple) and selected_file[0]:
-            fileData = readFile(selected_file[0])
-            TabLayout(self)
-            self.plainTextEdit.setPlainText(json.loads(fileData))
+            if validate_file(selected_file[0]):
+                fileData = readFile(selected_file[0])
+                self.fileData = json.loads(fileData)
+                TabLayout(self)
+                self.plainTextEdit.setPlainText(self.fileData)
+
+    def parse(self):
+        parse(self, self.fileData)
+        time.sleep(1)
+        ResultTabs(self, "Duplicates", "No Duplicates")

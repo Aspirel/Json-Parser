@@ -2,6 +2,9 @@ from PySide6.QtGui import QFont
 from PySide6.QtWidgets import (QGridLayout, QPlainTextEdit,
                                QTabWidget, QWidget)
 
+jsonFontSize = QFont()
+jsonFontSize.setPointSize(12)
+
 
 def TabLayout(window):
     # Tabs
@@ -10,8 +13,6 @@ def TabLayout(window):
     window.tabWidget.setStyleSheet("QTabWidget { "
                                    "font-weight: bold;"
                                    "font-size: 12px }")
-    jsonFontSize = QFont()
-    jsonFontSize.setPointSize(12)
 
     # tab 1
     window.originalFileTab = QWidget()
@@ -24,7 +25,11 @@ def TabLayout(window):
     window.plainTextEdit.setFont(jsonFontSize)
     window.gridLayout_3.addWidget(window.plainTextEdit, 0, 0, 1, 1)
     window.tabWidget.addTab(window.originalFileTab, "")
+    window.gridLayout.addWidget(window.tabWidget, 0, 1, 1, 1)
+    window.tabWidget.setTabText(window.tabWidget.indexOf(window.originalFileTab), "File")
 
+
+def ResultTabs(window, tabName1, tabName2):
     # tab 2
     window.optionNegativeTab = QWidget()
     window.optionNegativeTab.setObjectName(u"tab_2")
@@ -47,9 +52,7 @@ def TabLayout(window):
     window.plainTextEdit3.setReadOnly(True)
     window.gridLayout_4.addWidget(window.plainTextEdit3, 0, 0, 1, 1)
     window.tabWidget.addTab(window.optionPositiveTab, "")
-    window.gridLayout.addWidget(window.tabWidget, 0, 1, 1, 1)
-    window.tabWidget.setCurrentIndex(0)
 
-    window.tabWidget.setTabText(window.tabWidget.indexOf(window.originalFileTab), "Original")
-    window.tabWidget.setTabText(window.tabWidget.indexOf(window.optionNegativeTab), "Duplicates")
-    window.tabWidget.setTabText(window.tabWidget.indexOf(window.optionPositiveTab), "No Duplicates")
+    # window.tabWidget.setCurrentIndex(1)
+    window.tabWidget.setTabText(window.tabWidget.indexOf(window.optionNegativeTab), tabName1)
+    window.tabWidget.setTabText(window.tabWidget.indexOf(window.optionPositiveTab), tabName2)
