@@ -7,3 +7,25 @@ def centerWindow(window):
     geo = window.frameGeometry()
     geo.moveCenter(center)
     window.move(geo.topLeft())
+
+
+def resetMenus(window):
+    window.startParseButton.setEnabled(True)
+    window.fileLengthRadioButton.setAutoExclusive(False)
+    window.fileLengthRadioButton.setChecked(False)
+    window.fileLengthRadioButton.setAutoExclusive(True)
+
+    window.removeEmptyRadioButton.setAutoExclusive(False)
+    window.removeEmptyRadioButton.setChecked(False)
+    window.removeEmptyRadioButton.setAutoExclusive(True)
+
+    window.removeNullRadioButton.setAutoExclusive(False)
+    window.removeNullRadioButton.setChecked(False)
+    window.removeNullRadioButton.setAutoExclusive(True)
+
+    window.removeDuplicatesRadioButton.setAutoExclusive(False)
+    window.removeDuplicatesRadioButton.setChecked(False)
+    window.removeDuplicatesRadioButton.setAutoExclusive(True)
+    window.progressBar.setValue(0)
+    window.tabWidget.removeTab(1)
+    window.tabWidget.removeTab(1)

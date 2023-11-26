@@ -5,14 +5,15 @@ from PySide6.QtWidgets import (QMainWindow, QGridLayout, QRadioButton, QSizePoli
 from Layouts.tabsLayout import TabLayout
 from Layouts.uploadFileLayout import *
 from parser_UI import *
-from utils import *
 from src.Python.Layouts.fieldsSelectionLayout import FieldsSelection
+from utils import *
 
 
 class MainWindow(QMainWindow):
 
     def __init__(self):
         super(MainWindow, self).__init__()
+        self.saveFilesButton = None
         self.listViewLabel = None
         self.listView = None
         self.fieldsWindow = None
@@ -24,7 +25,8 @@ class MainWindow(QMainWindow):
         self.helper = None
         self.filePath = None
         self.verticalSpacer = None
-        self.pushButton = None
+        self.startParseButton = None
+        self.uploadNewButton = None
         self.fileLengthRadioButton = None
         self.removeDuplicatesRadioButton = None
         self.removeEmptyRadioButton = None
@@ -48,8 +50,6 @@ class MainWindow(QMainWindow):
         self.selectedFields = []
 
     def setup_ui(self, window):
-        if not window.objectName():
-            window.setObjectName(u"JSONParser")
         window.resize(1000, 600)
         centerWindow(window)
         self.window = window
@@ -109,15 +109,15 @@ class MainWindow(QMainWindow):
         self.menuVerticalLayout.addWidget(self.removeNullRadioButton)
 
         # start parsing button
-        self.pushButton = QPushButton(self.centralwidget)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setStyleSheet("QPushButton { "
-                                      "max-width: 170;"
-                                      "font-weight: bold;"
-                                      "font-size: 12px }")
-        self.pushButton.setText("Start ")
-        self.pushButton.clicked.connect(self.parse)
-        self.menuVerticalLayout.addWidget(self.pushButton)
+        self.startParseButton = QPushButton(self.centralwidget)
+        self.startParseButton.setObjectName(u"pushButton")
+        self.startParseButton.setStyleSheet("QPushButton { "
+                                            "max-width: 170;"
+                                            "font-weight: bold;"
+                                            "font-size: 12px }")
+        self.startParseButton.setText("Start")
+        self.startParseButton.clicked.connect(lambda: parse(self))
+        self.menuVerticalLayout.addWidget(self.startParseButton)
 
         # Progress bar
         self.progressBar = QProgressBar(self.centralwidget)
@@ -140,13 +140,37 @@ class MainWindow(QMainWindow):
         self.gridLayout.addLayout(self.menuVerticalLayout, 0, 0, 1, 1)
         self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 1)
 
+        # save files button
+        self.saveFilesButton = QPushButton(self.centralwidget)
+        self.saveFilesButton.setObjectName(u"pushButton")
+        self.saveFilesButton.setStyleSheet("QPushButton { "
+                                           "max-width: 170;"
+                                           "font-weight: bold;"
+                                           "font-size: 12px }")
+        self.saveFilesButton.setText("Save files")
+        self.saveFilesButton.clicked.connect(lambda: self.saveFiles())
+        self.saveFilesButton.setVisible(False)
+        self.menuVerticalLayout.addWidget(self.saveFilesButton)
+
+        # upload new file button
+        self.uploadNewButton = QPushButton(self.centralwidget)
+        self.uploadNewButton.setObjectName(u"pushButton")
+        self.uploadNewButton.setStyleSheet("QPushButton { "
+                                           "max-width: 170;"
+                                           "font-weight: bold;"
+                                           "font-size: 12px }")
+        self.uploadNewButton.setText("Upload new file")
+        self.uploadNewButton.clicked.connect(lambda: self.uploadNewFile())
+        self.uploadNewButton.setVisible(False)
+        self.menuVerticalLayout.addWidget(self.uploadNewButton)
+
         self.listViewLabel = QLabel(self.centralwidget)
         self.listViewLabel.setFont(fontSize)
         self.listViewLabel.setText("Selected fields")
         self.listViewLabel.setVisible(False)
         self.menuVerticalLayout.addWidget(self.listViewLabel)
         self.listView = QListWidget(self.centralwidget)
-        self.listView.setStyleSheet("QListWidget { max-width: 170;}")
+        self.listView.setStyleSheet("QListWidget { max-width: 170; max-height: 150}")
         font = self.listView.font()
         font.setPointSize(10.5)
         self.listView.setFont(font)
@@ -165,11 +189,16 @@ class MainWindow(QMainWindow):
                 TabLayout(self)
                 self.plainTextEdit.setPlainText(self.fileData)
 
-    def parse(self):
-        parse(self)
-
     def fieldWindowSetup(self):
         if self.fileData:
             radioButtons = getAllKeys(json.loads(self.fileData))
             self.fieldsWindow = FieldsSelection(self, radioButtons)
             self.fieldsWindow.show()
+
+    def uploadNewFile(self):
+        resetMenus(self)
+        self.setupFile()
+
+    def saveFiles(self):
+        print("saving")
+

@@ -14,7 +14,7 @@ def readFile(fileName):
     file = open(fileName, 'r', encoding="utf8")
     fileData = file.read()
     file.close()
-    return json.dumps(fileData, indent=4, sort_keys=True)
+    return json.dumps(fileData, indent=4, sort_keys=True, ensure_ascii=False)
 
 
 # writes data into a give file
@@ -99,8 +99,9 @@ def parseDuplicates(window, jsonData, fields):
                 is_duplicate(item, field)
         window.progressBar.setValue(int((i / len(jsonData)) * 100))
     window.progressBar.setValue(100)
-    write_file(resultItems, 'no_duplicates.json')
-    write_file(foundItems, 'duplicates.json')
+
+    # write_file(resultItems, 'no_duplicates.json')
+    # write_file(foundItems, 'duplicates.json')
 
 
 # Removes empty objects from the file based on empty fields
@@ -132,8 +133,8 @@ def parseEmpty(window, jsonData, fields):
         window.progressBar.setValue(int((i / len(jsonData)) * 100))
     window.progressBar.setValue(100)
 
-    write_file(resultItems, 'no_empty.json')
-    write_file(foundItems, 'empty.json')
+    # write_file(resultItems, 'no_empty.json')
+    # write_file(foundItems, 'empty.json')
 
 
 def parseNull(window, jsonData, fields):
@@ -164,29 +165,33 @@ def parseNull(window, jsonData, fields):
         window.progressBar.setValue(int((i / len(jsonData)) * 100))
     window.progressBar.setValue(100)
 
-    write_file(resultItems, 'no_null.json')
-    write_file(foundItems, 'null.json')
+    # write_file(resultItems, 'no_null.json')
+    # write_file(foundItems, 'null.json')
 
 
 def parse(window):
     if window.fileData:
+        window.startParseButton.setEnabled(False)
         jsonData = json.loads(window.fileData)
         if window.fileLengthRadioButton.isChecked():
             print(filesLength(jsonData))
         elif window.removeDuplicatesRadioButton.isChecked():
             workerThread = WorkerThread(lambda: parseDuplicates(window, jsonData, window.selectedFields))
-            workerThread.finished.connect(lambda: setResultTabs(window, "Duplicates", "No duplicates"))
+            workerThread.finished.connect(lambda: setResultTabs(window, "Duplicates"))
             workerThread.start()
         elif window.removeEmptyRadioButton.isChecked():
             workerThread = WorkerThread(lambda: parseEmpty(window, jsonData, window.selectedFields))
-            workerThread.finished.connect(lambda: setResultTabs(window, "Empty", "No empty"))
+            workerThread.finished.connect(lambda: setResultTabs(window, "Empty"))
             workerThread.start()
         elif window.removeNullRadioButton.isChecked():
             workerThread = WorkerThread(lambda: parseNull(window, jsonData, window.selectedFields))
-            workerThread.finished.connect(lambda: setResultTabs(window, "Null", "No null"))
+            workerThread.finished.connect(lambda: setResultTabs(window, "Null"))
             workerThread.start()
 
 
-def setResultTabs(window, tab1, tab2):
+def setResultTabs(window, tabName):
     if not window.optionPositiveTab and not window.optionNegativeTab:
-        ResultTabs(window, tab1, tab2, resultItems, foundItems)
+        ResultTabs(window, tabName, resultItems, foundItems)
+        window.uploadNewButton.setVisible(True)
+        window.saveFilesButton.setVisible(True)
+        window.startParseButton.setEnabled(True)

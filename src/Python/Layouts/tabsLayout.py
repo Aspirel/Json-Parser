@@ -31,7 +31,7 @@ def TabLayout(window):
     window.tabWidget.setTabText(window.tabWidget.indexOf(window.originalFileTab), "File")
 
 
-def ResultTabs(window, tabName1, tabName2, resultItems, foundItems):
+def ResultTabs(window, tabName, resultItems, foundItems):
     # tab 2
     window.optionNegativeTab = QWidget()
     window.optionNegativeTab.setObjectName(u"tab_2")
@@ -43,7 +43,7 @@ def ResultTabs(window, tabName1, tabName2, resultItems, foundItems):
     window.plainTextEdit2.setFont(jsonFontSize)
     window.plainTextEdit2.setPlainText(json.dumps(resultItems, indent=4, ensure_ascii=False))
     window.gridLayout_5.addWidget(window.plainTextEdit2, 0, 0, 1, 1)
-    window.tabWidget.addTab(window.optionNegativeTab, tabName1)
+    window.tabWidget.addTab(window.optionNegativeTab, tabName)
 
     # tab 3
     window.optionPositiveTab = QWidget()
@@ -56,4 +56,4 @@ def ResultTabs(window, tabName1, tabName2, resultItems, foundItems):
     window.plainTextEdit3.setFont(jsonFontSize)
     window.plainTextEdit3.setPlainText(json.dumps(foundItems, indent=4, ensure_ascii=False))
     window.gridLayout_4.addWidget(window.plainTextEdit3, 0, 0, 1, 1)
-    window.tabWidget.addTab(window.optionPositiveTab, tabName2)
+    window.tabWidget.addTab(window.optionPositiveTab, "Result")
