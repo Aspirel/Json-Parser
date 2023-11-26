@@ -56,7 +56,7 @@ class MainWindow(QMainWindow):
 
         fontSize = QFont()
         fontSize.setBold(True)
-        fontSize.setPointSize(10)
+        fontSize.setPointSize(10.5)
 
         self.centralwidget = QWidget(window)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -145,13 +145,11 @@ class MainWindow(QMainWindow):
         self.listViewLabel.setVisible(False)
         self.menuVerticalLayout.addWidget(self.listViewLabel)
         self.listView = QListWidget(self.centralwidget)
-        self.listView.setStyleSheet("QListWidget { "
-                                    "max-width: 170}"
-
-                                    "QListWidget::item{"
-                                    "font-size: 12px;"
-                                    "padding-left: 5px;"
-                                    "}")
+        self.listView.setStyleSheet("QListWidget { max-width: 170;}")
+        font = self.listView.font()
+        font.setPointSize(10.5)
+        self.listView.setFont(font)
+        self.listView.setSpacing(3)
         self.listView.setVisible(False)
         self.menuVerticalLayout.addWidget(self.listView)
 

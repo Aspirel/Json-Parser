@@ -35,12 +35,18 @@ class FieldsSelection(QWidget):
             radioButton1 = QRadioButton(radioButtons[i])
             radioButton1.setFont(fontSize)
             radioButton1.setAutoExclusive(False)
-            radioButton2 = QRadioButton(radioButtons[i + 1] if i + 1 < len(radioButtons) else '')
-            radioButton2.setFont(fontSize)
-            radioButton2.setAutoExclusive(False)
-            formLayout.addRow(radioButton1, radioButton2)
+
+            radioButton2 = None
+            if i + 1 < len(radioButtons):
+                radioButton2 = QRadioButton(radioButtons[i + 1])
+                radioButton2.setFont(fontSize)
+                radioButton2.setAutoExclusive(False)
+                formLayout.addRow(radioButton1, radioButton2)
+            else:
+                formLayout.addRow(radioButton1, None)
             self.radioButtonsList.append(radioButton1)
-            self.radioButtonsList.append(radioButton2)
+            if radioButton2:
+                self.radioButtonsList.append(radioButton2)
 
         pushButton = QPushButton(self)
         pushButton.setText("Apply")
