@@ -86,7 +86,7 @@ def parse_duplicates(file_data, fields):
                         duplicates.append(item)
                 elif isinstance(value, (dict, list)):
                     is_duplicate(value, target_field)
-            if json_data not in duplicates and json_data not in result_items:
+            if item not in duplicates and item not in result_items:
                 result_items.append(json_data)
         elif isinstance(json_data, list):
             for list_item in json_data:

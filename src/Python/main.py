@@ -1,17 +1,21 @@
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import (QMainWindow, QGridLayout, QRadioButton, QSizePolicy, QSpacerItem,
-                               QWidget, QProgressBar, QFileDialog)
+                               QWidget, QProgressBar, QFileDialog, QListWidget, QLabel)
 
 from Layouts.tabsLayout import TabLayout
 from Layouts.uploadFileLayout import *
-from parser import *
+from parser_UI import *
 from utils import *
+from src.Python.Layouts.fieldsSelectionLayout import FieldsSelection
 
 
 class MainWindow(QMainWindow):
 
     def __init__(self):
         super(MainWindow, self).__init__()
+        self.listViewLabel = None
+        self.listView = None
+        self.fieldsWindow = None
         self.progressBar = None
         self.window = None
         self.widget = None
@@ -41,12 +45,14 @@ class MainWindow(QMainWindow):
         self.centralwidget = None
         self.fileData = None
         self.option = None
+        self.selectedFields = []
 
     def setup_ui(self, window):
         if not window.objectName():
             window.setObjectName(u"JSONParser")
         window.resize(1000, 600)
         centerWindow(window)
+        self.window = window
 
         fontSize = QFont()
         fontSize.setBold(True)
@@ -57,7 +63,7 @@ class MainWindow(QMainWindow):
         window.setCentralWidget(self.centralwidget)
 
         # Main grid
-        self.gridLayout = QGridLayout()
+        self.gridLayout = QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName(u"gridLayout")
 
         # Inner grid
@@ -83,6 +89,7 @@ class MainWindow(QMainWindow):
         self.removeDuplicatesRadioButton.setFont(fontSize)
         self.removeDuplicatesRadioButton.setText("Remove duplicates")
         self.removeDuplicatesRadioButton.setAutoExclusive(True)
+        self.removeDuplicatesRadioButton.clicked.connect(self.fieldWindowSetup)
         self.menuVerticalLayout.addWidget(self.removeDuplicatesRadioButton)
 
         self.removeEmptyRadioButton = QRadioButton(self.centralwidget)
@@ -125,12 +132,28 @@ class MainWindow(QMainWindow):
                                        "{"
                                        "background-color : #2cde85;"
                                        "}")
-
         self.menuVerticalLayout.addWidget(self.progressBar)
+
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
         self.menuVerticalLayout.addItem(self.verticalSpacer)
         self.gridLayout.addLayout(self.menuVerticalLayout, 0, 0, 1, 1)
         self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 1)
+
+        self.listViewLabel = QLabel(self.centralwidget)
+        self.listViewLabel.setFont(fontSize)
+        self.listViewLabel.setText("Selected fields")
+        self.listViewLabel.setVisible(False)
+        self.menuVerticalLayout.addWidget(self.listViewLabel)
+        self.listView = QListWidget(self.centralwidget)
+        self.listView.setStyleSheet("QListWidget { "
+                                    "max-width: 170}"
+
+                                    "QListWidget::item{"
+                                    "font-size: 12px;"
+                                    "padding-left: 5px;"
+                                    "}")
+        self.listView.setVisible(False)
+        self.menuVerticalLayout.addWidget(self.listView)
 
     def setupFile(self):
         file_dialog = QFileDialog()
@@ -145,3 +168,9 @@ class MainWindow(QMainWindow):
 
     def parse(self):
         parse(self)
+
+    def fieldWindowSetup(self):
+        if self.fileData:
+            radioButtons = getAllKeys(json.loads(self.fileData))
+            self.fieldsWindow = FieldsSelection(self, radioButtons)
+            self.fieldsWindow.show()
