@@ -182,17 +182,17 @@ def parse(window):
                 lambda: setResultTabs(window, "Duplicates"))
             window.workerThread.start()
         elif window.removeEmptyRadioButton.isChecked():
-            workerThread = WorkerThread(lambda: parseEmpty(
+            window.workerThread = WorkerThread(lambda: parseEmpty(
                 window, jsonData, window.selectedFields))
-            workerThread.finished.connect(
+            window.workerThread.finished.connect(
                 lambda: setResultTabs(window, "Empty"))
-            workerThread.start()
+            window.workerThread.start()
         elif window.removeNullRadioButton.isChecked():
-            workerThread = WorkerThread(lambda: parseNull(
+            window.workerThread = WorkerThread(lambda: parseNull(
                 window, jsonData, window.selectedFields))
-            workerThread.finished.connect(
+            window.workerThread.finished.connect(
                 lambda: setResultTabs(window, "Null"))
-            workerThread.start()
+            window.workerThread.start()
 
 
 def setResultTabs(window, tabName):

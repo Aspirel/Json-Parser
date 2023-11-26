@@ -68,12 +68,14 @@ class MainWindow(QMainWindow):
         self.fileLengthRadioButton.setFont(fontSize)
         self.fileLengthRadioButton.setText("Check file length")
         self.fileLengthRadioButton.setAutoExclusive(True)
+        self.fileLengthRadioButton.setEnabled(False)
         menuVerticalLayout.addWidget(self.fileLengthRadioButton)
 
         self.removeDuplicatesRadioButton = QRadioButton()
         self.removeDuplicatesRadioButton.setFont(fontSize)
         self.removeDuplicatesRadioButton.setText("Remove duplicates")
         self.removeDuplicatesRadioButton.setAutoExclusive(True)
+        self.removeDuplicatesRadioButton.setEnabled(False)
         self.removeDuplicatesRadioButton.clicked.connect(self.fieldWindowSetup)
         menuVerticalLayout.addWidget(self.removeDuplicatesRadioButton)
 
@@ -81,6 +83,7 @@ class MainWindow(QMainWindow):
         self.removeEmptyRadioButton.setFont(fontSize)
         self.removeEmptyRadioButton.setText("Remove empty")
         self.removeEmptyRadioButton.setAutoExclusive(True)
+        self.removeEmptyRadioButton.setEnabled(False)
         self.removeEmptyRadioButton.clicked.connect(self.fieldWindowSetup)
         menuVerticalLayout.addWidget(self.removeEmptyRadioButton)
 
@@ -88,6 +91,7 @@ class MainWindow(QMainWindow):
         self.removeNullRadioButton.setFont(fontSize)
         self.removeNullRadioButton.setText("Remove null")
         self.removeNullRadioButton.setAutoExclusive(True)
+        self.removeNullRadioButton.setEnabled(False)
         self.removeNullRadioButton.clicked.connect(self.fieldWindowSetup)
         menuVerticalLayout.addWidget(self.removeNullRadioButton)
 
@@ -98,6 +102,7 @@ class MainWindow(QMainWindow):
                                             "font-weight: bold;"
                                             "font-size: 12px }")
         self.startParseButton.setText("Start")
+        self.startParseButton.setEnabled(False)
         self.startParseButton.clicked.connect(lambda: parse(self))
         menuVerticalLayout.addWidget(self.startParseButton)
 
@@ -169,6 +174,7 @@ class MainWindow(QMainWindow):
                 self.fileData = json.loads(fileData)
                 TabLayout(self)
                 self.plainTextEdit.setPlainText(self.fileData)
+                enableMenus(self)
 
     def fieldWindowSetup(self):
         if self.fileData:
