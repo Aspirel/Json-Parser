@@ -3,12 +3,10 @@ from PySide6.QtWidgets import QVBoxLayout, QPushButton
 
 
 def FileUploadLayout(window):
-    verticalLayout = QVBoxLayout(window.centralwidget)
-    verticalLayout.setObjectName(u"verticalLayout")
+    verticalLayout = QVBoxLayout()
 
     # Button
-    pushButton = QPushButton(window.centralwidget)
-    pushButton.setObjectName(u"pushButton")
+    pushButton = QPushButton()
     pushButton.setStyleSheet("QPushButton {"
                              "color: white; "
                              "font-weight: bold;"
