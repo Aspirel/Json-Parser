@@ -190,3 +190,9 @@ def setResultTabs(window, tabName):
         updatePlainTextTabs(window, tabName, resultItems, foundItems)
     window.saveFilesButton.setVisible(True)
     window.startParseButton.setEnabled(True)
+
+
+def saveFiles(window):
+    current_tab_name = window.tabWidget.tabBar().tabText(1)
+    write_file(resultItems, 'result.json')
+    write_file(foundItems, current_tab_name + '.json')

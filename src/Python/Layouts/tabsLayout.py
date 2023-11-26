@@ -35,8 +35,6 @@ def ResultTabs(window, tabName, resultItems, foundItems):
     window.plainTextEdit2 = QPlainTextEdit(window.optionNegativeTab)
     window.plainTextEdit2.setReadOnly(True)
     window.plainTextEdit2.setFont(jsonFontSize)
-    # window.plainTextEdit2.setPlainText(json.dumps(
-    #     foundItems, indent=4, ensure_ascii=False))
     window.tab3gridLayout.addWidget(window.plainTextEdit2, 0, 0, 1, 1)
     window.tabWidget.addTab(window.optionNegativeTab, tabName)
 
@@ -46,8 +44,6 @@ def ResultTabs(window, tabName, resultItems, foundItems):
     window.plainTextEdit3 = QPlainTextEdit(window.optionPositiveTab)
     window.plainTextEdit3.setReadOnly(True)
     window.plainTextEdit3.setFont(jsonFontSize)
-    # window.plainTextEdit3.setPlainText(json.dumps(
-    #     resultItems, indent=4, ensure_ascii=False))
     window.tab2gridLayout.addWidget(window.plainTextEdit3, 0, 0, 1, 1)
     window.tabWidget.addTab(window.optionPositiveTab, "Result")
 

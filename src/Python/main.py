@@ -5,7 +5,7 @@ from PySide6.QtWidgets import (QMainWindow, QGridLayout, QRadioButton, QPushButt
 
 from Layouts.tabsLayout import TabLayout
 from Layouts.uploadFileLayout import FileUploadLayout
-from parser_UI import parse, validate_file, readFile, getAllKeys
+from parser_UI import parse, validate_file, readFile, getAllKeys, saveFiles
 from Layouts.fieldsSelectionLayout import FieldsSelection
 from utils import *
 
@@ -14,7 +14,6 @@ class MainWindow(QMainWindow):
 
     def __init__(self):
         super(MainWindow, self).__init__()
-        self.UIworkerThread = None
         self.workerThread = None
         self.saveFilesButton = None
         self.listViewLabel = None
@@ -134,7 +133,7 @@ class MainWindow(QMainWindow):
                                            "font-weight: bold;"
                                            "font-size: 12px }")
         self.saveFilesButton.setText("Save files")
-        self.saveFilesButton.clicked.connect(lambda: self.saveFiles())
+        self.saveFilesButton.clicked.connect(lambda: saveFiles(self))
         self.saveFilesButton.setVisible(False)
         menuVerticalLayout.addWidget(self.saveFilesButton)
 
@@ -185,6 +184,3 @@ class MainWindow(QMainWindow):
     def uploadNewFile(self):
         resetMenus(self)
         self.setupFile()
-
-    def saveFiles(self):
-        print("saving")
