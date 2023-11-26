@@ -97,6 +97,7 @@ class MainWindow(QMainWindow):
         self.removeEmptyRadioButton.setFont(fontSize)
         self.removeEmptyRadioButton.setText("Remove empty")
         self.removeEmptyRadioButton.setAutoExclusive(True)
+        self.removeEmptyRadioButton.clicked.connect(self.fieldWindowSetup)
         self.menuVerticalLayout.addWidget(self.removeEmptyRadioButton)
 
         self.removeNullRadioButton = QRadioButton(self.centralwidget)
@@ -104,7 +105,7 @@ class MainWindow(QMainWindow):
         self.removeNullRadioButton.setFont(fontSize)
         self.removeNullRadioButton.setText("Remove null")
         self.removeNullRadioButton.setAutoExclusive(True)
-
+        self.removeNullRadioButton.clicked.connect(self.fieldWindowSetup)
         self.menuVerticalLayout.addWidget(self.removeNullRadioButton)
 
         # start parsing button
