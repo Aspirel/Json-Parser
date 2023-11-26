@@ -2,7 +2,7 @@ from PySide6.QtCore import Qt
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QFormLayout, QWidget, QRadioButton, QVBoxLayout, QPushButton, QListWidgetItem
 
-from utils import *
+from src.Python.utils import centerWindow
 
 
 class FieldsSelection(QWidget):

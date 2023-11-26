@@ -1,10 +1,11 @@
+import json
 from PySide6.QtGui import QFont
-from PySide6.QtWidgets import (QMainWindow, QGridLayout, QRadioButton, QSizePolicy, QSpacerItem,
-                               QWidget, QProgressBar, QFileDialog, QListWidget, QLabel)
+from PySide6.QtWidgets import (QMainWindow, QGridLayout, QRadioButton, QPushButton, QSizePolicy, QSpacerItem,
+                               QWidget, QProgressBar, QFileDialog, QListWidget, QLabel, QVBoxLayout)
 
 from Layouts.tabsLayout import TabLayout
-from Layouts.uploadFileLayout import *
-from parser_UI import *
+from Layouts.uploadFileLayout import FileUploadLayout
+from parser_UI import parse, validate_file, readFile, getAllKeys
 from Layouts.fieldsSelectionLayout import FieldsSelection
 from utils import *
 
@@ -13,6 +14,7 @@ class MainWindow(QMainWindow):
 
     def __init__(self):
         super(MainWindow, self).__init__()
+        self.UIworkerThread = None
         self.workerThread = None
         self.saveFilesButton = None
         self.listViewLabel = None
@@ -144,7 +146,6 @@ class MainWindow(QMainWindow):
                                            "font-size: 12px }")
         self.uploadNewButton.setText("Upload new file")
         self.uploadNewButton.clicked.connect(lambda: self.uploadNewFile())
-        self.uploadNewButton.setVisible(False)
         menuVerticalLayout.addWidget(self.uploadNewButton)
 
         self.listViewLabel = QLabel()
@@ -161,7 +162,6 @@ class MainWindow(QMainWindow):
         self.listView.setSpacing(3)
         self.listView.setVisible(False)
         menuVerticalLayout.addWidget(self.listView)
-
         self.gridLayout.addLayout(menuVerticalLayout, 0, 0, 1, 1)
 
     def setupFile(self):
@@ -179,8 +179,8 @@ class MainWindow(QMainWindow):
     def fieldWindowSetup(self):
         if self.fileData:
             radioButtons = getAllKeys(json.loads(self.fileData))
-            self.fieldsWindow = FieldsSelection(self, radioButtons)
-            self.fieldsWindow.show()
+            self.window = FieldsSelection(self, radioButtons)
+            self.window.show()
 
     def uploadNewFile(self):
         resetMenus(self)

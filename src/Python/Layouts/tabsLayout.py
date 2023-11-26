@@ -11,7 +11,6 @@ jsonFontSize.setPointSize(12)
 def TabLayout(window):
     # Tabs
     window.tabWidget = QTabWidget()
-    window.tabWidget.setObjectName(u"tabWidget")
     window.tabWidget.setStyleSheet("QTabWidget { "
                                    "font-weight: bold;"
                                    "font-size: 12px }")
@@ -36,8 +35,8 @@ def ResultTabs(window, tabName, resultItems, foundItems):
     window.plainTextEdit2 = QPlainTextEdit(window.optionNegativeTab)
     window.plainTextEdit2.setReadOnly(True)
     window.plainTextEdit2.setFont(jsonFontSize)
-    window.plainTextEdit2.setPlainText(json.dumps(
-        resultItems, indent=4, ensure_ascii=False))
+    # window.plainTextEdit2.setPlainText(json.dumps(
+    #     foundItems, indent=4, ensure_ascii=False))
     window.tab3gridLayout.addWidget(window.plainTextEdit2, 0, 0, 1, 1)
     window.tabWidget.addTab(window.optionNegativeTab, tabName)
 
@@ -47,7 +46,17 @@ def ResultTabs(window, tabName, resultItems, foundItems):
     window.plainTextEdit3 = QPlainTextEdit(window.optionPositiveTab)
     window.plainTextEdit3.setReadOnly(True)
     window.plainTextEdit3.setFont(jsonFontSize)
-    window.plainTextEdit3.setPlainText(json.dumps(
-        foundItems, indent=4, ensure_ascii=False))
+    # window.plainTextEdit3.setPlainText(json.dumps(
+    #     resultItems, indent=4, ensure_ascii=False))
     window.tab2gridLayout.addWidget(window.plainTextEdit3, 0, 0, 1, 1)
     window.tabWidget.addTab(window.optionPositiveTab, "Result")
+
+    updatePlainTextTabs(window, tabName, resultItems, foundItems)
+
+
+def updatePlainTextTabs(window, tabName, resultItems, foundItems):
+    window.plainTextEdit2.setPlainText(json.dumps(
+        foundItems, indent=4, ensure_ascii=False))
+    window.plainTextEdit3.setPlainText(json.dumps(
+        resultItems, indent=4, ensure_ascii=False))
+    window.tabWidget.tabBar().setTabText(1, tabName)

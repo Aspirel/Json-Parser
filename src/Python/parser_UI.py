@@ -2,7 +2,7 @@ import json
 import os
 import sys
 
-from Layouts.tabsLayout import ResultTabs
+from Layouts.tabsLayout import ResultTabs, updatePlainTextTabs
 from workerThread import WorkerThread
 
 resultItems = []
@@ -23,11 +23,6 @@ def write_file(data, file_name):
     with open(os.path.join(application_path, file_name), 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
     f.close()
-
-
-# method that takes json files and returns their lengths
-def filesLength(file):
-    return len(file)
 
 
 # gets the current location of the program in the os
@@ -66,6 +61,11 @@ def getAllKeys(jsonData):
     return list(keys)
 
 
+# method that takes json files and returns their lengths
+def filesLength(file):
+    return len(file)
+
+
 # checks a json file for duplicates and creates a new output file without them
 def parseDuplicates(window, jsonData, fields):
     checkedObjects = []
@@ -92,16 +92,10 @@ def parseDuplicates(window, jsonData, fields):
                 is_duplicate(list_item, target_field)
 
     for i, item in enumerate(jsonData):
-        if isinstance(fields, str):
-            is_duplicate(item, fields)
-        else:
-            for field in fields:
-                is_duplicate(item, field)
+        for field in fields:
+            is_duplicate(item, field)
         window.progressBar.setValue(int((i / len(jsonData)) * 100))
     window.progressBar.setValue(100)
-
-    # write_file(resultItems, 'no_duplicates.json')
-    # write_file(foundItems, 'duplicates.json')
 
 
 # Removes empty objects from the file based on empty fields
@@ -125,16 +119,10 @@ def parseEmpty(window, jsonData, fields):
                 is_empty(list_item, target_field)
 
     for i, item in enumerate(jsonData):
-        if isinstance(fields, str):
-            is_empty(item, fields)
-        else:
-            for field in fields:
-                is_empty(item, field)
+        for field in fields:
+            is_empty(item, field)
         window.progressBar.setValue(int((i / len(jsonData)) * 100))
     window.progressBar.setValue(100)
-
-    # write_file(resultItems, 'no_empty.json')
-    # write_file(foundItems, 'empty.json')
 
 
 def parseNull(window, jsonData, fields):
@@ -157,19 +145,19 @@ def parseNull(window, jsonData, fields):
                 isNull(list_item, target_field)
 
     for i, item in enumerate(jsonData):
-        if isinstance(fields, str):
-            isNull(item, fields)
-        else:
-            for field in fields:
-                isNull(item, field)
+        for field in fields:
+            isNull(item, field)
         window.progressBar.setValue(int((i / len(jsonData)) * 100))
     window.progressBar.setValue(100)
 
-    # write_file(resultItems, 'no_null.json')
-    # write_file(foundItems, 'null.json')
-
 
 def parse(window):
+    global resultItems
+    resultItems = []
+    global foundItems
+    foundItems = []
+    print(resultItems)
+    print(foundItems)
     if window.fileData:
         window.startParseButton.setEnabled(False)
         jsonData = json.loads(window.fileData)
@@ -198,6 +186,7 @@ def parse(window):
 def setResultTabs(window, tabName):
     if not window.optionPositiveTab and not window.optionNegativeTab:
         ResultTabs(window, tabName, resultItems, foundItems)
-        window.uploadNewButton.setVisible(True)
-        window.saveFilesButton.setVisible(True)
-        window.startParseButton.setEnabled(True)
+    else:
+        updatePlainTextTabs(window, tabName, resultItems, foundItems)
+    window.saveFilesButton.setVisible(True)
+    window.startParseButton.setEnabled(True)
