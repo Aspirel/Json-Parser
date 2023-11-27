@@ -173,7 +173,7 @@ class MainWindow(QMainWindow):
                 self.fileData = json.loads(fileData)
                 TabLayout(self)
                 self.plainTextEdit.setPlainText(self.fileData)
-                enableMenus(self)
+                enableRadioButtonsMenus(self)
 
     def fieldWindowSetup(self):
         if self.fileData:

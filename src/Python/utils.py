@@ -9,12 +9,17 @@ def centerWindow(window):
     window.move(geo.topLeft())
 
 
-def enableMenus(window):
-    window.startParseButton.setEnabled(True)
+def enableRadioButtonsMenus(window):
     window.fileLengthRadioButton.setEnabled(True)
     window.removeEmptyRadioButton.setEnabled(True)
     window.removeNullRadioButton.setEnabled(True)
     window.removeDuplicatesRadioButton.setEnabled(True)
+
+
+def enableParsingMenus(window):
+    window.listViewLabel.setVisible(True)
+    window.listView.setVisible(True)
+    window.startParseButton.setEnabled(True)
 
 
 def resetMenus(window):

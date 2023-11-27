@@ -70,6 +70,10 @@ def filesLength(file):
 def parseDuplicates(window, jsonData, fields):
     checkedObjects = []
 
+    # TODO maybe if its already in both lists, remove from result. Otherwise will keep it in as a positive result
+    #  when its not. If the first field selected is negative and goes into the duplicates, and the next field
+    #  is negative, its already in duplicates so it will leave it in the positive list. If we remove it from it, solves
+    #  the problem.
     def is_duplicate(json_data, target_field):
         if isinstance(json_data, dict):
             for key, value in json_data.items():

@@ -2,7 +2,7 @@ from PySide6.QtCore import Qt
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QFormLayout, QWidget, QRadioButton, QVBoxLayout, QPushButton, QListWidgetItem
 
-from src.Python.utils import centerWindow
+from src.Python.utils import centerWindow, enableParsingMenus
 
 
 class FieldsSelection(QWidget):
@@ -64,5 +64,4 @@ class FieldsSelection(QWidget):
                 self.window.listView.addItem(listItem)
 
         self.close()
-        self.window.listViewLabel.setVisible(True)
-        self.window.listView.setVisible(True)
+        enableParsingMenus(self.window)
