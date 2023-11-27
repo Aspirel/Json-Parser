@@ -1,8 +1,10 @@
 import json
 import os
-import sys
+
+from PySide6.QtWidgets import QFileDialog
 
 from Layouts.tabsLayout import ResultTabs, updatePlainTextTabs
+from utils import alertDialog
 from workerThread import WorkerThread
 
 resultItems = []
@@ -18,19 +20,10 @@ def readFile(fileName):
 
 
 # writes data into a give file
-def write_file(data, file_name):
-    application_path = get_os_file_path()
-    with open(os.path.join(application_path, file_name), 'w', encoding='utf-8') as f:
+def write_file(path, data, file_name):
+    with open(os.path.join(path, file_name), 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
     f.close()
-
-
-# gets the current location of the program in the os
-def get_os_file_path():
-    if getattr(sys, 'frozen', False):
-        return os.path.dirname(sys.executable)
-    elif __file__:
-        return os.path.dirname(__file__)
 
 
 # Checks if the file exists and is valid
@@ -59,11 +52,6 @@ def getAllKeys(jsonData):
 
     getKeys(jsonData)
     return list(keys)
-
-
-# method that takes json files and returns their lengths
-def filesLength(file):
-    return len(file)
 
 
 # checks a json file for duplicates and creates a new output file without them
@@ -107,7 +95,7 @@ def parseEmpty(window, jsonData, fields):
         if isinstance(json_data, dict):
             for key, value in json_data.items():
                 if key == target_field:
-                    if value.strip() == "":
+                    if value == "":
                         if item not in foundItems:
                             foundItems.append(item)
                     else:
@@ -159,14 +147,11 @@ def parse(window):
     resultItems = []
     global foundItems
     foundItems = []
-    print(resultItems)
-    print(foundItems)
+
     if window.fileData:
         window.startParseButton.setEnabled(False)
         jsonData = json.loads(window.fileData)
-        if window.fileLengthRadioButton.isChecked():
-            print(filesLength(jsonData))
-        elif window.removeDuplicatesRadioButton.isChecked():
+        if window.removeDuplicatesRadioButton.isChecked():
             window.workerThread = WorkerThread(
                 lambda: parseDuplicates(window, jsonData, window.selectedFields))
             window.workerThread.finished.connect(
@@ -196,6 +181,19 @@ def setResultTabs(window, tabName):
 
 
 def saveFiles(window):
-    current_tab_name = window.tabWidget.tabBar().tabText(1)
-    write_file(resultItems, 'result.json')
-    write_file(foundItems, current_tab_name + '.json')
+    currentTabName = window.tabWidget.tabBar().tabText(1).lower()
+    fileDialog = QFileDialog()
+    path = fileDialog.getExistingDirectory(window, "Save files", )
+    if path:
+        message = ""
+        errorMessage = ""
+        try:
+            write_file(path, resultItems, 'result.json')
+            write_file(path, foundItems, currentTabName + '.json')
+            message = "Files saved successfully"
+        except Exception as e:
+            errorMessage = "Failed saving files"
+            print('\n{errorMessage}. Error: {error} \n'.format(error=e, errorMessage=errorMessage))
+
+        alertDialog(window, errorMessage, False) if errorMessage else alertDialog(window, message, True)
+

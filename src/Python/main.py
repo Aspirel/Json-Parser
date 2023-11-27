@@ -26,7 +26,6 @@ class MainWindow(QMainWindow):
         self.filePath = None
         self.startParseButton = None
         self.uploadNewButton = None
-        self.fileLengthRadioButton = None
         self.removeDuplicatesRadioButton = None
         self.removeEmptyRadioButton = None
         self.removeNullRadioButton = None
@@ -64,13 +63,6 @@ class MainWindow(QMainWindow):
 
         # radio buttons vertical layout
         menuVerticalLayout = QVBoxLayout()
-
-        self.fileLengthRadioButton = QRadioButton()
-        self.fileLengthRadioButton.setFont(fontSize)
-        self.fileLengthRadioButton.setText("Check file length")
-        self.fileLengthRadioButton.setAutoExclusive(True)
-        self.fileLengthRadioButton.setEnabled(False)
-        menuVerticalLayout.addWidget(self.fileLengthRadioButton)
 
         self.removeDuplicatesRadioButton = QRadioButton()
         self.removeDuplicatesRadioButton.setFont(fontSize)
@@ -165,7 +157,7 @@ class MainWindow(QMainWindow):
 
     def setupFile(self):
         file_dialog = QFileDialog()
-        selected_file = file_dialog.getOpenFileName(None, "Select file")
+        selected_file = file_dialog.getOpenFileName(self, "Select file")
 
         if isinstance(selected_file, tuple) and selected_file[0]:
             if validate_file(selected_file[0]):

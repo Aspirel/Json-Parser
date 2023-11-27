@@ -1,5 +1,5 @@
 from PySide6.QtGui import QScreen
-from PySide6.QtWidgets import QApplication
+from PySide6.QtWidgets import QApplication, QDialog, QDialogButtonBox, QVBoxLayout, QLabel, QMessageBox
 
 
 def centerWindow(window):
@@ -10,7 +10,6 @@ def centerWindow(window):
 
 
 def enableRadioButtonsMenus(window):
-    window.fileLengthRadioButton.setEnabled(True)
     window.removeEmptyRadioButton.setEnabled(True)
     window.removeNullRadioButton.setEnabled(True)
     window.removeDuplicatesRadioButton.setEnabled(True)
@@ -24,9 +23,6 @@ def enableParsingMenus(window):
 
 def resetMenus(window):
     window.startParseButton.setEnabled(False)
-    window.fileLengthRadioButton.setAutoExclusive(False)
-    window.fileLengthRadioButton.setChecked(False)
-    window.fileLengthRadioButton.setAutoExclusive(True)
 
     window.removeEmptyRadioButton.setAutoExclusive(False)
     window.removeEmptyRadioButton.setChecked(False)
@@ -42,3 +38,12 @@ def resetMenus(window):
     window.progressBar.setValue(0)
     window.tabWidget.removeTab(1)
     window.tabWidget.removeTab(1)
+
+
+def alertDialog(window, message, success):
+    dialogMessage = QMessageBox(window)
+    dialogMessage.setWindowTitle("Saving files")
+    dialogMessage.setIcon(QMessageBox.Information if success else QMessageBox.Critical)
+    dialogMessage.setText(message)
+    dialogMessage.setStyleSheet("QMessageBox {font: bold 12pt Segoe UI;}")
+    dialogMessage.exec_()
