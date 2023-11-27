@@ -142,11 +142,15 @@ def parseNull(window, jsonData, fields):
     window.progressBar.setValue(100)
 
 
-def parse(window):
+def resetResults():
     global resultItems
     resultItems = []
     global foundItems
     foundItems = []
+
+
+def parse(window):
+    resetResults()
 
     if window.fileData:
         window.startParseButton.setEnabled(False)
@@ -196,4 +200,3 @@ def saveFiles(window):
             print('\n{errorMessage}. Error: {error} \n'.format(error=e, errorMessage=errorMessage))
 
         alertDialog(window, errorMessage, False) if errorMessage else alertDialog(window, message, True)
-

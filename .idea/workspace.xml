@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b89161b8-b792-4f5a-9095-b11103504c63" name="Changes" comment="Added saving through file explorer and dialog messages.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Python/Layouts/tabsLayout.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Python/Layouts/tabsLayout.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Python/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Python/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Python/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Python/utils.py" afterDir="false" />
     </list>
@@ -139,5 +138,16 @@
     <MESSAGE value="Improved functionality around menus." />
     <MESSAGE value="Added saving through file explorer and dialog messages." />
     <option name="LAST_COMMIT_MESSAGE" value="Added saving through file explorer and dialog messages." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/Python/utils.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

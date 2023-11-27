@@ -1,5 +1,5 @@
 from PySide6.QtGui import QScreen
-from PySide6.QtWidgets import QApplication, QDialog, QDialogButtonBox, QVBoxLayout, QLabel, QMessageBox
+from PySide6.QtWidgets import QApplication, QMessageBox
 
 
 def centerWindow(window):
