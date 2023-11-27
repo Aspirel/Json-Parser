@@ -15,15 +15,7 @@ def enableRadioButtonsMenus(window):
     window.removeDuplicatesRadioButton.setEnabled(True)
 
 
-def enableParsingMenus(window):
-    window.listViewLabel.setVisible(True)
-    window.listView.setVisible(True)
-    window.startParseButton.setEnabled(True)
-
-
-def resetMenus(window):
-    window.startParseButton.setEnabled(False)
-
+def resetRadioButtonsMenus(window):
     window.removeEmptyRadioButton.setAutoExclusive(False)
     window.removeEmptyRadioButton.setChecked(False)
     window.removeEmptyRadioButton.setAutoExclusive(True)
@@ -35,6 +27,18 @@ def resetMenus(window):
     window.removeDuplicatesRadioButton.setAutoExclusive(False)
     window.removeDuplicatesRadioButton.setChecked(False)
     window.removeDuplicatesRadioButton.setAutoExclusive(True)
+
+
+def enableParsingMenus(window):
+    window.listViewLabel.setVisible(True)
+    window.listView.setVisible(True)
+    window.startParseButton.setEnabled(True)
+
+
+def resetMenus(window):
+    window.startParseButton.setEnabled(False)
+
+    resetRadioButtonsMenus(window)
 
     window.progressBar.setValue(0)
     window.optionPositiveTab = None

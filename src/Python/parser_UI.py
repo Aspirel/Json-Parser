@@ -4,7 +4,7 @@ import os
 from PySide6.QtWidgets import QFileDialog
 
 from Layouts.tabsLayout import ResultTabs, updatePlainTextTabs
-from utils import alertDialog
+from utils import alertDialog, resetRadioButtonsMenus
 from workerThread import WorkerThread
 
 resultItems = []
@@ -182,6 +182,7 @@ def setResultTabs(window, tabName):
         updatePlainTextTabs(window, tabName, resultItems, foundItems)
     window.saveFilesButton.setVisible(True)
     window.startParseButton.setEnabled(False)
+    resetRadioButtonsMenus(window)
 
 
 def saveFiles(window):

@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b89161b8-b792-4f5a-9095-b11103504c63" name="Changes" comment="Added saving through file explorer and dialog messages.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Python/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Python/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Python/parser_UI.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Python/parser_UI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Python/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Python/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +144,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/Python/utils.py</url>
-          <line>55</line>
+          <line>61</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
