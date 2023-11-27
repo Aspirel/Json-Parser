@@ -47,7 +47,6 @@ def resetMenus(window):
     window.tabWidget.removeTab(1)
     window.listView.clear()
     window.saveFilesButton.setVisible(False)
-    window.saveFilesButton.setEnabled(False)
 
 
 def alertDialog(window, message, success):

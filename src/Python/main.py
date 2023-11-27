@@ -137,6 +137,7 @@ class MainWindow(QMainWindow):
                                            "font-weight: bold;"
                                            "font-size: 12px }")
         self.uploadNewButton.setText("Upload new file")
+        self.uploadNewButton.setVisible(False)
         self.uploadNewButton.clicked.connect(lambda: self.uploadNewFile())
         menuVerticalLayout.addWidget(self.uploadNewButton)
 
@@ -156,7 +157,7 @@ class MainWindow(QMainWindow):
         menuVerticalLayout.addWidget(self.listView)
         self.gridLayout.addLayout(menuVerticalLayout, 0, 0, 1, 1)
 
-    def setupFile(self):
+    def setupFile(self, newUpload):
         file_dialog = QFileDialog()
         selected_file = file_dialog.getOpenFileName(self, "Select file")
 
@@ -167,6 +168,8 @@ class MainWindow(QMainWindow):
                 TabLayout(self)
                 self.plainTextEdit.setPlainText(self.fileData)
                 enableRadioButtonsMenus(self)
+                if newUpload:
+                    resetMenus(self)
 
     def fieldWindowSetup(self):
         if self.fileData:
@@ -175,5 +178,4 @@ class MainWindow(QMainWindow):
             self.window.show()
 
     def uploadNewFile(self):
-        self.setupFile()
-        resetMenus(self)
+        self.setupFile(True)

@@ -181,6 +181,7 @@ def setResultTabs(window, tabName):
     else:
         updatePlainTextTabs(window, tabName, resultItems, foundItems)
     window.saveFilesButton.setVisible(True)
+    window.uploadNewButton.setVisible(True)
     window.startParseButton.setEnabled(False)
     resetRadioButtonsMenus(window)
 
@@ -188,7 +189,7 @@ def setResultTabs(window, tabName):
 def saveFiles(window):
     currentTabName = window.tabWidget.tabBar().tabText(1).lower()
     fileDialog = QFileDialog()
-    path = fileDialog.getExistingDirectory(window, "Save files", )
+    path = fileDialog.getExistingDirectory(window, "Save files")
     if path:
         message = ""
         errorMessage = ""
