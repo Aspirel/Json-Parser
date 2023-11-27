@@ -84,7 +84,6 @@ def parseDuplicates(window, jsonData, fields):
                         if item not in resultItems:
                             resultItems.append(item)
                         checkedObjects.append(item_object)
-                    # TODO when a UI is made, include option to include empty/null values
                     elif value and item not in foundItems:
                         foundItems.append(item)
                 elif isinstance(value, (dict, list)):
@@ -193,7 +192,7 @@ def setResultTabs(window, tabName):
     else:
         updatePlainTextTabs(window, tabName, resultItems, foundItems)
     window.saveFilesButton.setVisible(True)
-    window.startParseButton.setEnabled(True)
+    window.startParseButton.setEnabled(False)
 
 
 def saveFiles(window):

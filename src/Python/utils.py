@@ -23,7 +23,7 @@ def enableParsingMenus(window):
 
 
 def resetMenus(window):
-    window.startParseButton.setEnabled(True)
+    window.startParseButton.setEnabled(False)
     window.fileLengthRadioButton.setAutoExclusive(False)
     window.fileLengthRadioButton.setChecked(False)
     window.fileLengthRadioButton.setAutoExclusive(True)
