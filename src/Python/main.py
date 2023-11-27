@@ -15,6 +15,7 @@ class MainWindow(QMainWindow):
 
     def __init__(self):
         super(MainWindow, self).__init__()
+        self.parsingProgressLabel = None
         self.workerThread = None
         self.saveFilesButton = None
         self.listViewLabel = None
@@ -115,6 +116,11 @@ class MainWindow(QMainWindow):
                                        "}")
         menuVerticalLayout.addWidget(self.progressBar)
 
+        self.parsingProgressLabel = QLabel()
+        self.parsingProgressLabel.setFont(fontSize)
+        self.parsingProgressLabel.setVisible(False)
+        menuVerticalLayout.addWidget(self.parsingProgressLabel)
+
         verticalSpacer = QSpacerItem(
             20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
         menuVerticalLayout.addItem(verticalSpacer)
@@ -168,6 +174,7 @@ class MainWindow(QMainWindow):
                 TabLayout(self)
                 self.plainTextEdit.setPlainText(self.fileData)
                 enableRadioButtonsMenus(self)
+                self.uploadNewButton.setVisible(True)
                 if newUpload:
                     resetMenus(self)
 

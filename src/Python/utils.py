@@ -33,6 +33,7 @@ def enableParsingMenus(window):
     window.listViewLabel.setVisible(True)
     window.listView.setVisible(True)
     window.startParseButton.setEnabled(True)
+    window.parsingProgressLabel.clear()
 
 
 def resetMenus(window):
@@ -47,6 +48,7 @@ def resetMenus(window):
     window.tabWidget.removeTab(1)
     window.listView.clear()
     window.saveFilesButton.setVisible(False)
+    window.parsingProgressLabel.clear()
 
 
 def alertDialog(window, message, success):

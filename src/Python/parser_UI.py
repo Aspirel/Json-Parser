@@ -82,11 +82,12 @@ def parseDuplicates(window, jsonData, fields):
             for list_item in json_data:
                 is_duplicate(list_item, target_field)
 
+    fileLength = len(jsonData)
     for i, item in enumerate(jsonData):
         for field in fields:
             is_duplicate(item, field)
-        window.progressBar.setValue(int((i / len(jsonData)) * 100))
-    window.progressBar.setValue(100)
+        window.progressBar.setValue(int((i / fileLength) * 100))
+        window.parsingProgressLabel.setText("Parsing...")
 
 
 # Removes empty objects from the file based on empty fields
@@ -109,11 +110,12 @@ def parseEmpty(window, jsonData, fields):
             for list_item in json_data:
                 is_empty(list_item, target_field)
 
+    fileLength = len(jsonData)
     for i, item in enumerate(jsonData):
         for field in fields:
             is_empty(item, field)
-        window.progressBar.setValue(int((i / len(jsonData)) * 100))
-    window.progressBar.setValue(100)
+        window.progressBar.setValue(int((i / fileLength) * 100))
+        window.parsingProgressLabel.setText("Parsing...")
 
 
 def parseNull(window, jsonData, fields):
@@ -135,11 +137,12 @@ def parseNull(window, jsonData, fields):
             for list_item in json_data:
                 isNull(list_item, target_field)
 
+    fileLength = len(jsonData)
     for i, item in enumerate(jsonData):
         for field in fields:
             isNull(item, field)
-        window.progressBar.setValue(int((i / len(jsonData)) * 100))
-    window.progressBar.setValue(100)
+        window.progressBar.setValue(int((i / fileLength) * 100))
+        window.parsingProgressLabel.setText("Parsing...")
 
 
 def resetResults():
@@ -174,8 +177,11 @@ def parse(window):
                 lambda: setResultTabs(window, "Null"))
             window.workerThread.start()
 
+        window.parsingProgressLabel.setVisible(True)
+
 
 def setResultTabs(window, tabName):
+    window.parsingProgressLabel.setText("Finishing up...")
     if not window.optionPositiveTab and not window.optionNegativeTab:
         ResultTabs(window, tabName, resultItems, foundItems)
     else:
@@ -184,6 +190,8 @@ def setResultTabs(window, tabName):
     window.uploadNewButton.setVisible(True)
     window.startParseButton.setEnabled(False)
     resetRadioButtonsMenus(window)
+    window.progressBar.setValue(100)
+    window.parsingProgressLabel.setText("Done!")
 
 
 def saveFiles(window):
