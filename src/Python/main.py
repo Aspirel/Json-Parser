@@ -1,12 +1,13 @@
 import json
+
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import (QMainWindow, QGridLayout, QRadioButton, QPushButton, QSizePolicy, QSpacerItem,
-                               QWidget, QProgressBar, QFileDialog, QListWidget, QLabel, QVBoxLayout)
+                               QWidget, QProgressBar, QFileDialog, QListWidget)
 
+from Layouts.fieldsSelectionLayout import FieldsSelection
 from Layouts.tabsLayout import TabLayout
 from Layouts.uploadFileLayout import FileUploadLayout
 from parser_UI import parse, validate_file, readFile, getAllKeys, saveFiles
-from Layouts.fieldsSelectionLayout import FieldsSelection
 from utils import *
 
 
@@ -174,5 +175,5 @@ class MainWindow(QMainWindow):
             self.window.show()
 
     def uploadNewFile(self):
-        resetMenus(self)
         self.setupFile()
+        resetMenus(self)

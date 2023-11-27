@@ -10,22 +10,22 @@ jsonFontSize.setPointSize(12)
 
 def TabLayout(window):
     # Tabs
-    window.tabWidget = QTabWidget()
-    window.tabWidget.setStyleSheet("QTabWidget { "
-                                   "font-weight: bold;"
-                                   "font-size: 12px }")
-
-    # tab 1
-    window.originalFileTab = QWidget(window.tabWidget)
-    window.tab1GridLayout = QGridLayout(window.originalFileTab)
-    window.plainTextEdit = QPlainTextEdit(window.originalFileTab)
-    window.plainTextEdit.setReadOnly(True)
-    window.plainTextEdit.setFont(jsonFontSize)
-    window.tab1GridLayout.addWidget(window.plainTextEdit, 0, 0, 1, 1)
-    window.tabWidget.addTab(window.originalFileTab, "")
-    window.gridLayout.addWidget(window.tabWidget, 0, 1, 1, 1)
-    window.tabWidget.setTabText(
-        window.tabWidget.indexOf(window.originalFileTab), "File")
+    if not window.tabWidget:
+        window.tabWidget = QTabWidget()
+        window.tabWidget.setStyleSheet("QTabWidget { "
+                                       "font-weight: bold;"
+                                       "font-size: 12px }")
+        # tab 1
+        window.originalFileTab = QWidget(window.tabWidget)
+        window.tab1GridLayout = QGridLayout(window.originalFileTab)
+        window.plainTextEdit = QPlainTextEdit(window.originalFileTab)
+        window.plainTextEdit.setReadOnly(True)
+        window.plainTextEdit.setFont(jsonFontSize)
+        window.tab1GridLayout.addWidget(window.plainTextEdit, 0, 0, 1, 1)
+        window.tabWidget.addTab(window.originalFileTab, "")
+        window.gridLayout.addWidget(window.tabWidget, 0, 1, 1, 1)
+        window.tabWidget.setTabText(
+            window.tabWidget.indexOf(window.originalFileTab), "File")
 
 
 def ResultTabs(window, tabName, resultItems, foundItems):

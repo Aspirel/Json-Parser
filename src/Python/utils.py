@@ -35,9 +35,15 @@ def resetMenus(window):
     window.removeDuplicatesRadioButton.setAutoExclusive(False)
     window.removeDuplicatesRadioButton.setChecked(False)
     window.removeDuplicatesRadioButton.setAutoExclusive(True)
+
     window.progressBar.setValue(0)
+    window.optionPositiveTab = None
+    window.optionNegativeTab = None
     window.tabWidget.removeTab(1)
     window.tabWidget.removeTab(1)
+    window.listView.clear()
+    window.saveFilesButton.setVisible(False)
+    window.saveFilesButton.setEnabled(False)
 
 
 def alertDialog(window, message, success):
