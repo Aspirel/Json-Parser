@@ -1,7 +1,7 @@
 import json
 import os
 
-from PySide6.QtWidgets import QFileDialog
+from PySide6.QtWidgets import QFileDialog, QApplication
 
 from Layouts.tabsLayout import ResultTabs, updatePlainTextTabs
 from utils import alertDialog, resetRadioButtonsMenus
@@ -58,10 +58,6 @@ def getAllKeys(jsonData):
 def parseDuplicates(window, jsonData, fields):
     checkedObjects = []
 
-    # TODO maybe if its already in both lists, remove from result. Otherwise will keep it in as a positive result
-    #  when its not. If the first field selected is negative and goes into the duplicates, and the next field
-    #  is negative, its already in duplicates so it will leave it in the positive list. If we remove it from it, solves
-    #  the problem.
     def is_duplicate(json_data, target_field):
         if isinstance(json_data, dict):
             for key, value in json_data.items():
@@ -82,12 +78,14 @@ def parseDuplicates(window, jsonData, fields):
             for list_item in json_data:
                 is_duplicate(list_item, target_field)
 
-    fileLength = len(jsonData)
-    for i, item in enumerate(jsonData):
-        for field in fields:
+    total_items = len(fields) * len(jsonData)
+    overall_progress = 0
+    window.parsingProgressLabel.setText("Parsing...")
+    for field in fields:
+        for i, item in enumerate(jsonData):
             is_duplicate(item, field)
-        window.progressBar.setValue(int((i / fileLength) * 100))
-        window.parsingProgressLabel.setText("Parsing...")
+            overall_progress += 1
+            window.progressBar.setValue(int((overall_progress / total_items) * 100))
 
 
 # Removes empty objects from the file based on empty fields
@@ -110,12 +108,14 @@ def parseEmpty(window, jsonData, fields):
             for list_item in json_data:
                 is_empty(list_item, target_field)
 
-    fileLength = len(jsonData)
-    for i, item in enumerate(jsonData):
-        for field in fields:
+    total_items = len(fields) * len(jsonData)
+    overall_progress = 0
+    window.parsingProgressLabel.setText("Parsing...")
+    for field in fields:
+        for i, item in enumerate(jsonData):
             is_empty(item, field)
-        window.progressBar.setValue(int((i / fileLength) * 100))
-        window.parsingProgressLabel.setText("Parsing...")
+            overall_progress += 1
+            window.progressBar.setValue(int((overall_progress / total_items) * 100))
 
 
 def parseNull(window, jsonData, fields):
@@ -137,12 +137,14 @@ def parseNull(window, jsonData, fields):
             for list_item in json_data:
                 isNull(list_item, target_field)
 
-    fileLength = len(jsonData)
-    for i, item in enumerate(jsonData):
-        for field in fields:
+    total_items = len(fields) * len(jsonData)
+    overall_progress = 0
+    window.parsingProgressLabel.setText("Parsing...")
+    for field in fields:
+        for i, item in enumerate(jsonData):
             isNull(item, field)
-        window.progressBar.setValue(int((i / fileLength) * 100))
-        window.parsingProgressLabel.setText("Parsing...")
+            overall_progress += 1
+            window.progressBar.setValue(int((overall_progress / total_items) * 100))
 
 
 def resetResults():
@@ -182,6 +184,7 @@ def parse(window):
 
 def setResultTabs(window, tabName):
     window.parsingProgressLabel.setText("Finishing up...")
+    QApplication.processEvents()
     if not window.optionPositiveTab and not window.optionNegativeTab:
         ResultTabs(window, tabName, resultItems, foundItems)
     else:
