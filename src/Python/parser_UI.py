@@ -4,7 +4,7 @@ import os
 from PySide6.QtWidgets import QFileDialog, QApplication
 
 from Layouts.tabsLayout import ResultTabs, updatePlainTextTabs
-from utils import alertDialog, resetRadioButtonsMenus
+from utils import alertDialog, resetRadioButtonsMenus, enableDisableRadioButtonsMenus
 from workerThread import WorkerThread
 
 resultItems = []
@@ -159,6 +159,10 @@ def parse(window):
 
     if window.fileData:
         window.startParseButton.setEnabled(False)
+        window.saveFilesButton.setVisible(False)
+        window.uploadNewButton.setVisible(False)
+        enableDisableRadioButtonsMenus(window, False)
+
         jsonData = json.loads(window.fileData)
         if window.removeDuplicatesRadioButton.isChecked():
             window.workerThread = WorkerThread(
@@ -191,7 +195,6 @@ def setResultTabs(window, tabName):
         updatePlainTextTabs(window, tabName, resultItems, foundItems)
     window.saveFilesButton.setVisible(True)
     window.uploadNewButton.setVisible(True)
-    window.startParseButton.setEnabled(False)
     resetRadioButtonsMenus(window)
     window.progressBar.setValue(100)
     window.parsingProgressLabel.setText("Done!")

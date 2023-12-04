@@ -8,7 +8,7 @@ from Layouts.fieldsSelectionLayout import FieldsSelection
 from Layouts.tabsLayout import TabLayout
 from Layouts.uploadFileLayout import FileUploadLayout
 from parser_UI import parse, validate_file, readFile, getAllKeys, saveFiles
-from utils import centerWindow, enableRadioButtonsMenus, resetMenus
+from utils import centerWindow, enableDisableRadioButtonsMenus, resetMenus
 
 
 class MainWindow(QMainWindow):
@@ -173,7 +173,7 @@ class MainWindow(QMainWindow):
                 self.fileData = json.loads(fileData)
                 TabLayout(self)
                 self.plainTextEdit.setPlainText(self.fileData)
-                enableRadioButtonsMenus(self)
+                enableDisableRadioButtonsMenus(self, True)
                 self.uploadNewButton.setVisible(True)
                 if newUpload:
                     resetMenus(self)

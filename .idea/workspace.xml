@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b89161b8-b792-4f5a-9095-b11103504c63" name="Changes" comment="Visibility of upload and save files fixed.">
+    <list default="true" id="b89161b8-b792-4f5a-9095-b11103504c63" name="Changes" comment="Improved algorithm speed. Fixed message not updating properly when finishing up.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Python/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Python/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Python/parser_UI.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Python/parser_UI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Python/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Python/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

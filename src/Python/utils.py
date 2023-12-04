@@ -9,10 +9,10 @@ def centerWindow(window):
     window.move(geo.topLeft())
 
 
-def enableRadioButtonsMenus(window):
-    window.removeEmptyRadioButton.setEnabled(True)
-    window.removeNullRadioButton.setEnabled(True)
-    window.removeDuplicatesRadioButton.setEnabled(True)
+def enableDisableRadioButtonsMenus(window, enable):
+    window.removeEmptyRadioButton.setEnabled(enable)
+    window.removeNullRadioButton.setEnabled(enable)
+    window.removeDuplicatesRadioButton.setEnabled(enable)
 
 
 def resetRadioButtonsMenus(window):
@@ -27,7 +27,7 @@ def resetRadioButtonsMenus(window):
     window.removeDuplicatesRadioButton.setAutoExclusive(False)
     window.removeDuplicatesRadioButton.setChecked(False)
     window.removeDuplicatesRadioButton.setAutoExclusive(True)
-
+    enableDisableRadioButtonsMenus(window, True)
 
 def enableParsingMenus(window):
     window.listViewLabel.setVisible(True)
