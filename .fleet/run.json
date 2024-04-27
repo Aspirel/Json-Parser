@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "python",
+            "name": "Python configuration",
+            "file": "src/Python/app.py",
+            "arguments": [],
+        },
+        
+    ]
+}
