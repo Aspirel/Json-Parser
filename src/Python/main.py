@@ -1,8 +1,13 @@
 import json
 
+from PySide6.QtCore import QSize
 from PySide6.QtGui import QFont
-from PySide6.QtWidgets import (QMainWindow, QGridLayout, QRadioButton, QPushButton, QSizePolicy, QSpacerItem,
-                               QWidget, QProgressBar, QFileDialog, QListWidget, QVBoxLayout, QLabel)
+from PySide6.QtWidgets import (
+    QMainWindow, QGridLayout, QRadioButton,
+    QPushButton, QSizePolicy, QSpacerItem,
+    QWidget, QProgressBar, QFileDialog,
+    QListWidget, QVBoxLayout, QLabel,
+    QApplication)
 
 from Layouts.fieldsSelectionLayout import FieldsSelection
 from Layouts.tabsLayout import TabLayout
@@ -46,7 +51,9 @@ class MainWindow(QMainWindow):
         self.selectedFields = []
 
     def setup_ui(self, window):
-        window.resize(1000, 600)
+        desktop = QApplication.primaryScreen().availableGeometry()
+        window_size = QSize(desktop.width() * 0.5, desktop.height() * 0.7)
+        window.resize(window_size)
         centerWindow(window)
         self.window = window
 
