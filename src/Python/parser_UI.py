@@ -54,98 +54,59 @@ def getAllKeys(jsonData):
     return list(keys)
 
 
-# checks a json file for duplicates and creates a new output file without them
+def traverse_json(json_data, target_field, match_fn):
+    if isinstance(json_data, dict):
+        for key, value in json_data.items():
+            if key == target_field:
+                yield value
+            elif isinstance(value, (dict, list)):
+                yield from traverse_json(value, target_field, match_fn)
+    elif isinstance(json_data, list):
+        for item in json_data:
+            yield from traverse_json(item, target_field, match_fn)
+
+def parse_by_condition(window, jsonData, fields, match_fn):
+    global resultItems, foundItems
+    resultItems, foundItems = [], []
+
+    total_items = len(fields) * len(jsonData)
+    window.parsingProgressLabel.setText("Parsing...")
+
+    for field in fields:
+        for i, item in enumerate(jsonData):
+            matched = False
+            for value in traverse_json(item, field, match_fn):
+                if match_fn(value):
+                    if item not in foundItems:
+                        foundItems.append(item)
+                    matched = True
+                else:
+                    if item not in resultItems:
+                        resultItems.append(item)
+                    matched = True
+            if not matched and item not in foundItems and item not in resultItems:
+                resultItems.append(item)
+
+            progress = int((i + 1 + fields.index(field) * len(jsonData)) / total_items * 100)
+            window.progressBar.setValue(progress)
+
 def parseDuplicates(window, jsonData, fields):
     checkedObjects = []
 
-    def is_duplicate(json_data, target_field):
-        if isinstance(json_data, dict):
-            for key, value in json_data.items():
-                if key == target_field:
-                    item_object = {key: value}
-                    if len(resultItems) == 0 or (
-                            item_object not in checkedObjects and value):
-                        if item not in resultItems:
-                            resultItems.append(item)
-                        checkedObjects.append(item_object)
-                    elif value and item not in foundItems:
-                        foundItems.append(item)
-                elif isinstance(value, (dict, list)):
-                    is_duplicate(value, target_field)
-            if item not in foundItems and item not in resultItems:
-                resultItems.append(item)
-        elif isinstance(json_data, list):
-            for list_item in json_data:
-                is_duplicate(list_item, target_field)
+    def is_duplicate(value):
+        item_object = {fields[0]: value}
+        if item_object not in checkedObjects and value:
+            checkedObjects.append(item_object)
+            return True
+        return False
 
-    total_items = len(fields) * len(jsonData)
-    overall_progress = 0
-    window.parsingProgressLabel.setText("Parsing...")
-    for field in fields:
-        for i, item in enumerate(jsonData):
-            is_duplicate(item, field)
-            overall_progress += 1
-            window.progressBar.setValue(int((overall_progress / total_items) * 100))
+    parse_by_condition(window, jsonData, fields, is_duplicate)
 
-
-# Removes empty objects from the file based on empty fields
 def parseEmpty(window, jsonData, fields):
-    def is_empty(json_data, target_field):
-        if isinstance(json_data, dict):
-            for key, value in json_data.items():
-                if key == target_field:
-                    if value == "":
-                        if item not in foundItems:
-                            foundItems.append(item)
-                    else:
-                        if item not in resultItems:
-                            resultItems.append(item)
-                elif isinstance(value, (dict, list)):
-                    is_empty(value, target_field)
-            if item not in foundItems and item not in resultItems:
-                resultItems.append(item)
-        elif isinstance(json_data, list):
-            for list_item in json_data:
-                is_empty(list_item, target_field)
-
-    total_items = len(fields) * len(jsonData)
-    overall_progress = 0
-    window.parsingProgressLabel.setText("Parsing...")
-    for field in fields:
-        for i, item in enumerate(jsonData):
-            is_empty(item, field)
-            overall_progress += 1
-            window.progressBar.setValue(int((overall_progress / total_items) * 100))
-
+    parse_by_condition(window, jsonData, fields, lambda v: v == "")
 
 def parseNull(window, jsonData, fields):
-    def isNull(json_data, target_field):
-        if isinstance(json_data, dict):
-            for key, value in json_data.items():
-                if key == target_field:
-                    if value is None:
-                        if item not in foundItems:
-                            foundItems.append(item)
-                    else:
-                        if item not in resultItems:
-                            resultItems.append(item)
-                elif isinstance(value, (dict, list)):
-                    isNull(value, target_field)
-            if item not in foundItems and item not in resultItems:
-                resultItems.append(item)
-        elif isinstance(json_data, list):
-            for list_item in json_data:
-                isNull(list_item, target_field)
-
-    total_items = len(fields) * len(jsonData)
-    overall_progress = 0
-    window.parsingProgressLabel.setText("Parsing...")
-    for field in fields:
-        for i, item in enumerate(jsonData):
-            isNull(item, field)
-            overall_progress += 1
-            window.progressBar.setValue(int((overall_progress / total_items) * 100))
-
+    parse_by_condition(window, jsonData, fields, lambda v: v is None)
 
 def resetResults():
     global resultItems
