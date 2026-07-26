@@ -175,15 +175,18 @@ class MainWindow(QMainWindow):
         selected_file = file_dialog.getOpenFileName(self, "Select file")
 
         if isinstance(selected_file, tuple) and selected_file[0]:
-            if validate_file(selected_file[0]):
-                fileData = readFile(selected_file[0])
-                self.fileData = json.loads(fileData)
+            path = selected_file[0]
+    
+            if validate_file(path):
+                self.fileData = load_file(path)
                 TabLayout(self)
-                self.plainTextEdit.setPlainText(self.fileData)
+                self.plainTextEdit.setPlainText(json.dumps(self.fileData, indent=4))
                 enableDisableRadioButtonsMenus(self, True)
                 self.uploadNewButton.setVisible(True)
+    
                 if newUpload:
                     resetMenus(self)
+
 
     def fieldWindowSetup(self):
         if self.fileData:
